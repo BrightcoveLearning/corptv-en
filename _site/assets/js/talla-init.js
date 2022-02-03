@@ -6,10 +6,10 @@ var token =
   Talla.config = Talla.init(
     appID,
     Talla.OptionJWTCredentials(token),
-    Talla.OptionBotName("Brightcove Beacon Doc Search"),
+    Talla.OptionBotName("Brightcove CorpTV Doc Search"),
     Talla.OptionAnonymous(true),
     Talla.OptionThemeColor('rgb(1, 5, 14)'),
-    Talla.OptionDisplayName('Search Brightcove Beacon Docs'),
+    Talla.OptionDisplayName('Search Brightcove CorpTV Docs'),
     Talla.OptionKnowledgeGroups(['d4105468-75a8-4bbb-89ac-33df9e3b5173']),
     Talla.OptionWideBeacon(true),
     Talla.OptionBeaconCTA("Have a question?"),

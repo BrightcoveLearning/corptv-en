@@ -7,28 +7,28 @@ parent: "Monetization"
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
 
-  <aside class="bcls-aside bcls-aside--information">NOTE: In this topic, some of the steps are performed in Beacon Classic.</aside>
+  <aside class="bcls-aside bcls-aside--information">NOTE: In this topic, some of the steps are performed in {{ site.product_short }} Classic.</aside>
   <section class="bcls-section">
     <h2 id="Understanding_AuthVOD">Understanding AuthVOD</h2>
-    <p>AuthVOD (AUTHenticated Video On Demand) is a monetization package where viewers must authenticate, that is enter a username and password, to the Brightcove Beacon app to watch videos included in the package. The videos may or may not show advertisements, depending on how you configure that package.</p>
-    <p>See the <a href="/monetization/general/monetization-options.html">Understanding Monetization Options</a> document for more information on AuthVOD, as well as all monetization packages you can use with Brightcove Beacon.</p>
+    <p>AuthVOD (AUTHenticated Video On Demand) is a monetization package where viewers must authenticate, that is enter a username and password, to the {{ site.product }} app to watch videos included in the package. The videos may or may not show advertisements, depending on how you configure that package.</p>
+    <p>See the <a href="/monetization/general/monetization-options.html">Understanding Monetization Options</a> document for more information on AuthVOD, as well as all monetization packages you can use with {{ site.product }}.</p>
   </section>
 
   <section class="bcls-section">
     <h2 id="Configuring_an_AuthVOD_package_overview">Configuring an AuthVOD package overview</h2>
     <p>Here are the high-level steps in configuring an AuthVOD package:</p>
     <ol>
-      <li>In Beacon Classic, create an <strong>unpublished</strong>, cost free package.</li>
+      <li>In {{ site.product_short }} Classic, create an <strong>unpublished</strong>, cost free package.</li>
       <li>If ads are desired, supply an ad provider when creating the package.</li>
-      <li>In Beacon Studio, add data to videos' custom fields to assign them to the AuthVOD package.</li>
+      <li>In {{ site.product_short }} Studio, add data to videos' custom fields to assign them to the AuthVOD package.</li>
     </ol>
   </section>
 
   <section class="bcls-section">
-    <h2 id="section-name">Creating a package in Brightcove Beacon</h2>
-    <p>Here are the detailed steps to follow in Beacon Classic to create an AuthVOD package:</p>
+    <h2 id="section-name">Creating a package in {{ site.product }}</h2>
+    <p>Here are the detailed steps to follow in {{ site.product_short }} Classic to create an AuthVOD package:</p>
     <ol class="bcls-tasklist">
-      <li>Click the <strong>Commerce</strong> tab along the top of Beacon Classic.
+      <li>Click the <strong>Commerce</strong> tab along the top of {{ site.product_short }} Classic.
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/monetization/implementing-authvod/navigation-to-add.png" alt="get to add new package button">
         </figure>
@@ -53,26 +53,26 @@ parent: "Monetization"
   </section>
 
   <section class="bcls-section">
-    <h2 id="Add_videos_to_the_package_in_Beacon_Studio">Add videos to the package in Beacon Studio</h2>
-    <p>To add content to the package, you need to use Beacon Studio to assign values to custom fields. The two custom fields that you must assign values to for an AuthVOD package are:</p>
+    <h2 id="Add_videos_to_the_package_in_Beacon_Studio">Add videos to the package in {{ site.product_short }} Studio</h2>
+    <p>To add content to the package, you need to use {{ site.product_short }} Studio to assign values to custom fields. The two custom fields that you must assign values to for an AuthVOD package are:</p>
     <ul>
-      <li>beacon.rights.&lt;counter&gt;.packageName</li>
-      <li>beacon.rights.&lt;counter&gt;.type</li>
+      <li>{{ site.product_short }}.rights.&lt;counter&gt;.packageName</li>
+      <li>{{ site.product_short }}.rights.&lt;counter&gt;.type</li>
     </ul>
-    <aside class="bcls-aside bcls-aside--tip">For more information on creating and using custom fields with Brightcove Beacon, see the <a href="/monetization/general/vc-custom-fields.html">Custom Fields for Monetization</a> document.</aside>
+    <aside class="bcls-aside bcls-aside--tip">For more information on creating and using custom fields with {{ site.product }}, see the <a href="/monetization/general/vc-custom-fields.html">Custom Fields for Monetization</a> document.</aside>
     <p>The steps below detail the process of assigning values to those custom fields.</p>
     <p>For each video you wish to be in the package, complete the following steps:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Log in to Beacon Studio.</li>
+      <li>Log in to {{ site.product_short }} Studio.</li>
       <li>From the primary navigation, select the <strong>Media</strong> module.</li>
       <li>Click the video name to which you wish to add custom field values, which displays that video's properties.</li>
       <li>Click the <strong>Video and Tracks</strong> tab.</li>
       <li>In the <strong>CUSTOM FIELDS</strong> section (right side), click <strong>Edit</strong> button.</li>
-      <li>For the <strong>beacon.rights.&lt;counter&gt;.packageName</strong>, enter the name of your AuthVOD package created earlier.</li>
-      <li>For the <strong>beacon.rights.&lt;counter&gt;.type</strong>, enter <strong>SVOD</strong>.</li>
+      <li>For the <strong>{{ site.product_short }}.rights.&lt;counter&gt;.packageName</strong>, enter the name of your AuthVOD package created earlier.</li>
+      <li>For the <strong>{{ site.product_short }}.rights.&lt;counter&gt;.type</strong>, enter <strong>SVOD</strong>.</li>
       <li>At either the top or bottom of the list of custom fields, click <strong>Save</strong>.</li>
     </ol>
-    <p>The following screenshot shows an example of actual values used in the custom fields. In this case, the <strong>counter</strong> is zero (highlighted in red) and the package name is <strong>AuthVOD Test</strong> (highlighted in yellow). Remember when implementing AuthVOD, the <strong>beacon.rights.&lt;counter&gt;.type</strong> is always set to <strong>SVOD</strong>.</p>
+    <p>The following screenshot shows an example of actual values used in the custom fields. In this case, the <strong>counter</strong> is zero (highlighted in red) and the package name is <strong>AuthVOD Test</strong> (highlighted in yellow). Remember when implementing AuthVOD, the <strong>{{ site.product_short }}.rights.&lt;counter&gt;.type</strong> is always set to <strong>SVOD</strong>.</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/monetization/implementing-authvod/values-in-custom-fields.png" alt="custom field values">
     </figure>

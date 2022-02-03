@@ -7,7 +7,7 @@ description: In this topic you will learn how you can increase the quality of po
   <h1>Increasing the Quality of Poster and Thumbnail Images</h1>
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>When a video is uploaded to Brightcove Beacon, poster and thumbnail images are created automatically by taking a snapshot from the source video at the midway point. The size of the poster and thumbnail is based upon the dimensions specified in the ingest profile used when uploading the video.</p>
+    <p>When a video is uploaded to {{ site.product }}, poster and thumbnail images are created automatically by taking a snapshot from the source video at the midway point. The size of the poster and thumbnail is based upon the dimensions specified in the ingest profile used when uploading the video.</p>
     <p>Poster and thumbnail images can be seen in the following areas:</p>
     <ul>
       <li>In the Media module, the thumbnail image is displayed next to the video; the poster image will appear in the preview player on the video properties page</li>
@@ -39,7 +39,7 @@ description: In this topic you will learn how you can increase the quality of po
     </div>
     <div id="ingest" class="BCL-subsection">
       <h3>Checking ingest profile image sizes</h3>
-      <p>Beacon Studio does not display the ingest profile that was used when a video was uploaded. You can, however, check the image sizes for ingest profiles:</p>
+      <p>{{ site.product_short }} Studio does not display the ingest profile that was used when a video was uploaded. You can, however, check the image sizes for ingest profiles:</p>
       <ol class="bcls-tasklist-restart">
         <li>In the left navigation, click <strong>Admin</strong>. Note that you must be an account administrator to access to the Administration page.</li>
         <li>Click <strong>Ingest Profiles</strong>.</li>
@@ -70,7 +70,7 @@ description: In this topic you will learn how you can increase the quality of po
   </section>
   <section class="bcls-section">
     <h2 id="resize">Automatic resizing</h2>
-    <p>When you add custom poster and/or thumbnail images via Studio or the Dynamic Ingest API, by default Brightcove Beacon will resize these to match the image sizes defined in the default Ingest Profile for the account.</p>
+    <p>When you add custom poster and/or thumbnail images via Studio or the Dynamic Ingest API, by default {{ site.product }} will resize these to match the image sizes defined in the default Ingest Profile for the account.</p>
     <h3>Override auto-resizing</h3>
     <aside class="bcls-aside bcls-aside--information">Note: This option is only available when using a <strong>Legacy</strong> profile version.</aside>
     <p>If you want to override this behavior and have Video Cloud retain actual image dimensions, follow these steps:</p>

@@ -6,12 +6,12 @@ parent: Cloud Playout
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
-  <aside class="bcls-aside bcls-aside--information">NOTE: In this topic, some of the steps are performed in Beacon Studio and some in Beacon Classic.</aside>
+  <aside class="bcls-aside bcls-aside--information">NOTE: In this topic, some of the steps are performed in {{ site.product_short }} Studio and some in {{ site.product_short }} Classic.</aside>
 
   <section class="bcls-section">
     <h2 id="Introduction">Introduction</h2>
     <p>The Cloud Playout module enables broadcasters and media publishers to use a collection of VOD videos and live streams and then stream them as a linear channel. The channel can be streamed to Brightcove Live, Amazon S3 or a specified RTMP URL.</p>
-    <p>See <a href="/channels/beacon-channels/creating-a-channel.html">Creating a Beacon Channel</a> to see how you add a Cloud Playout channel to your Beacon app.</p>
+    <p>See <a href="/channels/{{ site.product_short }}-channels/creating-a-channel.html">Creating a {{ site.product_short }} Channel</a> to see how you add a Cloud Playout channel to your {{ site.product_short }} app.</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/cloud-playout/cloud-playout-in-navigaton.png" alt="Go to Cloud Playout">
       <figcaption class="bcls-caption--image">Creating a Cloud Playout Channel</figcaption>
@@ -80,7 +80,7 @@ parent: Cloud Playout
         </figure>
       </li>
       <li>If you will be using Live inputs, set <strong>Live Input</strong> to On, and enter a Slate URL, unless you are going to use the default Brightcove MP4 for you slate. The slate MP4 will play whenever Live input is stopped because the encoder is stopped or some technical issue blocks the live stream. <strong>Note that <strong>the Slate URL must be a static URL that is always available</strong> (short-lived CDN URLs are not allowed).</strong></li>
-      <li>Enter the channel <strong>Destination</strong> details. For channels to work in Beacon apps, you must select <strong>Brightcove Live Event</strong> as the destination.
+      <li>Enter the channel <strong>Destination</strong> details. For channels to work in {{ site.product_short }} apps, you must select <strong>Brightcove Live Event</strong> as the destination.
         <ul>
           <li><strong>Optimize Display for</strong> - Controls the bitrate and dimensions for the output
             <ul>
@@ -92,7 +92,7 @@ parent: Cloud Playout
           <li><strong>Output to</strong> - Select an output method for the channel
             <ul>
               <li><strong>Brightcove Live Event</strong> - Create or use a previously created Brightcove Live Channel. When creating a new channel, the region of the channel will be optimized based upon the <strong>Output Region</strong> that was selected.</li>
-              <li><strong>RTMP</strong> - this destination is <strong>not compatible with Beacon.</strong></li>
+              <li><strong>RTMP</strong> - this destination is <strong>not compatible with {{ site.product_short }}.</strong></li>
               <li><strong>Amazon S3 Bucket </strong> - You can select this destination <strong>in addition to Brightcove Live Event, but not as the only destination</strong>. This option will push an HLS output to an Amazon S3 bucket. You will be required to enter Bucket Name, Region, Access Key and Secret Key. The bucket should be public and writeable.</li>
             </ul>
             <aside class="bcls-aside bcls-aside--information">Note that outputting to <strong>Brightcove Live Event</strong> will automatically generate live hours for your account, which are billable. There is no addition charge for using Cloud Playout, but normal charges for live streaming hours apply.
@@ -168,7 +168,7 @@ parent: Cloud Playout
 
   <section class="bcls-section">
     <h2 id="epg">Working with an electronic program guide</h2>
-    <p>Brightcove generates the EPG for Cloud Playout channels and Beacon will handle that for you.</p>
+    <p>Brightcove generates the EPG for Cloud Playout channels and {{ site.product_short }} will handle that for you.</p>
     <p>If you want to see the program data for the EPG, an API is available to retrieve the EPG. For more information see the <a href="https://apis.support.brightcove.com/cloud-playout-apis/getting-started/overview-epg-api.html">Overview: EPG API</a> topic.</p>
   </section>
 

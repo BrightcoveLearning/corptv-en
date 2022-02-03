@@ -1,6 +1,6 @@
 ---
 title: "Managing Cookie Consent Using OneTrust"
-description: "In this topic, you will learn how to implement OneTrust Cookie Compliance with Brightcove Beacon."
+description: "In this topic, you will learn how to implement OneTrust Cookie Compliance with CorpTV."
 parent: "General Information"
 layout: "staging"
 ---
@@ -18,7 +18,7 @@ layout: "staging"
       <li>California Consumer Privacy Act (CCPA)</li>
       <li>General Data Protection Regulation (GDPR) used in the EU and United Kingdom</li>
     </ul>
-    <p>This document is an introduction to get you started using OneTrust's Cookie Compliance tool with Brightcove Beacon. Brightcove recommends using OneTrust for your Beacon cookie compliance needs.</p>
+    <p>This document is an introduction to get you started using OneTrust's Cookie Compliance tool with {{ site.product }}. Brightcove recommends using OneTrust for your {{ site.product_short }} cookie compliance needs.</p>
     <aside class="bcls-aside bcls-aside--tip language-editable">
       <p>For further general information on cookies, regulation rules and cookie compliance see OneTrust's <a href="https://www.cookiepro.com/knowledgebase/">CookiePro Knowledge Base</a> document. For complete details on OneTrust's tools see the <a href="https://my.onetrust.com/s/topic/0TO1Q000000ItRyWAK/cookie-compliance">Cookie Compliance</a> section of documentation at OneTrust.</p>
     </aside>
@@ -27,7 +27,7 @@ layout: "staging"
 
   <section class="bcls-section">
     <h2 id="How_it_works">How it works</h2>
-    <p>The end result of setting up OneTrust Cookie Compliance is that a banner will appear in the Beacon App for geographic locations you choose. Here is an example of what the banner could look like (taken from OneTrust's site):</p>
+    <p>The end result of setting up OneTrust Cookie Compliance is that a banner will appear in the {{ site.product_short }} App for geographic locations you choose. Here is an example of what the banner could look like (taken from OneTrust's site):</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/general/managing-cookie-consent/one-trust-banner.png" alt="one trust banner">
     </figure>
@@ -37,7 +37,7 @@ layout: "staging"
     </figure>
     <p>As part of the implementation process you will have the option to customize the text displayed in, and the look of, both the banner and preference center.</p>
     <h3>Overview of implementation process</h3>
-    <p>There are a number of steps to complete to implement OneTrust's cookie compliance with your Beacon app. Here is an overview of that process:</p>
+    <p>There are a number of steps to complete to implement OneTrust's cookie compliance with your {{ site.product_short }} app. Here is an overview of that process:</p>
     <ol>
       <li>Create templates that define your banner and preference center functionality and upload your logo for each template created. You will copy templates supplied by Brightcove as the foundation for your templates.</li>
       <li>Create a geolocation rule group, which will act as a container for geolocation rules.</li>
@@ -48,14 +48,14 @@ layout: "staging"
           <li>Define other specifications, like how often re-consent will need to be done.</li>
         </ul>
       </li>
-      <li>Assign geolocation rules to the domains from which your Beacon app is served.</li>
-      <li>Generate the scripts that provide the actual cookie compliance in your Beacon app.</li>
+      <li>Assign geolocation rules to the domains from which your {{ site.product_short }} app is served.</li>
+      <li>Generate the scripts that provide the actual cookie compliance in your {{ site.product_short }} app.</li>
       <li>Supply the scripts to your web team for implementation.</li>
     </ol>
     <p>The major sections following in this document lead you step by step through the implementation process.</p>
     <h3>Implementation architecture</h3>
-    <p>The following gives a look "under the hood" of how OneTrust Cookie Compliance integrates with your Beacon app.</p>
-    <p>The key to integrating OneTrust into your Beacon web app is the <strong>data-domain-script</strong> that is used to tie each domain name with the SDK that will perform all the functionalities OneTrust provides. In a nutshell, the <strong>data-domain-script</strong> is used to identify each domain name that is using the SDK. Your Beacon web app needs to know the <em>data-domain-script <strong>id</strong></em> assigned to a certain customer(domain name). Beacon Classic provides the <em>data-domain-script id</em> into the <strong>privacy_management_platform</strong> field by hitting the <strong>api/settings</strong> endpoint.</p>
+    <p>The following gives a look "under the hood" of how OneTrust Cookie Compliance integrates with your {{ site.product_short }} app.</p>
+    <p>The key to integrating OneTrust into your {{ site.product_short }} web app is the <strong>data-domain-script</strong> that is used to tie each domain name with the SDK that will perform all the functionalities OneTrust provides. In a nutshell, the <strong>data-domain-script</strong> is used to identify each domain name that is using the SDK. Your {{ site.product_short }} web app needs to know the <em>data-domain-script <strong>id</strong></em> assigned to a certain customer(domain name). {{ site.product_short }} Classic provides the <em>data-domain-script id</em> into the <strong>privacy_management_platform</strong> field by hitting the <strong>api/settings</strong> endpoint.</p>
     <p>Here is an architecture diagram of the implementation:</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/general/managing-cookie-consent/architecture-diagram.png" alt="architecture diagram">
@@ -80,7 +80,7 @@ layout: "staging"
           <img class="bcls-image" src="/assets/images/general/managing-cookie-consent/click-templates.png" alt="click templates">
         </figure>
       </li>
-      <li>Choose <strong>Beacon web app template CCPA</strong> to copy and click the ellipses icon on the far right. You will base your CCPA template off of this Brightcove supplied template.
+      <li>Choose <strong>{{ site.product_short }} web app template CCPA</strong> to copy and click the ellipses icon on the far right. You will base your CCPA template off of this Brightcove supplied template.
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/general/managing-cookie-consent/click-ellipses.png" alt="click ellipses">
         </figure>
@@ -109,7 +109,7 @@ layout: "staging"
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/general/managing-cookie-consent/upload-new-logo.png" alt="upload new logo">
         </figure>
-        <aside class="bcls-aside bcls-aside--warning language-editable">There is no need to make any other styling changes here as the banner and preference center will automatically be styled based on the design of your Beacon app.</aside>
+        <aside class="bcls-aside bcls-aside--warning language-editable">There is no need to make any other styling changes here as the banner and preference center will automatically be styled based on the design of your {{ site.product_short }} app.</aside>
       </li>
       <li>Note that the logo is updated in the preview.
         <figure class="bcls-figure">
@@ -123,7 +123,7 @@ layout: "staging"
       </li>
       <li>Now create another template:
         <ul>
-          <li>Copy the <strong>Beacon web app template GDPR TCF 2</strong> template.</li>
+          <li>Copy the <strong>{{ site.product_short }} web app template GDPR TCF 2</strong> template.</li>
           <li>Suggested naming convention for your template is <strong>Web-[YourCompanyName]-GDPR</strong>.</li>
           <li>Update the logo.</li>
         </ul>
@@ -156,8 +156,8 @@ layout: "staging"
           <img class="bcls-image" src="/assets/images/general/managing-cookie-consent/geo-add-rule.png" alt="geo add rule">
         </figure>
       </li>
-      <li>You will now create the CCPA rule. The following table provides settings you need to make to be compatible with Beacon. Other changes can be made based on regulations for your targeted geographies.
-        <aside class="bcls-aside bcls-aside--tip language-editable">As with templates, you may not need all the rules based on locations your Beacon app is targeting.</aside>
+      <li>You will now create the CCPA rule. The following table provides settings you need to make to be compatible with {{ site.product_short }}. Other changes can be made based on regulations for your targeted geographies.
+        <aside class="bcls-aside bcls-aside--tip language-editable">As with templates, you may not need all the rules based on locations your {{ site.product_short }} app is targeting.</aside>
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
@@ -176,7 +176,7 @@ layout: "staging"
             </tr>
             <tr>
               <td>Template</td>
-              <td>Choose the template created that was based on the Brightcove supplied <strong>Beacon web app template GDPR TCF 2</strong>.</td>
+              <td>Choose the template created that was based on the Brightcove supplied <strong>{{ site.product_short }} web app template GDPR TCF 2</strong>.</td>
             </tr>
             <tr>
               <td>Cookie Categories</td>
@@ -192,7 +192,7 @@ layout: "staging"
             </tr>
           </tbody>
         </table>
-      <li>Create the GDPR rule. Be sure to supply the following values to insure compatibility with Beacon. Other values can be set as needed to meet other regulations.
+      <li>Create the GDPR rule. Be sure to supply the following values to insure compatibility with {{ site.product_short }}. Other values can be set as needed to meet other regulations.
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
@@ -211,7 +211,7 @@ layout: "staging"
             </tr>
             <tr>
               <td>Template</td>
-              <td>Choose the template created that was based on the Brightcove supplied <strong>Beacon web app template CCPA</strong>.</td>
+              <td>Choose the template created that was based on the Brightcove supplied <strong>{{ site.product_short }} web app template CCPA</strong>.</td>
             </tr>
             <tr>
               <td>Cookie Categories</td>
@@ -228,7 +228,7 @@ layout: "staging"
           </tbody>
         </table>
       </li>
-      <li>You may wish to create a rule that can be applied to regions NOT selected for the CCPA or GDPR rules. It might be applied to all other regions, and because of this you might want to name this rule <strong>Global</strong>. Be sure to supply the following values to insure compatibility with Beacon. Other values can be set as needed to meet other regulations.
+      <li>You may wish to create a rule that can be applied to regions NOT selected for the CCPA or GDPR rules. It might be applied to all other regions, and because of this you might want to name this rule <strong>Global</strong>. Be sure to supply the following values to insure compatibility with {{ site.product_short }}. Other values can be set as needed to meet other regulations.
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>

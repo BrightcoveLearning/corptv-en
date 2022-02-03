@@ -15,7 +15,7 @@ parent: "monetization"
       <li><strong>Custom fields implementation details</strong> - Provides details on managing custom fields on the following topics:
         <ul>
           <li>Custom field names</li>
-          <li>Using list values for Brightcove Beacon metadata</li>
+          <li>Using list values for {{ site.product }} metadata</li>
           <li>Editing list values</li>
           <li>Deleting list values</li>
           <li>Removing custom fields from an account</li>
@@ -34,8 +34,8 @@ parent: "monetization"
     <figure class="bcls-figure"> <img class="bcls-image" src="/assets/images/monetization/vc-custom-fields/rights-mamagement-example-avod.png" alt=""> </figure>
     <p>You can learn the following from this example:</p>
     <ul>
-      <li>Not all the rights management fields in a group must be be assigned values. In this case, only the <em>beacon.rights.&lt;counter&gt;.adConfiguration</em> and <em>beacon.rights.&lt;counter&gt;.type</em> are used.</li>
-      <li>You can use the SSAI configuration ID created in Studio in the Brightcove Beacon custom fields.</li>
+      <li>Not all the rights management fields in a group must be be assigned values. In this case, only the <em>{{ site.product_short }}.rights.&lt;counter&gt;.adConfiguration</em> and <em>{{ site.product_short }}.rights.&lt;counter&gt;.type</em> are used.</li>
+      <li>You can use the SSAI configuration ID created in Studio in the {{ site.product }} custom fields.</li>
       <li>The counter value for a set of rights management fields can start at 0 (highlighted in yellow).</li>
     </ul>
     <p>Note that no fields you create will need to have the <strong>Make this Field Required</strong> checkbox checked.</p>
@@ -53,7 +53,7 @@ parent: "monetization"
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td>beacon.rights.&lt;counter&gt;.type</td>
+          <td>{{ site.product_short }}.rights.&lt;counter&gt;.type</td>
           <td>beacon_rights_ <br />&lt;counter&gt;_type</td>
           <td>Text</td>
           <td>
@@ -67,7 +67,7 @@ parent: "monetization"
         </tr>
         <tr>
           <td>
-            beacon.rights.<br />
+            {{ site.product_short }}.rights.<br />
             &lt;counter&gt;.<br />
             startDate
           </td>
@@ -81,7 +81,7 @@ parent: "monetization"
             * Date when the asset should be exposed under the access restrictions and monetization options in this particular set<br> * Format: Date yyyy-mm-dd hh:mm:ss<br> * Default value: If not set, defaults to video availability start date </td>
         </tr>
         <tr>
-          <td>beacon.rights.&lt;counter&gt;.endDate</td>
+          <td>{{ site.product_short }}.rights.&lt;counter&gt;.endDate</td>
           <td>
             beacon_rights_ <br />
             &lt;counter&gt;_enddate
@@ -91,14 +91,14 @@ parent: "monetization"
             * Date when the asset should be no longer exposed under the access restrictions and monetization options in this particular set<br> * Format: Date yyyy-mm-dd hh:mm:ss<br> * Default value: If not set, defaults to video availability end date </td>
         </tr>
         <tr>
-          <td>beacon.rights.&lt;counter&gt;.devices</td>
+          <td>{{ site.product_short }}.rights.&lt;counter&gt;.devices</td>
           <td>
             beacon_rights_ <br />
             &lt;counter&gt;_devices
           </td>
           <td>Text</td>
           <td>
-            * Comma separated list of devices supported in Brightcove Beacon to which the asset should be exposed under the access restrictions and monetization options in this particular set<br> * Comma separated list of: <ul>
+            * Comma separated list of devices supported in {{ site.product }} to which the asset should be exposed under the access restrictions and monetization options in this particular set<br> * Comma separated list of: <ul>
               <li>iOS</li>
               <li>Android</li>
               <li>web</li>
@@ -111,11 +111,11 @@ parent: "monetization"
               <li>androidtv</li>
               <!-- li>panasonic</li> -->
             </ul>
-            * Default value: If not set, defaults to all devices supported in Brightcove Beacon </td>
+            * Default value: If not set, defaults to all devices supported in {{ site.product }} </td>
         </tr>
         <tr>
           <td>
-            beacon.rights.<br />
+            {{ site.product_short }}.rights.<br />
             &lt;counter&gt;.<br />
             locationsPermit
           </td>
@@ -126,11 +126,11 @@ parent: "monetization"
           </td>
           <td>Text</td>
           <td>
-            * Comma separated list of locations defined in Brightcove Beacon to which the asset should be exposed under the access restrictions and monetization options in this particular set<br> * Default value: If not set, defaults to all locations supported in Brightcove Beacon </td>
+            * Comma separated list of locations defined in {{ site.product }} to which the asset should be exposed under the access restrictions and monetization options in this particular set<br> * Default value: If not set, defaults to all locations supported in {{ site.product }} </td>
         </tr>
         <tr>
           <td>
-            beacon.rights.&lt;counter&gt;.<br /> locationsDeny </td>
+            {{ site.product_short }}.rights.&lt;counter&gt;.<br /> locationsDeny </td>
           <td>
             beacon_rights_ <br />
             &lt;counter&gt;_<br />
@@ -138,11 +138,11 @@ parent: "monetization"
           </td>
           <td>Text</td>
           <td>
-            * Comma separated list of locations defined in Brightcove Beacon to which the asset should NOT be exposed under the access restrictions and monetization options in this particular set<br> * No default value </td>
+            * Comma separated list of locations defined in {{ site.product }} to which the asset should NOT be exposed under the access restrictions and monetization options in this particular set<br> * No default value </td>
         </tr>
         <tr>
           <td>
-            beacon.rights.<br />
+            {{ site.product_short }}.rights.<br />
             &lt;counter&gt;.<br />
             packageName
           </td>
@@ -153,11 +153,11 @@ parent: "monetization"
           </td>
           <td>Text</td>
           <td>
-            * A value for this field MUST be entered if the <strong>beacon.rights.&lt;counter&gt;.type</strong> field value is set to <strong>SVOD</strong><br> * A comma separated list of package names, as defined in Brightcove Beacon<br> * Examples: <em>Premium Sports, Action Movies, Earth Day Movies</em><br> * No default value </td>
+            * A value for this field MUST be entered if the <strong>{{ site.product_short }}.rights.&lt;counter&gt;.type</strong> field value is set to <strong>SVOD</strong><br> * A comma separated list of package names, as defined in {{ site.product }}<br> * Examples: <em>Premium Sports, Action Movies, Earth Day Movies</em><br> * No default value </td>
         </tr>
         <tr>
           <td>
-            beacon.rights.<br />
+            {{ site.product_short }}.rights.<br />
             &lt;counter&gt;.<br />
             adConfiguration
           </td>
@@ -168,7 +168,7 @@ parent: "monetization"
           </td>
           <td>Text</td>
           <td>
-            * A value for this field MUST be entered if the <strong>beacon.rights.&lt;counter&gt;.type</strong> field value is set to <strong>AVOD</strong><br> * Identifier of an ad configuration in Brightcove Beacon<br> * No default value </td>
+            * A value for this field MUST be entered if the <strong>{{ site.product_short }}.rights.&lt;counter&gt;.type</strong> field value is set to <strong>AVOD</strong><br> * Identifier of an ad configuration in {{ site.product }}<br> * No default value </td>
         </tr>
       </tbody>
     </table>
@@ -178,7 +178,7 @@ parent: "monetization"
     <h2 id="Creating_custom_fields">Creating custom fields</h2>
     <p>To create custom fields, follow these steps.</p>
     <ol class="bcls-tasklist">
-      <li>Log in to Beacon Studio.</li>
+      <li>Log in to {{ site.product_short }} Studio.</li>
       <li>
         In the primary navigation, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access the ADMIN menu.
       </li>
@@ -190,7 +190,7 @@ parent: "monetization"
         <figure class="bcls-figure"> <img class="bcls-image" src="/assets/images/monetization/vc-custom-fields/new-custom-field1.png" alt="" /> </figure>
       </li>
       <li>
-        For the <strong>Display Name</strong>, enter <samp>beacon.rights.0.adConfiguration</samp>. This is a commonly needed custom field for your first monetization implementation that needs custom fields. Note that this value will appear as the label for the field in the Media module. An <strong>Internal Name</strong> will automatically be created for the field based on the display name.
+        For the <strong>Display Name</strong>, enter <samp>{{ site.product_short }}.rights.0.adConfiguration</samp>. This is a commonly needed custom field for your first monetization implementation that needs custom fields. Note that this value will appear as the label for the field in the Media module. An <strong>Internal Name</strong> will automatically be created for the field based on the display name.
       </li>
       <li>
         For the <strong>Type</strong> select <strong>Text</strong>. Note the following for values for the possible types:
@@ -204,7 +204,7 @@ parent: "monetization"
         </ul>
       </li>
       <li>
-        Enter a <strong>Description</strong>. For this field a good description is <samp>A value for this field MUST be entered if the beacon.rights.&lt;counter&gt;.type field value is set to AVOD.</samp> The description field will appear as a hint in the Studio interface.
+        Enter a <strong>Description</strong>. For this field a good description is <samp>A value for this field MUST be entered if the {{ site.product_short }}.rights.&lt;counter&gt;.type field value is set to AVOD.</samp> The description field will appear as a hint in the Studio interface.
       </li>
       <li>
         DO NOT make this field required.
@@ -231,9 +231,9 @@ parent: "monetization"
       The next three sections of this document cover custom fields that you may need to create based on your particular implementation use case. Each custom field has both a <strong>Display Name</strong> and an <strong>Internal Name</strong>. If you feel you have a more meaningful name for the <strong>Display Name</strong> option you can use that, but the <strong>Internal Name</strong> MUST match exactly.
     </p>
 
-    <h3>Using list values for Brightcove Beacon metadata </h3>
+    <h3>Using list values for {{ site.product }} metadata </h3>
     <p>
-      In the table of values for the rights management custom fields show above, you may wish to consider the <strong>beacon.rights.&lt;counter&gt;.type</strong> to be of type <strong>List</strong>. Note that ALL the <strong>Types</strong> are <strong>Text</strong>. It may ease the burden on monetization implementors if they can select from a list rather than having to enter text. Also, it will invariably help to keep data entry more consistent if values can be selected from a list rather than typed in. Therefore, if you find a <strong>List</strong> works in some business cases, a list can be used.
+      In the table of values for the rights management custom fields show above, you may wish to consider the <strong>{{ site.product_short }}.rights.&lt;counter&gt;.type</strong> to be of type <strong>List</strong>. Note that ALL the <strong>Types</strong> are <strong>Text</strong>. It may ease the burden on monetization implementors if they can select from a list rather than having to enter text. Also, it will invariably help to keep data entry more consistent if values can be selected from a list rather than typed in. Therefore, if you find a <strong>List</strong> works in some business cases, a list can be used.
     </p>
 
     <h3 id="edit">Editing list values</h3>

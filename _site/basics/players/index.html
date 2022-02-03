@@ -1,44 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex,nofollow"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Learn the basic skills needed to create and manage players using Beacon Studio.">
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Learn the basic skills needed to create and manage players using {{ site.product_short }} Studio." />
+
   <title>How To: Manage Players</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css" />
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css" />
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css" />
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css" />
-  <link rel="stylesheet" href="/assets/css/local.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet" />
   
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2728311-17"></script>
-<script translate="no">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-2728311-17');
-</script>
+  <script src="/assets/js/site/google-analytics.js"></script>
   <script src="/assets/js/sajari-head.js"></script>
-	<script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="/assets/css/local.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
-
 <body class="body">
-
 <header>
   <div class="div-header">
-    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/COVE004_Brightcove_Beacon_Logo_RGB_K.svg" alt="product logo" style="max-height: 100px;max-width: 232px;"></a>
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/SVG/COVE004_brightcove_corptv_Logo_RGB_K.svg" alt="Brightcove"></a>
 <!-- GTranslate: https://gtranslate.io/ -->
 <select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
 
@@ -48,105 +38,27 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 /* ]]> */
 </script>
 
-    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
-      <option value="">Other Brightcove Docs</option>
-      
-        
-          <option value="https://support.brightcove.com">Documentation Home</option>
-        
-      
-        
-          <option value="">-- VIDEO CLOUD --</option>
-        
-      
-        
-          <option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
-        
-      
-        
-          <option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
-        
-      
-        
-          <option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
-        
-      
-        
-          <option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
-        
-      
-        
-          <option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
-        
-      
-        
-          <option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
-        
-      
-        
-          <option value="">-- VIDEO ESSENTIALS --</option>
-        
-      
-        
-          <option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon</option>
-        
-      
-        
-          <option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
-        
-      
-        
-          <option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
-        
-      
-        
-          <option value="">-- VIDEO CLOUD ADD-ONS --</option>
-        
-      
-        
-          <option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
-        
-      
-        
-          <option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
-        
-      
-        
-          <option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
-        
-      
-        
-          <option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
-        
-      
-        
-          <option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
-        
-      
-    </select>
 
 
-    <span class="secondary-nav"><a href="https://supportportal.brightcove.com"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+&nbsp;<span class="secondary-nav"><a href="https://support.brightcove.com/product-updates.html">Product Updates</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://supportportal.brightcove.com">Contact Support</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/">System Status</a></span>
     <br>
     
   </div>
-</header>
-<!-- <img id="back_button" src="/assets/images/feather/arrow-left.svg" alt="Back" style="opacity: .2;cursor: not-allowed;"> -->
-<nav id="breadcrumbs" aria-label="breadcrumb">
-  <ol class="breadcrumb arr-right">
-    
-    <li class="breadcrumb-item"><a href="/index-howto.html">Beacon Help</a></li>
-    
-    
-    
-    <li class="breadcrumb-item"><a href="/basics/players/">Players</a></li>
-    
-    
-    <li class="breadcrumb-item active" aria-current="page">How To: Manage Players</li>
-    
-  </ol>
-</nav>
-<!-- <img id="forward_button" src="/assets/images/feather/chevron-right.svg" alt="Forward" style="opacity: .2;cursor: not-allowed;"> -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/basics/">Basics</a></li>
+      
+      
+      
+      <li class="breadcrumb-item active" aria-current="page">How To: Manage Players</li>
+      
+      
+    </nav>
+  </header>
 
 <div class="container">
     <div class="row">
@@ -191,7 +103,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 						
 					
 						
-							<option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon</option>
+							<option value="https://{{ site.product_short }}.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;{{ site.product }}</option>
 						
 					
 						
@@ -238,7 +150,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/getting-started/learning-guide-bc-beacon.html">Brightcove Beacon Learning Guide</a></li>
+                    <li><a href="/getting-started/learning-guide-bc-ott.html">Brightcove CorpTV Learning Guide</a></li>
                   
                 
                   
@@ -246,11 +158,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/getting-started/getting-started-beacon-studio.html">Getting Started with Beacon Studio</a></li>
+                    <li><a href="/getting-started/getting-started-ott-studio.html">Getting Started with CorpTV Studio</a></li>
                   
                 
                   
-                    <li><a href="/general/beacon-studio-or-classic.html">When to Use Beacon Studio and/or Beacon Classic</a></li>
+                    <li><a href="/general/ott-studio-or-classic.html">When to Use CorpTV Studio and/or CorpTV Classic</a></li>
                   
                 
                   
@@ -444,7 +356,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/media/creating-beacon-playlist.html">Creating a Beacon Classic Playlist</a></li>
+                    <li><a href="/media/creating-ott-playlist.html">Creating a CorpTV Classic Playlist</a></li>
                   
                 
                   
@@ -623,19 +535,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                 
                   
                     <li class="submenu-header">
-                      <a href="/channels/beacon-channels/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Beacon Channels</a>
+                      <a href="/channels/ott-channels/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;CorpTV Channels</a>
                       <ul class="sidenav-subsubmenu" style="display:none;">
                         
                           
-                            <li><a href="/channels/beacon-channels/creating-a-channel.html">Creating a Beacon Channel</a></li>
+                            <li><a href="/channels/ott-channels/creating-a-channel.html">Creating a CorpTV Channel</a></li>
                           
                         
                           
-                            <li><a href="/channels/beacon-channels/electronic-program-guides.html">Creating an EPG</a></li>
+                            <li><a href="/channels/ott-channels/electronic-program-guides.html">Creating an EPG</a></li>
                           
                         
                           
-                            <li><a href="/channels/beacon-channels/streaming-vods-to-a-channel.html">Streaming VODs to a Channel</a></li>
+                            <li><a href="/channels/ott-channels/streaming-vods-to-a-channel.html">Streaming VODs to a Channel</a></li>
                           
                         
                       </ul>
@@ -688,7 +600,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                           
                         
                           
-                            <li><a href="/channels/cloud-playout/publish-channel-beacon.html">Publishing a Cloud Playout Channel</a></li>
+                            <li><a href="/channels/cloud-playout/publish-channel-ott.html">Publishing a Cloud Playout Channel</a></li>
                           
                         
                           
@@ -860,7 +772,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                           
                         
                           
-                            <li><a href="/monetization/ssai/beacon-apps-ad-targeting.html">Beacon Apps Ad Targeting</a></li>
+                            <li><a href="/monetization/ssai/ott-apps-ad-targeting.html">CorpTV Apps Ad Targeting</a></li>
                           
                         
                       </ul>
@@ -871,19 +783,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
-              <h5 class="submenu-header"><a href="/beacon-web-store/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Beacon Web Store</a></h5>
+              <h5 class="submenu-header"><a href="/ott-web-store/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;CorpTV Web Store</a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/beacon-web-store/beacon-webstore-overview.html">Overview: Brightcove Beacon Web Store</a></li>
+                    <li><a href="/ott-web-store/ott-webstore-overview.html">Overview: Brightcove CorpTV Web Store</a></li>
                   
                 
                   
-                    <li><a href="/beacon-web-store/integration-details.html">Integrating with the Beacon Web Store</a></li>
+                    <li><a href="/ott-web-store/integration-details.html">Integrating with the CorpTV Web Store</a></li>
                   
                 
                   
-                    <li><a href="/beacon-web-store/beacon-store-webhook-reference.html">Beacon Store Webhook Reference</a></li>
+                    <li><a href="/ott-web-store/ott-store-webhook-reference.html">CorpTV Store Webhook Reference</a></li>
                   
                 
               </ul>
@@ -957,7 +869,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                           
                         
                           
-                            <li><a href="/analytics/analytics-business-metrics.html">Beacon Analytics Business Metrics</a></li>
+                            <li><a href="/analytics/analytics-business-metrics.html">CorpTV Analytics Business Metrics</a></li>
                           
                         
                           
@@ -1113,7 +1025,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                           
                         
                           
-                            <li><a href="/publishing-apps/android/updating-android-apps-to-bcb.html">Updating Android Apps to Brightcove Beacon</a></li>
+                            <li><a href="/publishing-apps/android/updating-android-apps-to-bcb.html">Updating Android Apps to Brightcove CorpTV</a></li>
                           
                         
                           
@@ -1346,7 +1258,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/styling/branding-beacon-apps.html">Branding Brightcove Beacon Apps</a></li>
+                    <li><a href="/styling/branding-ott-apps.html">Branding Brightcove CorpTV Apps</a></li>
                   
                 
                   
@@ -1404,7 +1316,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
                   
                 
                   
-                    <li><a href="/general/beacon-studio-or-classic.html">When to Use Beacon Studio and/or Beacon Classic</a></li>
+                    <li><a href="/general/ott-studio-or-classic.html">When to Use CorpTV Studio and/or CorpTV Classic</a></li>
                   
                 
                   
@@ -1430,7 +1342,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/release-notes/product-updates.html">Beacon Studio Release Notes</a></li>
+                    <li><a href="/release-notes/product-updates.html">CorpTV Studio Release Notes</a></li>
                   
                 
               </ul>
@@ -1478,7 +1390,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>How To: Manage Players</h1>
 <article class="bcls-article">
-  <summary>Learn the basic skills needed to create and manage players using Beacon Studio.</summary>
+  <summary>Learn the basic skills needed to create and manage players using {{ site.product_short }} Studio.</summary>
   <section>
     <h2 id="Topics_in_this_section">Topics</h2>
     <ul>
@@ -1493,7 +1405,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <!-- <nav id="more_resources">
   <h2 id="more_resources_header" style="margin-left: 1rem !important;">More Resources</h2>
   <ul style="list-style: none;">
-    <li><a href="https://beacon-help.support.brightcove.com" target="_blank"><img src="/assets/images/feather/search.svg" alt="Search" >Search Brightcove Beacon Documentation <i data-feather="external-link"></i></a></li>
+    <li><a href="" target="_blank"><img src="/assets/images/feather/search.svg" alt="Search" >Search Brightcove CorpTV Documentation <i data-feather="external-link"></i></a></li>
     <li><a href="/#" target="_blank"><img src="/assets/images/feather/file-text.svg" alt="Release Notes">View Release Notes <img src="/assets/images/feather/external-link-blue.svg" alt="External Link"class="external-link-icon"></a></li>
     <li><a href="https://status.brightcove.com" target="_blank"><img src="/assets/images/feather/info.svg" alt="System Status"> System Status <img src="/assets/images/feather/external-link-blue.svg" alt="External Link"class="external-link-icon"></a></li>
     <li><a href="https://supportportal.brightcove.com/s/login/" target="_blank"><img src="/assets/images/feather/message-circle.svg" alt="Contact Support"> Contact Support <img src="/assets/images/feather/external-link-blue.svg" alt="External Link"class="external-link-icon"></a></li>

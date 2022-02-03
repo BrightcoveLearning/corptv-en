@@ -1524,8 +1524,8 @@
     "oldURL": "/step-step-using-live-module-telestream-wirecast"
   },
   {
-    "newURL": "live.support.brightcove.com/beacon-live/streaming-live-to-beacon.html",
-    "oldURL": "/streaming-live-to-beacon"
+    "newURL": "live.support.brightcove.com/{{ site.product_short }}-live/streaming-live-to-{{ site.product_short }}.html",
+    "oldURL": "/streaming-live-to-{{ site.product_short }}"
   },
   {
     "newURL": "live.support.brightcove.com/general/supported-encoders-live-events.html",

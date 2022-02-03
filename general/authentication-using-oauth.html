@@ -1,6 +1,6 @@
 ---
 title: "Authentication Using OAuth"
-description: "In this topic, you will learn how to configure the integration of Brightcove Beacon with an OIDC provider. Auth0 is used as an example OIDC provider."
+description: "In this topic, you will learn how to configure the integration of CorpTV with an OIDC provider. Auth0 is used as an example OIDC provider."
 parent: "General Information"
 ---
 
@@ -11,19 +11,19 @@ parent: "General Information"
   <section class="bcls-section">
     <p></p>
     <h2 id="Introduction">Introduction</h2>
-    <p>OAuth (<strong>O</strong>pen <strong>Auth</strong>orization) is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites, but without using passwords. For instance, consider when you are using a bank application. OAuth provides you a way to get an authorization token to access protected/privileged bank information. A Brightcove Beacon example is when authenticating to one of the Beacon apps, OAuth will provide the UI and validate the credentials of a potential viewer.</p>
+    <p>OAuth (<strong>O</strong>pen <strong>Auth</strong>orization) is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites, but without using passwords. For instance, consider when you are using a bank application. OAuth provides you a way to get an authorization token to access protected/privileged bank information. A {{ site.product }} example is when authenticating to one of the {{ site.product_short }} apps, OAuth will provide the UI and validate the credentials of a potential viewer.</p>
   </section>
 
   <section class="bcls-section">
     <h2 id="section-name">Process overview</h2>
-    <p>A high-level look at the process of using OAuth with Brightcove Beacon is:</p>
+    <p>A high-level look at the process of using OAuth with {{ site.product }} is:</p>
     <ol>
       <li>Create an Auth0 API.</li>
-      <li>If using a web application, create an Auth0 single page application. Once created, you will need to send the associated <strong>Client ID</strong> to the Beacon web app team to get the corresponding <strong>Allowed Callback URLs</strong>.</li>
-      <li>Create an Auth0 native application for all other application platforms you are using with Beacon. For each platform, once the applications are created you will need to send the associated <strong>Client ID</strong>s to the specific Beacon platform team to get the corresponding <strong>Allowed Callback URLs</strong>.</li>
+      <li>If using a web application, create an Auth0 single page application. Once created, you will need to send the associated <strong>Client ID</strong> to the {{ site.product_short }} web app team to get the corresponding <strong>Allowed Callback URLs</strong>.</li>
+      <li>Create an Auth0 native application for all other application platforms you are using with {{ site.product_short }}. For each platform, once the applications are created you will need to send the associated <strong>Client ID</strong>s to the specific {{ site.product_short }} platform team to get the corresponding <strong>Allowed Callback URLs</strong>.</li>
       <li>Enter the returned URLs from each platform team into the corresponding <strong>Allowed Callback URLs</strong> form field for each platform application.</li>
       <li>From one of the applications, copy the <strong>OpenID Configuration</strong> URL and browse it.</li>
-      <li>Use information from the browsed <strong>OpenID Configuration</strong> web page as values for the <strong>Auth Providers</strong> form in Beacon Classic.</li>
+      <li>Use information from the browsed <strong>OpenID Configuration</strong> web page as values for the <strong>Auth Providers</strong> form in {{ site.product_short }} Classic.</li>
     </ol>
   </section>
 
@@ -65,7 +65,7 @@ parent: "General Information"
 
   <section class="bcls-section">
     <h2 id="Creating_the_single_page_application">Creating the single page application</h2>
-    <p>You create a single page application ONLY for your Beacon web app. If you are not going to have a web app, you do not have to perform these steps.</p>
+    <p>You create a single page application ONLY for your {{ site.product_short }} web app. If you are not going to have a web app, you do not have to perform these steps.</p>
     <aside class="bcls-aside bcls-aside--tip language-editable">For complete documentation see Auth0's <a href="">Application Settings</a> document.</aside>
     <ol class="bcls-tasklist-restart">
       <li>From the Dashboard, click <strong>Applications > Applications > Create Application</strong>.
@@ -84,7 +84,7 @@ parent: "General Information"
           <img class="bcls-image" src="/assets/images/general/authentication-using-oauth/client-id-single-page.png" alt="client id">
         </figure>
       </li>
-      <li>You now need to copy the Client ID, be sure you record that it is from your web application, and send the ID to the Beacon web application team. The Beacon team will then send back to you the value you will enter in <strong>Application URIs > Allowed Callback URLs</strong> AND <strong>Application URIs > Allowed Logout URLs</strong>.
+      <li>You now need to copy the Client ID, be sure you record that it is from your web application, and send the ID to the {{ site.product_short }} web application team. The {{ site.product_short }} team will then send back to you the value you will enter in <strong>Application URIs > Allowed Callback URLs</strong> AND <strong>Application URIs > Allowed Logout URLs</strong>.
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/general/authentication-using-oauth/allowed-callback-urls-web.png" alt="allowed callback urls">
         </figure>
@@ -102,7 +102,7 @@ parent: "General Information"
 
   <section class="bcls-section">
     <h2 id="Creating_a_native_application">Creating a native application</h2>
-    <p>You must create a native application for each platform for which you have a Beacon application. This includes:</p>
+    <p>You must create a native application for each platform for which you have a {{ site.product_short }} application. This includes:</p>
     <ul>
       <li>iOS/Apple TV (one application needed for both)</li>
       <li>Android Mobile/Android TV (one application needed for both)</li>
@@ -127,7 +127,7 @@ parent: "General Information"
           <img class="bcls-image" src="/assets/images/general/authentication-using-oauth/client-id-native.png" alt="client id">
         </figure>
       </li>
-      <li>You now need to copy the Client ID, be sure you record to which platform this application corresponds. You then need to send the ID to the correct platform team. The Beacon team will then send back to you the value you will enter in <strong>Application URIs > Allowed Callback URLs</strong>.
+      <li>You now need to copy the Client ID, be sure you record to which platform this application corresponds. You then need to send the ID to the correct platform team. The {{ site.product_short }} team will then send back to you the value you will enter in <strong>Application URIs > Allowed Callback URLs</strong>.
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/general/authentication-using-oauth/allowed-callback-urls.png" alt="allowed callback urls">
         </figure>
@@ -153,8 +153,8 @@ parent: "General Information"
   </section>
 
   <section class="bcls-section">
-    <h2 id="section-name">Implementing OAuth in Beacon Classic</h2>
-    <p>In this section of the document, you will learn how to use information from your OAuth applications to fill in the <strong>Auth Providers</strong> form in the Beacon Classic CMS.</p>
+    <h2 id="section-name">Implementing OAuth in {{ site.product_short }} Classic</h2>
+    <p>In this section of the document, you will learn how to use information from your OAuth applications to fill in the <strong>Auth Providers</strong> form in the {{ site.product_short }} Classic CMS.</p>
     <aside class="bcls-aside bcls-aside--tip language-editable">Note that your account will have to enabled for OAuth to see the appropriate forms.</aside>
     <ol class="bcls-tasklist">
       <li>From the dashboard, click on <strong>Applications → Applications</strong> to see a list of your applications.</li>
@@ -171,7 +171,7 @@ parent: "General Information"
           <img class="bcls-image" src="/assets/images/general/authentication-using-oauth/openid-config-json.png" alt="openid config json">
         </figure>
       </li>
-      <li>In Beacon Classic, click the gear icon in the top navigation.</li>
+      <li>In {{ site.product_short }} Classic, click the gear icon in the top navigation.</li>
       <li>In the left navigation click <strong>Auth Providers</strong>.</li>
       <li>Check to be sure you see a form similar to the following:
         <figure class="bcls-figure">
@@ -182,7 +182,7 @@ parent: "General Information"
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Beacon CMS Form Field</th>
+              <th>{{ site.product_short }} CMS Form Field</th>
               <th>Value or location<br>(actual values to enter are in bold)</th>
             </tr>
           </thead>
@@ -275,11 +275,11 @@ parent: "General Information"
       <li>Place this value in the <strong>Has Audience</strong> form field.</li>
     </ol>
     <h3>Confirming correct implementation</h3>
-    <p>Once the OIDC provider is integrated correctly with Brightcove Beacon, the OIDC provider's tool will authenticate users to the Beacon apps. For instance, here is the OAuth implementation login screen from a Brightcove testing account:</p>
+    <p>Once the OIDC provider is integrated correctly with {{ site.product }}, the OIDC provider's tool will authenticate users to the {{ site.product_short }} apps. For instance, here is the OAuth implementation login screen from a Brightcove testing account:</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/general/authentication-using-oauth/bc-example-login.png" alt="bc example login">
     </figure>
-    <p>Note that this login screen looks completely different than the default Beacon login screen.</p>
+    <p>Note that this login screen looks completely different than the default {{ site.product_short }} login screen.</p>
   </section>
 
 </article>

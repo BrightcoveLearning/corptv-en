@@ -1,6 +1,6 @@
 ---
 title: "Known Issues"
-description: "This topic lists known issues for generated apps and the Beacon LA Studio."
+description: "This topic lists known issues for generated apps and the CorpTV Studio."
 parent: "General Information"
 ---
 <h1>{{ page.title }}</h1>
@@ -8,7 +8,7 @@ parent: "General Information"
   <summary>{{ page.description }}</summary>
 
   <section class="bcls-section">
-    <h2 id="Beacon_Studio">Beacon Studio</h2>
+    <h2 id="Beacon_Studio">{{ site.product_short }} Studio</h2>
     <h3>Page availability - Locations</h3>
     <p>You will see the <strong>World</strong> option listed twice for new pages, as well as pages that have not had any location availability set. Once a location is set you will not see the duplicate.</p>
     <figure class="bcls-figure">
@@ -48,7 +48,7 @@ parent: "General Information"
 
     <h3>Mobile web</h3>
     <ul>
-      <li>Mobile web has limited support. On devices with a width under 365px a message is displayed to install the appropriate native Brightcove Beacon app.</li>
+      <li>Mobile web has limited support. On devices with a width under 365px a message is displayed to install the appropriate native {{ site.product }} app.</li>
     </ul>
   </section>
 
@@ -115,8 +115,8 @@ parent: "General Information"
   </section>
   <section class="bcls-section">
     <h2 id="Live_events">Live events</h2>
-    <h3>Beacon does not track concurrent users for live events</h3>
-    <p>Beacon currently has a limitation where Beacon players do not fully support Live Analytics (CCU). The following analytics metrics are not currently tracked by Beacon:</p>
+    <h3>{{ site.product_short }} does not track concurrent users for live events</h3>
+    <p>{{ site.product_short }} currently has a limitation where {{ site.product_short }} players do not fully support Live Analytics (CCU). The following analytics metrics are not currently tracked by {{ site.product_short }}:</p>
     <ul>
       <li><code translate="no">video_impression</code> - video loaded into a player</li>
       <li><code translate="no">video_engagement</code> - concurrent views over the video duration</li>

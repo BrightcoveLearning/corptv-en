@@ -1,27 +1,27 @@
 ---
 title: "Implementing Live SSAI"
-description: In this topic, you will learn how to manage and create Live server-side ad configurations in Brightcove Beacon.
+description: In this topic, you will learn how to manage and create Live server-side ad configurations in CorpTV.
 parent: Monetization
 ---
 
 <h1>{{ page.title }}</h1>
 <article class="bcls-article">
   <summary>{{ page.description }}</summary>
-  <aside class="bcls-aside bcls-aside--information">NOTE: In this topic, some of the steps are defined in Beacon Classic and some Video Cloud Studio.</aside>
+  <aside class="bcls-aside bcls-aside--information">NOTE: In this topic, some of the steps are defined in {{ site.product_short }} Classic and some Video Cloud Studio.</aside>
   <section class="bcls-section">
     <h2 id="overview">Overview</h2>
     <p>
-      Brightcove Beacon supports Server-Side Ad Insertion (SSAI) in Live events so server-side ads can be requested and displayed during a Live stream. Note: if you are using redundancy with SSAI, you must insert ads into all jobs in the group at the same time.
+      {{ site.product }} supports Server-Side Ad Insertion (SSAI) in Live events so server-side ads can be requested and displayed during a Live stream. Note: if you are using redundancy with SSAI, you must insert ads into all jobs in the group at the same time.
     </p>
     <p>A high-level view of the process is:</p>
     <ol>
       <li>Create an Ad Configuration in Video Cloud Studio.</li>
       <li>Create a fill slate for your Live event.</li>
       <li>Create a Live event with SSAI enabled.</li>
-      <li>Publish the Live event to Beacon Classic.</li>
+      <li>Publish the Live event to {{ site.product_short }} Classic.</li>
     </ol>
     <aside class="bcls-aside bcls-aside--information"> This document is complementary to the
-      <a href="/live/streaming-live-event.html" target="_blank">Streaming a Live Event</a> documentation to guide you into add SSAI to your live events. For detailed information on how to create an event, please see the section on <a href="/live/streaming-live-event.html#create" target="_blank">Creating a live event in Brightcove Beacon</a>.
+      <a href="/live/streaming-live-event.html" target="_blank">Streaming a Live Event</a> documentation to guide you into add SSAI to your live events. For detailed information on how to create an event, please see the section on <a href="/live/streaming-live-event.html#create" target="_blank">Creating a live event in {{ site.product }}</a>.
     </aside>
     <p>SSAI provides these main features during Live events:</p>
     <ul>
@@ -40,7 +40,7 @@ parent: Monetization
   <section class="bcls-section">
     <h2 id="configuring-ssai">Configuring Server-Side Ad Settings</h2>
     <p>
-      Here you will create an SSAI Ad Configuration to be used as your set of ads that will be displayed in your Brightcove Beacon Live event.
+      Here you will create an SSAI Ad Configuration to be used as your set of ads that will be displayed in your {{ site.product }} Live event.
     </p>
     <ol class="bcls-tasklist">
       <li>Log in to Video Cloud Studio.</li>
@@ -118,7 +118,7 @@ parent: Monetization
       In order for a live event to use SSAI (Server-side Ad Insertion), the <strong>Enable Server-Side Ad Insertion (SSAI)</strong> setting must be selected when the event is created, and a previously created fill slate should be chosen for playback.
     </p>
     <p>
-      Follow these steps to create an Event that supports SSAI ads in Brightcove Beacon: </p>
+      Follow these steps to create an Event that supports SSAI ads in {{ site.product }}: </p>
     <ol class="bcls-tasklist">
       <li>Open the <strong>Live</strong> module in Studio.</li>
       <li>From the <strong>Manage Events</strong> page, click <strong>Create Event</strong>.</li>
@@ -192,9 +192,9 @@ parent: Monetization
     </figure>
   </section>
   <section class="bcls-section">
-    <h2 id="requesting-ssai">Publishing a Live event in Brightcove Beacon</h2>
+    <h2 id="requesting-ssai">Publishing a Live event in {{ site.product }}</h2>
     <p>
-      To publish your Live event with server-side ads in Brightcove Beacon, follow these steps: </p>
+      To publish your Live event with server-side ads in {{ site.product }}, follow these steps: </p>
     <ol class="bcls-tasklist">
       <li>In the Live <strong>Control Room</strong> click <strong>Publish and Embed</strong> in the left navigation.</li>
       <li>
@@ -216,9 +216,9 @@ parent: Monetization
           <img class="bcls-image--no-border" alt="" src="/assets/images/monetization/live-ssai/13-player-url.png" />
         </figure>
       </li>
-      <li>Log in to Beacon Classic.</li>
+      <li>Log in to {{ site.product_short }} Classic.</li>
       <li>
-        In Beacon Classic, in the upper menu, click the <strong>Advertisement</strong> tab.
+        In {{ site.product_short }} Classic, in the upper menu, click the <strong>Advertisement</strong> tab.
       </li>
       <li>
         Click the <strong>Add New Configuration</strong> button.
@@ -240,13 +240,13 @@ parent: Monetization
       <li>From the <strong>Provider</strong> menu select <strong>Brightcove SSAI</strong>.</li>
       <li>Click in the <strong>Create New Advertisement</strong> button.</li>
       <li>
-        Click on the upper menu <strong>Events</strong> tab and create or select your Live event. For more information in how to create a Brightcove Beacon Live Event, please see the
+        Click on the upper menu <strong>Events</strong> tab and create or select your Live event. For more information in how to create a {{ site.product }} Live Event, please see the
         <a href="/live/streaming-live-event.html" target="_blank">Streaming a Live Event</a> document.
-        <aside class="bcls-aside bcls-aside--information"> For the Live event to stream successfully in Brightcove Beacon, the <strong>Job ID</strong> and <strong>Stream Video ID</strong> must match the IDs of the current Live event.
+        <aside class="bcls-aside bcls-aside--information"> For the Live event to stream successfully in {{ site.product }}, the <strong>Job ID</strong> and <strong>Stream Video ID</strong> must match the IDs of the current Live event.
         </aside>
       </li>
       <li>
-        In you Brightcove Beacon Live Event click the
+        In you {{ site.product }} Live Event click the
         <strong>Rights & Scheduling</strong> tab.
       </li>
       <li>
@@ -269,18 +269,18 @@ parent: Monetization
         </figure>
       </li>
       <li>
-        Open your Brightcove Beacon App and select your event (the event names and pictures on the image are for example purposes only).
+        Open your {{ site.product }} App and select your event (the event names and pictures on the image are for example purposes only).
         <figure class="bcls-figure">
           <img class="bcls-image--no-border" alt="" width="400" height="700" src="/assets/images/monetization/live-ssai/19-app-event.png" />
         </figure>
       </li>
       <li>
-        In your Brightcove Beacon app, click on the
+        In your {{ site.product }} app, click on the
         <strong>Play</strong> button. You should now be able to see your Live event streaming, with ads inserted by SSAI from Video Cloud.
       </li>
     </ol>
     <p>
-      Once your event ends, you can save all or part of it as a clip that becomes a video asset in Video Cloud or a playable stream that can be shown in Brightcove Beacon. The Ads of the Live event will not be saved, but the cue points from where the ads were transmitted will be registered so that you can add new ads in a later VOD of your recorded Live event.
+      Once your event ends, you can save all or part of it as a clip that becomes a video asset in Video Cloud or a playable stream that can be shown in {{ site.product }}. The Ads of the Live event will not be saved, but the cue points from where the ads were transmitted will be registered so that you can add new ads in a later VOD of your recorded Live event.
     </p>
     <p>
       For more information on how to create a clip, please see the <a href="/live/streaming-live-event.html#Clip" target="_blank">Creating a Clip from your Live event</a> section from the <em>Streaming a Live Event</em> document.

@@ -30,11 +30,11 @@ parent: Managing Media
       <li><strong>At a Remote URL (remote asset)</strong> - In this case, the WebVTT file is hosted on your server and you add the URL for the file to the video metadata.
         <aside class="bcls-aside bcls-aside--information">Note: If you are hosting captions files on your own server, make sure the file is located at a URL that can be accessed by the Brightcove player. The server hosting the captions file should also have Cross-Origin Resource Sharing (CORS) enabled. You can read more about CORS <a href="https://general.support.brightcove.com/developer/concepts-cors.html">here</a>.</aside>
       </li>
-      <li><strong>Uploaded using Brightcove Beacon</strong> (<strong>ingested</strong>) - In this case, the WebVTT file is uploaded (ingested)  using the  Media module.</li>
+      <li><strong>Uploaded using {{ site.product }}</strong> (<strong>ingested</strong>) - In this case, the WebVTT file is uploaded (ingested)  using the  Media module.</li>
     </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: If the video source file you ingest into Brightcove Beacon has embedded 608/708 captions, they will be ignored during the processing of the video, and <strong>not</strong> present in the video renditions. To have captions with your videos, you have a few options:
+    <aside class="bcls-aside bcls-aside--information">Note: If the video source file you ingest into {{ site.product }} has embedded 608/708 captions, they will be ignored during the processing of the video, and <strong>not</strong> present in the video renditions. To have captions with your videos, you have a few options:
       <ul>
-        <li><a href="/media/generating-captions-videos.html">Let Beacon generate caption files</a></li>
+        <li><a href="/media/generating-captions-videos.html">Let {{ site.product_short }} generate caption files</a></li>
         <li><a href="/media/adding-captions-videos-using-media-module.html">Manually add captions</a></li>
       </ul>
     </aside>
@@ -48,7 +48,7 @@ parent: Managing Media
       <li>Using the APIs</li>
     </ol>
     <h3 id="cap_gen">Automatically generating captions for videos</h3>
-    <p>Beacon Studio can automatically generate captions for videos. For information, see <a href="/media/generating-captions-videos.html">Automatically Generating Captions for Videos</a>.</p>
+    <p>{{ site.product_short }} Studio can automatically generate captions for videos. For information, see <a href="/media/generating-captions-videos.html">Automatically Generating Captions for Videos</a>.</p>
     <h3 id="studio">Adding captions in Studio</h3>
     <p>Captions can be associated with a video using the Media module. For information, see <a href="adding-captions-videos.html">Adding Captions to Videos</a>.</p>
     <h3 id="pubcode">Modifying the player publishing code</h3>

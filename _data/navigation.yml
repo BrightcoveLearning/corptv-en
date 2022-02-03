@@ -5,14 +5,14 @@
   name: Getting Started
   url: /getting-started/index.html
   docs:
-    - name: Brightcove Beacon Learning Guide
-      url: /getting-started/learning-guide-bc-beacon.html
+    - name: Brightcove CorpTV Learning Guide
+      url: /getting-started/learning-guide-bc-ott.html
     - name: Implementation Phases
       url: /getting-started/implementation-phases.html
-    - name: Getting Started with Beacon Studio
-      url: /getting-started/getting-started-beacon-studio.html
-    - name: When to Use Beacon Studio and/or Beacon Classic
-      url: /general/beacon-studio-or-classic.html
+    - name: Getting Started with CorpTV Studio
+      url: /getting-started/getting-started-ott-studio.html
+    - name: When to Use CorpTV Studio and/or CorpTV Classic
+      url: /general/ott-studio-or-classic.html
     - name: App Design Best Practices
       url: /getting-started/design-best-practices.html
     - name: App Design Considerations
@@ -103,8 +103,8 @@
       url: /media/configuring-series-availability.html
     - name: Configuring Video Availability
       url: /media/configuring-video-availability.html
-    - name: Creating a Beacon Classic Playlist
-      url: /media/creating-beacon-playlist.html
+    - name: Creating a CorpTV Classic Playlist
+      url: /media/creating-ott-playlist.html
     - name: Creating and Managing Playlists
       url: /media/creating-and-managing-playlists.html
     - name: Creating and Managing Rule Sets
@@ -193,15 +193,15 @@
   name: Managing Channels
   url: '/channels/index.html'
   docs:
-    - name: Beacon Channels
-      url: /channels/beacon-channels/index.html
+    - name: CorpTV Channels
+      url: /channels/ott-channels/index.html
       docs:
-        - name: Creating a Beacon Channel
-          url: /channels/beacon-channels/creating-a-channel.html
+        - name: Creating a CorpTV Channel
+          url: /channels/ott-channels/creating-a-channel.html
         - name: Creating an EPG
-          url: /channels/beacon-channels/electronic-program-guides.html
+          url: /channels/ott-channels/electronic-program-guides.html
         - name: Streaming VODs to a Channel
-          url: /channels/beacon-channels/streaming-vods-to-a-channel.html
+          url: /channels/ott-channels/streaming-vods-to-a-channel.html
     - name: Cloud Playout Channels
       url: /channels/cloud-playout/index.html
       docs:
@@ -226,7 +226,7 @@
         - name: Searching for Channels
           url: /channels/cloud-playout/searching-for-channels.html
         - name: Publishing a Cloud Playout Channel
-          url: /channels/cloud-playout/publish-channel-beacon.html
+          url: /channels/cloud-playout/publish-channel-ott.html
         - name: Using Channel Actions
           url: /channels/cloud-playout/using-channel-actions.html
         - name: Viewing Channel Output and Analytics
@@ -311,18 +311,18 @@
           url: '/monetization/ssai/live-ssai.html'
         - name: Implementing VOD SSAI
           url: '/monetization/ssai/vod-ssai.html'
-        - name: 'Beacon Apps Ad Targeting'
-          url: '/monetization/ssai/beacon-apps-ad-targeting.html'
+        - name: 'CorpTV Apps Ad Targeting'
+          url: '/monetization/ssai/ott-apps-ad-targeting.html'
 - section:
-  name: 'Beacon Web Store'
-  url: '/beacon-web-store/index.html'
+  name: 'CorpTV Web Store'
+  url: '/ott-web-store/index.html'
   docs:
-    - name: 'Overview: Brightcove Beacon Web Store'
-      url: '/beacon-web-store/beacon-webstore-overview.html'
-    - name: 'Integrating with the Beacon Web Store'
-      url: '/beacon-web-store/integration-details.html'
-    - name: 'Beacon Store Webhook Reference'
-      url: '/beacon-web-store/beacon-store-webhook-reference.html'
+    - name: 'Overview: Brightcove CorpTV Web Store'
+      url: '/ott-web-store/ott-webstore-overview.html'
+    - name: 'Integrating with the CorpTV Web Store'
+      url: '/ott-web-store/integration-details.html'
+    - name: 'CorpTV Store Webhook Reference'
+      url: '/ott-web-store/ott-store-webhook-reference.html'
 - section:
   name: Reviewing Analytics
   url: /analytics/index.html
@@ -356,7 +356,7 @@
       docs:
         - name: Analytics Overview
           url: /analytics/analytics-overview.html
-        - name: Beacon Analytics Business Metrics
+        - name: CorpTV Analytics Business Metrics
           url: /analytics/analytics-business-metrics.html
         - name: Calculating Video Engagement Score
           url: /analytics/calculating-video-engagement-score.html
@@ -431,7 +431,7 @@
       docs:
         - name: 'Submitting New Apps to the Android Store'
           url: '/publishing-apps/android/submitting-to-android.html'
-        - name: 'Updating Android Apps to Brightcove Beacon'
+        - name: 'Updating Android Apps to Brightcove CorpTV'
           url: '/publishing-apps/android/updating-android-apps-to-bcb.html'
         - name: 'Adding Subscriptions to Android'
           url: '/publishing-apps/android/adding-subscriptions-in-android.html'
@@ -551,8 +551,8 @@
   name: Styling & Appearance
   url: /styling/index.html
   docs:
-    - name: Branding Brightcove Beacon Apps
-      url: /styling/branding-beacon-apps.html
+    - name: Branding Brightcove CorpTV Apps
+      url: /styling/branding-ott-apps.html
     - name: Image Specifications
       url: /styling/image-requirements.html
 - section:
@@ -581,8 +581,8 @@
       url: /general/related-content.html
     - name: Supported Video and Audio Formats
       url: /general/supported-video-and-audio-formats-codecs-and-containers.html
-    - name: When to Use Beacon Studio and/or Beacon Classic
-      url: /general/beacon-studio-or-classic.html
+    - name: When to Use CorpTV Studio and/or CorpTV Classic
+      url: /general/ott-studio-or-classic.html
     - name: Using Multiple Languages
       url: /general/using-multiple-languages.html
 - section:
@@ -595,7 +595,7 @@
   name: Release Notes
   url: /release-notes/index.html
   docs:
-    - name: Beacon Studio Release Notes
+    - name: CorpTV Studio Release Notes
       url: /release-notes/product-updates.html
 - section:
   name: 'Support'

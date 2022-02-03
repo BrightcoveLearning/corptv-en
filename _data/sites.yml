@@ -25,9 +25,9 @@
 - VideoEssentials:
   name: -- VIDEO ESSENTIALS --
   url: '' 
-- Beacon:
-  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon'
-  url: 'https://beacon.support.brightcove.com' 
+- {{ site.product_short }}:
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;{{ site.product }}'
+  url: 'https://{{ site.product_short }}.support.brightcove.com' 
 - Live:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live'
   url: 'https://live.support.brightcove.com' 

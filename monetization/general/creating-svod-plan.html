@@ -1,6 +1,6 @@
 ---
 title: "Creating an SVOD Plan"
-description: 'In this topic, you will learn how to configure a video SVOD (subscription video on demand) plan using the <strong>Commerce</strong> tab of Brightcove Beacon. The SVOD plan implements monetization. To learn how to apply the SVOD plan to videos see the <a href="/monetization/general/using-svod-plan.html">Using an SVOD Plan</a> document.'
+description: 'In this topic, you will learn how to configure a video SVOD (subscription video on demand) plan using the <strong>Commerce</strong> tab of CorpTV. The SVOD plan implements monetization. To learn how to apply the SVOD plan to videos see the <a href="/monetization/general/using-svod-plan.html">Using an SVOD Plan</a> document.'
 parent: "Monetization"
 ---
 
@@ -27,7 +27,7 @@ parent: "Monetization"
     <p>Step through the following steps to create a new package:</p>
     <ol class="bcls-tasklist">
       <li>
-        In Brightcove Beacon, select the <strong>Commerce</strong> tab, be sure <strong>SVOD/AuthVOD Plans</strong> is selected in the left navigation, then click <strong>Add New Package</strong> .
+        In {{ site.product }}, select the <strong>Commerce</strong> tab, be sure <strong>SVOD/AuthVOD Plans</strong> is selected in the left navigation, then click <strong>Add New Package</strong> .
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/monetization/creating-subscription-package/initial-menu-selections.png" alt="initial menu selections" />
         </figure>
@@ -52,8 +52,8 @@ parent: "Monetization"
             <strong>Advertisement</strong> : Choose if you wish to use advertisements with this package.
           </li>
           <li>
-            <strong>Ads Providers</strong> : If you have chosen to use ads in the previous step, choose the ad provider. This dropdown is populated with the advertisement configurations listed in the <strong>Advertisement</strong> section of Brightcove Beacon.
-            <!-- See the <a href="/using-brightcove-beacon/advertisement.html"> Advertisement </a> document for details on advertisement configurations. -->
+            <strong>Ads Providers</strong> : If you have chosen to use ads in the previous step, choose the ad provider. This dropdown is populated with the advertisement configurations listed in the <strong>Advertisement</strong> section of {{ site.product }}.
+            <!-- See the <a href="/using-brightcove-{{ site.product_short }}/advertisement.html"> Advertisement </a> document for details on advertisement configurations. -->
           </li>
           <li>
             <strong>Payment methods to use</strong> : Select the payment methods you want to use with this package. Note that for each method selected a section will open below the list of payment methods, which you must complete for each selected method. The screenshot below shows <strong>Stripe (in yellow)</strong> and <strong>Apple Store (in red)</strong> are selected.
@@ -114,7 +114,7 @@ parent: "Monetization"
     </ol>
     <p>That's it for the package creation!</p>
   </section>
-  <!-- <section class="bcls-section"> <h2 id="Using_the_package_in_Video_Cloud"> Using the package in Video Cloud </h2> <p> Although the package is created in Brightcove Beacon, it is not applied to content in there. To use the package, and apply it to video content you use Video Cloud custom fields. </p> </section> -->
+  <!-- <section class="bcls-section"> <h2 id="Using_the_package_in_Video_Cloud"> Using the package in Video Cloud </h2> <p> Although the package is created in {{ site.product }}, it is not applied to content in there. To use the package, and apply it to video content you use Video Cloud custom fields. </p> </section> -->
 
   <section class="bcls-section">
     <h2 id="Unpublishing">Unpublishing or deleting a package</h2>
@@ -144,7 +144,7 @@ parent: "Monetization"
     </p>
     <ol class="bcls-tasklist-restart">
       <li>
-        In Brightcove Beacon, select the <strong>Commerce</strong> tab, then click <strong>Coupons by Stripe</strong> and finally click <strong>Add New Voucher</strong>.
+        In {{ site.product }}, select the <strong>Commerce</strong> tab, then click <strong>Coupons by Stripe</strong> and finally click <strong>Add New Voucher</strong>.
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/monetization/creating-subscription-package/coupon-menu-selection.png" alt="coupon menu selections" />
         </figure>
@@ -153,7 +153,7 @@ parent: "Monetization"
         On the <strong>Create New Coupons</strong> form (screenshot below), complete the following:
         <ul>
           <li>
-            <strong>Id</strong> : Code that viewers will enter in the Brightcove Beacon app to use the coupon
+            <strong>Id</strong> : Code that viewers will enter in the {{ site.product }} app to use the coupon
           </li>
           <li><strong>Name</strong> : A friendly name for the coupon that can be displayed in invoices</li>
           <li>
@@ -196,12 +196,12 @@ parent: "Monetization"
       </li>
     </ol>
     <p>
-      In the Brightcove Beacon app when a package purchase takes place, viewers will be able to enter the coupon <strong>Id</strong>: </p>
+      In the {{ site.product }} app when a package purchase takes place, viewers will be able to enter the coupon <strong>Id</strong>: </p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/monetization/creating-subscription-package/use-coupon.png" alt="use coupon form" />
     </figure>
     <p>
-      Alternatively, you can create coupons directly in your Stripe account, and then use them in Brightcove Beacon.
+      Alternatively, you can create coupons directly in your Stripe account, and then use them in {{ site.product }}.
     </p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/monetization/creating-subscription-package/stripe-coupon-form.png" alt="use coupon form" />
