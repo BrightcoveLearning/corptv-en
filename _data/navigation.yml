@@ -275,54 +275,54 @@
       url: /players/setting-player-update-mode-and-version.html
     - name: Styling Players
       url: /players/styling-players.html
-- section:
-  name: 'Monetizing Content'
-  url: '/monetization/index.html'
-  docs:
-    - name: 'General'
-      url: '/monetization/general/index.html'
-      docs:
-        - name: Creating a Stripe Account
-          url: /monetization/general/creating-stripe-account.html
-        - name: Creating an SVOD Plan
-          url: /monetization/general/creating-svod-plan.html
-        - name: Creating Promo Coupons
-          url: /monetization/general/promo-codes.html
-        - name: Custom Fields for Monetization
-          url: /monetization/general/vc-custom-fields.html
-        - name: Implementing AuthVOD
-          url: /monetization/general/implementing-authvod.html
-        - name: Receiving In-App Purchase Notifications
-          url: /monetization/general/receive-iap-notifications.html
-        - name: Resources for Monetization
-          url: /monetization/general/resources.html
-        - name: Understanding Monetization Options
-          url: /monetization/general/monetization-options.html
-        - name: Using an SVOD Plan
-          url: /monetization/general/using-svod-plan.html
-    - name: SSAI
-      url: '/monetization/ssai/index.html'
-      docs:
-        - name: 'Creating an Advertisement'
-          url: '/monetization/ssai/advertisement.html'
-        - name: 'Configuring Server-Side Ad Settings'
-          url: '/monetization/ssai/configuring-server-side-ad-settings.html'
-        - name: 'Implementing Live SSAI'
-          url: '/monetization/ssai/live-ssai.html'
-        - name: Implementing VOD SSAI
-          url: '/monetization/ssai/vod-ssai.html'
-        - name: 'CorpTV Apps Ad Targeting'
-          url: '/monetization/ssai/ott-apps-ad-targeting.html'
-- section:
-  name: 'CorpTV Web Store'
-  url: '/ott-web-store/index.html'
-  docs:
-    - name: 'Overview: Brightcove CorpTV Web Store'
-      url: '/ott-web-store/ott-webstore-overview.html'
-    - name: 'Integrating with the CorpTV Web Store'
-      url: '/ott-web-store/integration-details.html'
-    - name: 'CorpTV Store Webhook Reference'
-      url: '/ott-web-store/ott-store-webhook-reference.html'
+# - section:
+#   name: 'Monetizing Content'
+#   url: '/monetization/index.html'
+#   docs:
+#     - name: 'General'
+#       url: '/monetization/general/index.html'
+#       docs:
+#         - name: Creating a Stripe Account
+#           url: /monetization/general/creating-stripe-account.html
+#         - name: Creating an SVOD Plan
+#           url: /monetization/general/creating-svod-plan.html
+#         - name: Creating Promo Coupons
+#           url: /monetization/general/promo-codes.html
+#         - name: Custom Fields for Monetization
+#           url: /monetization/general/vc-custom-fields.html
+#         - name: Implementing AuthVOD
+#           url: /monetization/general/implementing-authvod.html
+#         - name: Receiving In-App Purchase Notifications
+#           url: /monetization/general/receive-iap-notifications.html
+#         - name: Resources for Monetization
+#           url: /monetization/general/resources.html
+#         - name: Understanding Monetization Options
+#           url: /monetization/general/monetization-options.html
+#         - name: Using an SVOD Plan
+#           url: /monetization/general/using-svod-plan.html
+#     - name: SSAI
+#       url: '/monetization/ssai/index.html'
+#       docs:
+#         - name: 'Creating an Advertisement'
+#           url: '/monetization/ssai/advertisement.html'
+#         - name: 'Configuring Server-Side Ad Settings'
+#           url: '/monetization/ssai/configuring-server-side-ad-settings.html'
+#         - name: 'Implementing Live SSAI'
+#           url: '/monetization/ssai/live-ssai.html'
+#         - name: Implementing VOD SSAI
+#           url: '/monetization/ssai/vod-ssai.html'
+#         - name: 'CorpTV Apps Ad Targeting'
+#           url: '/monetization/ssai/ott-apps-ad-targeting.html'
+# - section:
+#   name: 'CorpTV Web Store'
+#   url: '/ott-web-store/index.html'
+#   docs:
+#     - name: 'Overview: Brightcove CorpTV Web Store'
+#       url: '/ott-web-store/ott-webstore-overview.html'
+#     - name: 'Integrating with the CorpTV Web Store'
+#       url: '/ott-web-store/integration-details.html'
+#     - name: 'CorpTV Store Webhook Reference'
+#       url: '/ott-web-store/ott-store-webhook-reference.html'
 - section:
   name: Reviewing Analytics
   url: /analytics/index.html
@@ -585,18 +585,18 @@
       url: /general/ott-studio-or-classic.html
     - name: Using Multiple Languages
       url: /general/using-multiple-languages.html
-- section:
-  name: Training
-  url: /training/index.html
-  docs:
-    - name: Placeholder Page
-      url: /training/placeholder.html
-- section:
-  name: Release Notes
-  url: /release-notes/index.html
-  docs:
-    - name: CorpTV Studio Release Notes
-      url: /release-notes/product-updates.html
+# - section:
+#   name: Training
+#   url: /training/index.html
+#   docs:
+#     - name: Placeholder Page
+#       url: /training/placeholder.html
+# - section:
+#   name: Release Notes
+#   url: /release-notes/index.html
+#   docs:
+#     - name: CorpTV Studio Release Notes
+#       url: /release-notes/product-updates.html
 - section:
   name: 'Support'
   url: '/support/index.html'
