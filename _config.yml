@@ -21,7 +21,7 @@
 title: Brightcove CorpTV Documentation
 email: training@brightcove.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Brightcove CorpTV provides video providers the environment for their customers to view videos without having a cable provider subscription.
+  Brightcove CorpTV provide Enterprises with a streaming service to reach their audience.
 # baseurl: "" # the subpath of your site, e.g. /blog
 site_url: 'https://corptv.support.brightcove.com'
 site_domain: 'corptv.support.brightcove.com'
