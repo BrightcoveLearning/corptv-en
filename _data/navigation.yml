@@ -219,10 +219,14 @@
           url: /channels/cloud-playout/adding-bumpers-to-vod.html
         - name: Importing Captions
           url: /channels/cloud-playout/import-captions.html
+        - name: Managing Slates
+          url: /channels/cloud-playout/managing-slates.html
         - name: Monetizing Cloud Playout
           url: /channels/cloud-playout/enabling-server-side-ads.html
         - name: Adding Mid-Roll Ads to a Channel
           url: /channels/cloud-playout/mid-roll-ad-insertion.html
+        - name: Setting a Hard Start for a Channel
+          url: /channels/cloud-playout/hard-start.html
         - name: Searching for Channels
           url: /channels/cloud-playout/searching-for-channels.html
         - name: Publishing a Cloud Playout Channel
