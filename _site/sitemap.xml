@@ -2305,6 +2305,114 @@
       
     
       <url>
+        <loc>https://corptv.support.brightcove.com/ott-plugins/index.html</loc>
+        <lastmod>2022-04-19</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/learning-guide-beacon-plugins.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/javascript-modules-beacon-plugins.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/dispatching-handling-events.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/custom-page.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/buttons-and-events.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/custom-divs.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/side-panel.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/user-events.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/data-module.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/ott-plugins/working-with-page-events.html</loc>
+          
+            <lastmod>2022-04-19</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+    
+      <url>
         <loc>https://corptv.support.brightcove.com/support/index.html</loc>
         <lastmod>2022-04-19</lastmod>
         <changefreq>daily</changefreq>
