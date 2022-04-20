@@ -592,7 +592,7 @@
   url: /ott-plugins/index.html
   docs:
     - name: 'Learning Guide: Beacon Plugins'
-      url: /ott-plugins/learning-guide-beacon-plugins.html
+      url: /ott-plugins/learning-guide-corptv-plugins.html
     - name: Use JavaScript Modules for Plugins
       url: /ott-plugins/javascript-modules-beacon-plugins.html
     - name: Dispatch & Handle Events in Plugins
