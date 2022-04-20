@@ -588,10 +588,10 @@
     - name: Using Multiple Languages
       url: /general/using-multiple-languages.html
 - section:
-  name: Beacon Plugins
+  name: OTT Plugins
   url: /ott-plugins/index.html
   docs:
-    - name: 'Learning Guide: Beacon Plugins'
+    - name: 'Learning Guide: OTT Plugins'
       url: /ott-plugins/learning-guide-corptv-plugins.html
     - name: Use JavaScript Modules for Plugins
       url: /ott-plugins/javascript-modules-beacon-plugins.html
