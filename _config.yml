@@ -35,6 +35,7 @@ product_underscore: Brightcove_CorpTV
 color: rgb(51, 51, 51)
 product_color: rgb(28, 185, 213)
 product_icon: "CorpTV_H_K.svg"
+cloud_playout_path: '/channels/cloud-playout/'
 search_id: '017969773216783359937:9ybe0wftqs0'
 feedbackify_id: '15610'
 defaults:
