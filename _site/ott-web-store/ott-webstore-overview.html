@@ -11,15 +11,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css" />
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css" />
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css" />
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet" />
-
+  
   <script src="/assets/js/site/google-analytics.js"></script>
   <script src="/assets/js/sajari-head.js"></script>
   <link rel="stylesheet" href="/assets/css/local.css" />
@@ -27,1576 +26,1565 @@
 </head>
 
 <body class="body">
-  <header>
-    <div class="div-header">
-      <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/SVG/CorpTV_H_K.svg" alt="Brightcove"></a>
-      <!-- GTranslate: https://gtranslate.io/ -->
-      <select onchange="doGTranslate(this);">
-        <option value="">Select Language</option>
-        <option value="en|en" translate="No">English</option>
-        <option value="en|zh-TW" translate="No">繁體中文</option>
-        <option value="en|fr" translate="No">Français</option>
-        <option value="en|de" translate="No">Deutsche</option>
-        <option value="en|ja" translate="No">日本語</option>
-        <option value="en|ko" translate="No">한국어</option>
-        <option value="en|es" translate="No">Español</option>
-      </select>
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/SVG/CorpTV_H_K.svg" alt="Brightcove"></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">Select Language</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
 
-      <script translate="no">
-        /* <![CDATA[ */
-        function doGTranslate(lang_pair) { if (lang_pair.value) lang_pair = lang_pair.value; if (lang_pair == '') return; var lang = lang_pair.split('|')[1]; var plang = location.hostname.split('.')[0]; if (plang.length != 2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw') plang = 'en'; location.href = location.protocol + '//' + (lang == 'en' ? '' : lang + '.') + location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '') + location.pathname + location.search; }
+<script translate="no">
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
 /* ]]> */
-      </script>
+</script>
 
 
 
-      &nbsp;<span class="secondary-nav"><a href="https://support.brightcove.com/product-updates.html">Product Updates</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://supportportal.brightcove.com">Contact Support</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/">System Status</a></span>
-      <br>
-
-    </div>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb arr-right">
-
-        <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
-
-
-        <li class="breadcrumb-item"><a href="/ott-web-store/">Ott web store</a></li>
-
-
-
-        <li class="breadcrumb-item active" aria-current="page">Overview: Brightcove CorpTV Web Store</li>
-
-
+&nbsp;<span class="secondary-nav"><a href="https://support.brightcove.com/product-updates.html">Product Updates</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://supportportal.brightcove.com">Contact Support</a> <span style="vertical-align: middle;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/">System Status</a></span>
+    <br>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/ott-web-store/">Ott web store</a></li>
+      
+      
+      
+      <li class="breadcrumb-item active" aria-current="page">Overview: Brightcove CorpTV Web Store</li>
+      
+      
     </nav>
   </header>
 
-  <div class="container">
+<div class="container">
     <div class="row">
       <div class="col-sm-3 left-side-bar">
-        <select id="site_select" class="bcls-select" style="margin-left: 1rem;">
-          <option value="">Other Brightcove Docs</option>
-
-
-          <option value="https://support.brightcove.com">Documentation Home</option>
-
-
-
-          <option value="">-- VIDEO CLOUD --</option>
-
-
-
-          <option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
-
-
-
-          <option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
-
-
-
-          <option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
-
-
-
-          <option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
-
-
-
-          <option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
-
-
-
-          <option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
-
-
-
-          <option value="">-- VIDEO ESSENTIALS --</option>
-
-
-
-          <option value="https://audience-insights.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience Insights</option>
-
-
-
-          <option value="https://beacon-help.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove CorpTV Studio</option>
-
-
-
-          <option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Classic</option>
-
-
-
-          <option value="https://corptv.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;CorpTV</option>
-
-
-
-          <option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
-
-
-
-          <option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
-
-
-
-          <option value="">-- VIDEO CLOUD ADD-ONS --</option>
-
-
-
-          <option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
-
-
-
-          <option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
-
-
-
-          <option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
-
-
-
-          <option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
-
-
-
-          <option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
-
-
-        </select>
+				<select id="site_select" class="bcls-select" style="margin-left: 1rem;">
+					<option value="">Other Brightcove Docs</option>
+					
+						
+							<option value="https://support.brightcove.com">Documentation Home</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD --</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
+						
+					
+						
+							<option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
+						
+					
+						
+							<option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
+						
+					
+						
+							<option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
+						
+					
+						
+							<option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
+						
+					
+						
+							<option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
+						
+					
+						
+							<option value="">-- VIDEO ESSENTIALS --</option>
+						
+					
+						
+							<option value="https://audience-insights.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience Insights</option>
+						
+					
+						
+							<option value="https://beacon-help.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove CorpTV Studio</option>
+						
+					
+						
+							<option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Classic</option>
+						
+					
+						
+							<option value="https://corptv.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;CorpTV</option>
+						
+					
+						
+							<option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
+						
+					
+						
+							<option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
+						
+					
+						
+							<option value="">-- VIDEO CLOUD ADD-ONS --</option>
+						
+					
+						
+							<option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
+						
+					
+						
+							<option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
+						
+					
+						
+							<option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+						
+					
+						
+							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+						
+					
+				</select>
         <nav class="sidenav" id="side_nav">
-
-
-          <h5><a href="/index.html">Home</a></h5>
-
-
-
-          <h5 class="submenu-header"><a href="/getting-started/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Getting Started</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/getting-started/learning-guide-bc-ott.html">Brightcove CorpTV Learning Guide</a></li>
-
-
-
-            <li><a href="/getting-started/implementation-phases.html">Implementation Phases</a></li>
-
-
-
-            <li><a href="/getting-started/getting-started-ott-studio.html">Getting Started with CorpTV Studio</a></li>
-
-
-
-            <li><a href="/general/ott-studio-or-classic.html">When to Use CorpTV Studio and/or CorpTV Classic</a></li>
-
-
-
-            <li><a href="/getting-started/design-best-practices.html">App Design Best Practices</a></li>
-
-
-
-            <li><a href="/getting-started/app-design-considerations.html">App Design Considerations</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/basics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Learn the Basics</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li class="submenu-header">
-              <a href="/basics/layout/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Layout</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/basics/layout/archiving-pages.html">Archiving Pages</a></li>
-
-
-
-                <li><a href="/basics/layout/availability-date.html">Configuring Calendar Restrictions</a></li>
-
-
-
-                <li><a href="/basics/layout/availability-device.html">Configuring Device Restrictions</a></li>
-
-
-
-                <li><a href="/basics/layout/availability-location.html">Configuring Location Restrictions</a></li>
-
-
-
-                <li><a href="/basics/layout/creating-page.html">Creating a Page</a></li>
-
-
+          
+            
+            <h5><a href="/index.html">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/getting-started/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Getting Started</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/getting-started/learning-guide-bc-ott.html">Brightcove CorpTV Learning Guide</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/implementation-phases.html">Implementation Phases</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/getting-started-ott-studio.html">Getting Started with CorpTV Studio</a></li>
+                  
+                
+                  
+                    <li><a href="/general/ott-studio-or-classic.html">When to Use CorpTV Studio and/or CorpTV Classic</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/design-best-practices.html">App Design Best Practices</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/app-design-considerations.html">App Design Considerations</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/basics/media/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Media</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/basics/media/activating-and-deactivating-video.html">Activating Videos</a></li>
-
-
-
-                <li><a href="/basics/media/adding-episode-season.html">Adding an Episode to a Season</a></li>
-
-
-
-                <li><a href="/basics/media/capturing-video-poster-thumbnail-images.html">Capturing Video Poster Images</a></li>
-
-
-
-                <li><a href="/basics/media/creating-manual-playlist.html">Creating a Manual Playlist</a></li>
-
-
-
-                <li><a href="/basics/media/creating-season.html">Creating a Season</a></li>
-
-
-
-                <li><a href="/basics/media/creating-series.html">Creating a Series</a></li>
-
-
-
-                <li><a href="/basics/media/creating-smart-playlist.html">Creating a Smart Playlist</a></li>
-
-
-
-                <li><a href="/basics/media/editing-basic-video-details.html">Editing Basic Video Details</a></li>
-
-
-
-                <li><a href="/basics/media/editing-video-details-multiple-videos.html">Editing Multiple Videos</a></li>
-
-
-
-                <li><a href="/basics/media/organizing-videos-using-folders.html">Using Folders</a></li>
-
-
-
-                <li><a href="/basics/media/publishing-playlist-web.html">Publishing Playlists</a></li>
-
-
-
-                <li><a href="/basics/media/publishing-single-video-web.html">Publishing Videos</a></li>
-
-
-
-                <li><a href="/basics/media/uploading-video-images.html">Uploading Video Images</a></li>
-
-
-
-                <li><a href="/basics/media/uploading-videos.html">Uploading Videos</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/basics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Learn the Basics</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/basics/layout/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Layout</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/basics/layout/archiving-pages.html">Archiving Pages</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/layout/availability-date.html">Configuring Calendar Restrictions</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/layout/availability-device.html">Configuring Device Restrictions</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/layout/availability-location.html">Configuring Location Restrictions</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/layout/creating-page.html">Creating a Page</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/basics/media/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Media</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/basics/media/activating-and-deactivating-video.html">Activating Videos</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/adding-episode-season.html">Adding an Episode to a Season</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/capturing-video-poster-thumbnail-images.html">Capturing Video Poster Images</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/creating-manual-playlist.html">Creating a Manual Playlist</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/creating-season.html">Creating a Season</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/creating-series.html">Creating a Series</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/creating-smart-playlist.html">Creating a Smart Playlist</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/editing-basic-video-details.html">Editing Basic Video Details</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/editing-video-details-multiple-videos.html">Editing Multiple Videos</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/organizing-videos-using-folders.html">Using Folders</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/publishing-playlist-web.html">Publishing Playlists</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/publishing-single-video-web.html">Publishing Videos</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/uploading-video-images.html">Uploading Video Images</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/media/uploading-videos.html">Uploading Videos</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/basics/players/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Players</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/basics/players/creating-player.html">Creating a Player</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/players/creating-playlist-player.html">Creating a Playlist Player</a></li>
+                          
+                        
+                          
+                            <li><a href="/basics/players/styling-player.html">Styling Players</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/basics/admin/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Administration</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/basics/admin/adding-user-account.html">Adding Users to an Account</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/basics/players/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Players</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/basics/players/creating-player.html">Creating a Player</a></li>
-
-
-
-                <li><a href="/basics/players/creating-playlist-player.html">Creating a Playlist Player</a></li>
-
-
-
-                <li><a href="/basics/players/styling-player.html">Styling Players</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/media/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Media</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/media/adding-application-id-player-embed-code.html">Adding an Application ID</a></li>
+                  
+                
+                  
+                    <li><a href="/media/adding-audio-tracks-videos.html">Adding Audio Tracks to Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/adding-captions-videos.html">Adding Captions to Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/adding-chapters-video.html">Adding Chapters to a Video</a></li>
+                  
+                
+                  
+                    <li><a href="/media/capturing-poster-and-thumbnail-images.html">Capturing Poster and Thumbnail Images</a></li>
+                  
+                
+                  
+                    <li><a href="/media/choosing-correct-embed-code.html">Choosing the Correct Embed Code</a></li>
+                  
+                
+                  
+                    <li><a href="/media/configuring-playlist-availability.html">Configuring Playlist Availability</a></li>
+                  
+                
+                  
+                    <li><a href="/media/configuring-season-availability.html">Configuring Season Availability</a></li>
+                  
+                
+                  
+                    <li><a href="/media/configuring-series-availability.html">Configuring Series Availability</a></li>
+                  
+                
+                  
+                    <li><a href="/media/configuring-video-availability.html">Configuring Video Availability</a></li>
+                  
+                
+                  
+                    <li><a href="/media/creating-ott-playlist.html">Creating a CorpTV Classic Playlist</a></li>
+                  
+                
+                  
+                    <li><a href="/media/creating-and-managing-playlists.html">Creating and Managing Playlists</a></li>
+                  
+                
+                  
+                    <li><a href="/media/creating-managing-rule-sets.html">Creating and Managing Rule Sets</a></li>
+                  
+                
+                  
+                    <li><a href="/media/creating-series-seasons-episodes.html">Creating Series, Seasons & Episodes</a></li>
+                  
+                
+                  
+                    <li><a href="/media/downloading-videos.html">Downloading Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/editing-series-details.html">Editing Series Details</a></li>
+                  
+                
+                  
+                    <li><a href="/media/editing-video-details.html">Editing Video Details</a></li>
+                  
+                
+                  
+                    <li><a href="/media/editing-video-details-using-quick-edit.html">Editing Details using Quick Edit</a></li>
+                  
+                
+                  
+                    <li><a href="/media/editing-series-details.html">Editing Series Details</a></li>
+                  
+                
+                  
+                    <li><a href="/media/exporting-video-data.html">Exporting Video Data</a></li>
+                  
+                
+                  
+                    <li><a href="/media/generating-captions-videos.html">Generating Captions for Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/getting-started-media-module.html">Getting Started with the Media Module</a></li>
+                  
+                
+                  
+                    <li><a href="/media/increasing-quality-poster-and-thumbnail-images.html">Increasing the Quality of Poster Images</a></li>
+                  
+                
+                  
+                    <li><a href="/media/introduction-playlists.html">Introduction to Playlists</a></li>
+                  
+                
+                  
+                    <li><a href="/media/managing-series.html">Managing Series</a></li>
+                  
+                
+                  
+                    <li><a href="/media/managing-videos.html">Managing Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/organizing-videos-using-folders.html">Organizing Videos Using Folders</a></li>
+                  
+                
+                  
+                    <li><a href="/media/overview-adding-captions-video.html">Overview: Adding Captions to a Video</a></li>
+                  
+                
+                  
+                    <li><a href="/media/replacing-video-source-file.html">Replacing a Video Source File</a></li>
+                  
+                
+                  
+                    <li><a href="/media/retranscoding-videos.html">Retranscoding Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/searching-videos-and-playlist.html">Searching Videos and Playlists</a></li>
+                  
+                
+                  
+                    <li><a href="/media/setting-required-fields-videos.html">Setting Required Fields</a></li>
+                  
+                
+                  
+                    <li><a href="/media/sharing-videos-other-accounts.html">Sharing Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/styling-captions.html">Styling Captions</a></li>
+                  
+                
+                  
+                    <li><a href="/media/uploading-videos.html">Uploading Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/uploading-video-images.html">Uploading Video Images</a></li>
+                  
+                
+                  
+                    <li><a href="/media/uploading-videos-remote-urls.html">Uploading Videos Remote URLs</a></li>
+                  
+                
+                  
+                    <li><a href="/media/working-360deg-videos.html">Working with 360° Videos</a></li>
+                  
+                
+                  
+                    <li><a href="/media/working-cue-points.html">Working with Cue Points</a></li>
+                  
+                
+                  
+                    <li><a href="/media/working-multi-lingual-metadata.html">Working with Multi-Lingual Metadata</a></li>
+                  
+                
+                  
+                    <li><a href="/media/working-remote-asset-videos.html">Working with Remote Asset Videos</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/basics/admin/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Administration</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/basics/admin/adding-user-account.html">Adding Users to an Account</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/layout/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Pages</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/layout/getting-started-layout-module.html">Getting Started with the Layout Module</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/configuring-app-settings.html">Configuring App Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/configuring-page-availability.html">Configuring Page Availability</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/creating-managing-pages.html">Creating and Managing Pages</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/managing-linked-pages.html">Managing Linked Pages</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/managing-playlists-on-pages.html">Managing Playlists on Pages</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/page-details-overview.html">Page Details Overview</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/clearing-cache.html">Refreshing the App Cache</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/using-core-pages.html">Using Core Pages</a></li>
+                  
+                
+                  
+                    <li><a href="/layout/using-page-layouts.html">Using Page Layouts</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/media/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Media</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/media/adding-application-id-player-embed-code.html">Adding an Application ID</a></li>
-
-
-
-            <li><a href="/media/adding-audio-tracks-videos.html">Adding Audio Tracks to Videos</a></li>
-
-
-
-            <li><a href="/media/adding-captions-videos.html">Adding Captions to Videos</a></li>
-
-
-
-            <li><a href="/media/adding-chapters-video.html">Adding Chapters to a Video</a></li>
-
-
-
-            <li><a href="/media/capturing-poster-and-thumbnail-images.html">Capturing Poster and Thumbnail Images</a></li>
-
-
-
-            <li><a href="/media/choosing-correct-embed-code.html">Choosing the Correct Embed Code</a></li>
-
-
-
-            <li><a href="/media/configuring-playlist-availability.html">Configuring Playlist Availability</a></li>
-
-
-
-            <li><a href="/media/configuring-season-availability.html">Configuring Season Availability</a></li>
-
-
-
-            <li><a href="/media/configuring-series-availability.html">Configuring Series Availability</a></li>
-
-
-
-            <li><a href="/media/configuring-video-availability.html">Configuring Video Availability</a></li>
-
-
-
-            <li><a href="/media/creating-ott-playlist.html">Creating a CorpTV Classic Playlist</a></li>
-
-
-
-            <li><a href="/media/creating-and-managing-playlists.html">Creating and Managing Playlists</a></li>
-
-
-
-            <li><a href="/media/creating-managing-rule-sets.html">Creating and Managing Rule Sets</a></li>
-
-
-
-            <li><a href="/media/creating-series-seasons-episodes.html">Creating Series, Seasons & Episodes</a></li>
-
-
-
-            <li><a href="/media/downloading-videos.html">Downloading Videos</a></li>
-
-
-
-            <li><a href="/media/editing-series-details.html">Editing Series Details</a></li>
-
-
-
-            <li><a href="/media/editing-video-details.html">Editing Video Details</a></li>
-
-
-
-            <li><a href="/media/editing-video-details-using-quick-edit.html">Editing Details using Quick Edit</a></li>
-
-
-
-            <li><a href="/media/editing-series-details.html">Editing Series Details</a></li>
-
-
-
-            <li><a href="/media/exporting-video-data.html">Exporting Video Data</a></li>
-
-
-
-            <li><a href="/media/generating-captions-videos.html">Generating Captions for Videos</a></li>
-
-
-
-            <li><a href="/media/getting-started-media-module.html">Getting Started with the Media Module</a></li>
-
-
-
-            <li><a href="/media/increasing-quality-poster-and-thumbnail-images.html">Increasing the Quality of Poster Images</a></li>
-
-
-
-            <li><a href="/media/introduction-playlists.html">Introduction to Playlists</a></li>
-
-
-
-            <li><a href="/media/managing-series.html">Managing Series</a></li>
-
-
-
-            <li><a href="/media/managing-videos.html">Managing Videos</a></li>
-
-
-
-            <li><a href="/media/organizing-videos-using-folders.html">Organizing Videos Using Folders</a></li>
-
-
-
-            <li><a href="/media/overview-adding-captions-video.html">Overview: Adding Captions to a Video</a></li>
-
-
-
-            <li><a href="/media/replacing-video-source-file.html">Replacing a Video Source File</a></li>
-
-
-
-            <li><a href="/media/retranscoding-videos.html">Retranscoding Videos</a></li>
-
-
-
-            <li><a href="/media/searching-videos-and-playlist.html">Searching Videos and Playlists</a></li>
-
-
-
-            <li><a href="/media/setting-required-fields-videos.html">Setting Required Fields</a></li>
-
-
-
-            <li><a href="/media/sharing-videos-other-accounts.html">Sharing Videos</a></li>
-
-
-
-            <li><a href="/media/styling-captions.html">Styling Captions</a></li>
-
-
-
-            <li><a href="/media/uploading-videos.html">Uploading Videos</a></li>
-
-
-
-            <li><a href="/media/uploading-video-images.html">Uploading Video Images</a></li>
-
-
-
-            <li><a href="/media/uploading-videos-remote-urls.html">Uploading Videos Remote URLs</a></li>
-
-
-
-            <li><a href="/media/working-360deg-videos.html">Working with 360° Videos</a></li>
-
-
-
-            <li><a href="/media/working-cue-points.html">Working with Cue Points</a></li>
-
-
-
-            <li><a href="/media/working-multi-lingual-metadata.html">Working with Multi-Lingual Metadata</a></li>
-
-
-
-            <li><a href="/media/working-remote-asset-videos.html">Working with Remote Asset Videos</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/layout/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Pages</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/layout/getting-started-layout-module.html">Getting Started with the Layout Module</a></li>
-
-
-
-            <li><a href="/layout/configuring-app-settings.html">Configuring App Settings</a></li>
-
-
-
-            <li><a href="/layout/configuring-page-availability.html">Configuring Page Availability</a></li>
-
-
-
-            <li><a href="/layout/creating-managing-pages.html">Creating and Managing Pages</a></li>
-
-
-
-            <li><a href="/layout/managing-linked-pages.html">Managing Linked Pages</a></li>
-
-
-
-            <li><a href="/layout/managing-playlists-on-pages.html">Managing Playlists on Pages</a></li>
-
-
-
-            <li><a href="/layout/page-details-overview.html">Page Details Overview</a></li>
-
-
-
-            <li><a href="/layout/clearing-cache.html">Refreshing the App Cache</a></li>
-
-
-
-            <li><a href="/layout/using-core-pages.html">Using Core Pages</a></li>
-
-
-
-            <li><a href="/layout/using-page-layouts.html">Using Page Layouts</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/channels/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Channels</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li class="submenu-header">
-              <a href="/channels/ott-channels/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;CorpTV Channels</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/channels/ott-channels/creating-a-channel.html">Creating a CorpTV Channel</a></li>
-
-
-
-                <li><a href="/channels/ott-channels/electronic-program-guides.html">Creating an EPG</a></li>
-
-
-
-                <li><a href="/channels/ott-channels/streaming-vods-to-a-channel.html">Streaming VODs to a Channel</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/channels/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Channels</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/channels/ott-channels/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;CorpTV Channels</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/channels/ott-channels/creating-a-channel.html">Creating a CorpTV Channel</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/ott-channels/electronic-program-guides.html">Creating an EPG</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/ott-channels/streaming-vods-to-a-channel.html">Streaming VODs to a Channel</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/channels/cloud-playout/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Cloud Playout Channels</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/channels/cloud-playout/cloud-playout-overview.html">Overview: Cloud Playout</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/cloud-playout-stream-vod.html">Creating a Cloud Playout Channel</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/cloud-playout-add-content.html">Managing the Channel Program</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/static-image-overlays.html">Adding Static Image Overlays</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/dynamic-overlays.html">Adding Dynamic Overlays</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/adding-bumpers-to-vod.html">Adding Bumpers to Cloud Playout</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/import-captions.html">Importing Captions</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/managing-slates.html">Managing Slates</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/enabling-server-side-ads.html">Monetizing Cloud Playout</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/mid-roll-ad-insertion.html">Adding Mid-Roll Ads to a Channel</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/hard-start.html">Setting a Hard Start for a Channel</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/searching-for-channels.html">Searching for Channels</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/publish-channel-ott.html">Publishing a Cloud Playout Channel</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/using-channel-actions.html">Using Channel Actions</a></li>
+                          
+                        
+                          
+                            <li><a href="/channels/cloud-playout/viewing-channel-output-and-analytics.html">Viewing Channel Output and Analytics</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/channels/cloud-playout/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Cloud Playout Channels</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/channels/cloud-playout/cloud-playout-overview.html">Overview: Cloud Playout</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/cloud-playout-stream-vod.html">Creating a Cloud Playout Channel</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/cloud-playout-add-content.html">Managing the Channel Program</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/static-image-overlays.html">Adding Static Image Overlays</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/dynamic-overlays.html">Adding Dynamic Overlays</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/adding-bumpers-to-vod.html">Adding Bumpers to Cloud Playout</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/import-captions.html">Importing Captions</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/managing-slates.html">Managing Slates</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/enabling-server-side-ads.html">Monetizing Cloud Playout</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/mid-roll-ad-insertion.html">Adding Mid-Roll Ads to a Channel</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/hard-start.html">Setting a Hard Start for a Channel</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/searching-for-channels.html">Searching for Channels</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/publish-channel-ott.html">Publishing a Cloud Playout Channel</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/using-channel-actions.html">Using Channel Actions</a></li>
-
-
-
-                <li><a href="/channels/cloud-playout/viewing-channel-output-and-analytics.html">Viewing Channel Output and Analytics</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/players/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Players</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/players/adding-thumbnail-seeking-player.html">Adding Thumbnail Seeking</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-player-overlay-using-overlay-plugin.html">Configuring a Player Overlay</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-playlist-endscreen-using-plugin.html">Configuring a Playlist Endscreen</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-adobe-analytics-event-tracking.html">Configuring Adobe Analytics Event Tracking</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-google-analytics-event-tracking.html">Configuring Google Analytics Event Tracking</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-player-advertising-using-players-module.html">Configuring Player Advertising</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-player-content-restrictions.html">Configuring Player Content Restrictions</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-player-controls.html">Configuring Player Controls</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-player-endscreen.html">Configuring the Player Endscreen</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-player-localization.html">Configuring Player Localization</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-player-playback-properties.html">Configuring Player Playback Properties</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-player-plugins.html">Configuring Player Plugins</a></li>
+                  
+                
+                  
+                    <li><a href="/players/configuring-social-properties-player.html">Configuring the Social Properties</a></li>
+                  
+                
+                  
+                    <li><a href="/players/generating-player-embed-code.html">Generating Player Embed Code</a></li>
+                  
+                
+                  
+                    <li><a href="/players/getting-started-players-module.html">Getting Started with the Players Module</a></li>
+                  
+                
+                  
+                    <li><a href="/players/setting-player-information-properties.html">Setting Player Information Properties</a></li>
+                  
+                
+                  
+                    <li><a href="/players/setting-player-properties.html">Setting Player Properties</a></li>
+                  
+                
+                  
+                    <li><a href="/players/setting-player-update-mode-and-version.html">Setting the Player Update Mode</a></li>
+                  
+                
+                  
+                    <li><a href="/players/styling-players.html">Styling Players</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/players/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Managing Players</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/players/adding-thumbnail-seeking-player.html">Adding Thumbnail Seeking</a></li>
-
-
-
-            <li><a href="/players/configuring-player-overlay-using-overlay-plugin.html">Configuring a Player Overlay</a></li>
-
-
-
-            <li><a href="/players/configuring-playlist-endscreen-using-plugin.html">Configuring a Playlist Endscreen</a></li>
-
-
-
-            <li><a href="/players/configuring-adobe-analytics-event-tracking.html">Configuring Adobe Analytics Event Tracking</a></li>
-
-
-
-            <li><a href="/players/configuring-google-analytics-event-tracking.html">Configuring Google Analytics Event Tracking</a></li>
-
-
-
-            <li><a href="/players/configuring-player-advertising-using-players-module.html">Configuring Player Advertising</a></li>
-
-
-
-            <li><a href="/players/configuring-player-content-restrictions.html">Configuring Player Content Restrictions</a></li>
-
-
-
-            <li><a href="/players/configuring-player-controls.html">Configuring Player Controls</a></li>
-
-
-
-            <li><a href="/players/configuring-player-endscreen.html">Configuring the Player Endscreen</a></li>
-
-
-
-            <li><a href="/players/configuring-player-localization.html">Configuring Player Localization</a></li>
-
-
-
-            <li><a href="/players/configuring-player-playback-properties.html">Configuring Player Playback Properties</a></li>
-
-
-
-            <li><a href="/players/configuring-player-plugins.html">Configuring Player Plugins</a></li>
-
-
-
-            <li><a href="/players/configuring-social-properties-player.html">Configuring the Social Properties</a></li>
-
-
-
-            <li><a href="/players/generating-player-embed-code.html">Generating Player Embed Code</a></li>
-
-
-
-            <li><a href="/players/getting-started-players-module.html">Getting Started with the Players Module</a></li>
-
-
-
-            <li><a href="/players/setting-player-information-properties.html">Setting Player Information Properties</a></li>
-
-
-
-            <li><a href="/players/setting-player-properties.html">Setting Player Properties</a></li>
-
-
-
-            <li><a href="/players/setting-player-update-mode-and-version.html">Setting the Player Update Mode</a></li>
-
-
-
-            <li><a href="/players/styling-players.html">Styling Players</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Reviewing Analytics</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li class="submenu-header">
-              <a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Using the Analytics Module</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/analytics/getting-started-analytics-module.html">Getting Started with the Analytics Module</a></li>
-
-
-
-                <li><a href="/analytics/analytics-module-ui-glossary.html">Analytics Module UI Glossary</a></li>
-
-
-
-                <li><a href="/analytics/how-search-videos-analytics-module.html">How to Search for Videos</a></li>
-
-
-
-                <li><a href="/analytics/faq-analytics-module.html">FAQ: Analytics Module</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Reviewing Analytics</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Using the Analytics Module</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/analytics/getting-started-analytics-module.html">Getting Started with the Analytics Module</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/analytics-module-ui-glossary.html">Analytics Module UI Glossary</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/how-search-videos-analytics-module.html">How to Search for Videos</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/faq-analytics-module.html">FAQ: Analytics Module</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Analytics Reports</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/analytics/analytics-report-reference.html">Analytics Report Reference</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/creating-custom-analytics-reports.html">Creating Custom Analytics Reports</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/engagement-report-reference.html">Engagement Report Reference</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/managing-scheduled-reports.html">Managing Scheduled Reports</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/performance-report-reference.html">Performance Report Reference</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;General Information</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/analytics/analytics-overview.html">Analytics Overview</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/analytics-business-metrics.html">CorpTV Analytics Business Metrics</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/calculating-video-engagement-score.html">Calculating Video Engagement Score</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/exporting-data-analytics-module.html">Exporting Data</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/resources.html">Resources for Analytics</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Third-Party Analytics</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/analytics/ga-self-configuration.html">Google Analytics Self Configuration</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/reviewing-player-event-data-google-analytics.html">Reviewing Player Events in Google Analytics</a></li>
+                          
+                        
+                          
+                            <li><a href="/analytics/viewing-analytics-data-google.html">Viewing Analytics Data in Google Analytics</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Analytics Reports</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/analytics/analytics-report-reference.html">Analytics Report Reference</a></li>
-
-
-
-                <li><a href="/analytics/creating-custom-analytics-reports.html">Creating Custom Analytics Reports</a></li>
-
-
-
-                <li><a href="/analytics/engagement-report-reference.html">Engagement Report Reference</a></li>
-
-
-
-                <li><a href="/analytics/managing-scheduled-reports.html">Managing Scheduled Reports</a></li>
-
-
-
-                <li><a href="/analytics/performance-report-reference.html">Performance Report Reference</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/admin/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Administering Accounts</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/admin/configuring-language-settings.html">Configuring Language Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/configuring-server-side-ad-settings.html">Configuring Server-Side Ad Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-ingest-profiles-context-aware-encoding.html">Creating Ingest Profiles for Context Aware Encoding</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/creating-ingest-profiles-dynamic-delivery.html">Creating Ingest Profiles for Dynamic Delivery</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/ingest-profiles-best-practices.html">Ingest Profiles Best Practices</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-account-information.html">Managing Account Information</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-account-settings.html">Managing Account Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-ingest-profiles.html">Managing Ingest Profiles</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-profile-information.html">Managing Profile Information</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-users.html">Managing Users</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html">Standard Ingest Profiles (DD & CAE)</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;General Information</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/analytics/analytics-overview.html">Analytics Overview</a></li>
-
-
-
-                <li><a href="/analytics/analytics-business-metrics.html">CorpTV Analytics Business Metrics</a></li>
-
-
-
-                <li><a href="/analytics/calculating-video-engagement-score.html">Calculating Video Engagement Score</a></li>
-
-
-
-                <li><a href="/analytics/exporting-data-analytics-module.html">Exporting Data</a></li>
-
-
-
-                <li><a href="/analytics/resources.html">Resources for Analytics</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/registered-users/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Registered Users</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/registered-users/working-with-registered-users.html">Working with Registered Users</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/analytics/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Third-Party Analytics</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/analytics/ga-self-configuration.html">Google Analytics Self Configuration</a></li>
-
-
-
-                <li><a href="/analytics/reviewing-player-event-data-google-analytics.html">Reviewing Player Events in Google Analytics</a></li>
-
-
-
-                <li><a href="/analytics/viewing-analytics-data-google.html">Viewing Analytics Data in Google Analytics</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/publishing-apps/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Publishing Apps</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/publishing-apps/general/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;General Information</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/publishing-apps/general/common-required-info.html">Common Required Information for Submitting Apps</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/general/device-apps-validation-guide.html">Device Apps Validation Guide</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/general/in-app-subscription-resources.html">In-App Subscription Resources</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/general/schedule-apps.html">Scheduling App Releases in the App Stores</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/publishing-apps/android/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Android</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/publishing-apps/android/submitting-to-android.html">Submitting New Apps to the Android Store</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/android/updating-android-apps-to-bcb.html">Updating Android Apps to Brightcove CorpTV</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/android/adding-subscriptions-in-android.html">Adding Subscriptions to Android</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/android/improving-relevance-android.html">Improving Search Relevance in the Android Play Store</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/android/installing-android-test-build.html">Installing an Android Test Build</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/android/managing-google-subscriptions-1.html">Managing Google Subscriptions Part 1</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/android/managing-google-subscriptions-2.html">Managing Google Subscriptions Part 2</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/publishing-apps/fire-tv/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Fire TV</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/publishing-apps/fire-tv/installing-fire-tv-test-build.html">Installing a Fire TV Test Build</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/fire-tv/submitting-to-amazon.html">Submitting to the Amazon Store</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/publishing-apps/ios-tvos/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;iOS/tvOS</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/publishing-apps/ios-tvos/installing-ios-test-build.html">Installing an iOS/tvOS Test Build</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/ios-tvos/submitting-to-apple.html">Submitting to the Apple Store</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/publishing-apps/roku/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Roku</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/publishing-apps/roku/configuring-inchannel-products.html">Configuring In-Channel Products in Roku</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/roku/installing-roku-test-build.html">Installing a Roku Test Build</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/roku/submitting-to-roku.html">Submitting to the Roku Store</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/publishing-apps/samsung/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Samsung</a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                          
+                            <li><a href="/publishing-apps/samsung/samsung-partner.html">Becoming a Samsung Partner</a></li>
+                          
+                        
+                          
+                            <li><a href="/publishing-apps/samsung/submitting-to-samsung.html">Submitting to the Samsung Store</a></li>
+                          
+                        
+                      </ul>
+                    </li>
+                  
+                
               </ul>
-            </li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/admin/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Administering Accounts</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/admin/configuring-language-settings.html">Configuring Language Settings</a></li>
-
-
-
-            <li><a href="/admin/configuring-server-side-ad-settings.html">Configuring Server-Side Ad Settings</a></li>
-
-
-
-            <li><a href="/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a></li>
-
-
-
-            <li><a href="/admin/creating-ingest-profiles-context-aware-encoding.html">Creating Ingest Profiles for Context Aware Encoding</a></li>
-
-
-
-            <li><a href="/admin/creating-ingest-profiles-dynamic-delivery.html">Creating Ingest Profiles for Dynamic Delivery</a></li>
-
-
-
-            <li><a href="/admin/ingest-profiles-best-practices.html">Ingest Profiles Best Practices</a></li>
-
-
-
-            <li><a href="/admin/managing-account-information.html">Managing Account Information</a></li>
-
-
-
-            <li><a href="/admin/managing-account-settings.html">Managing Account Settings</a></li>
-
-
-
-            <li><a href="/admin/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a></li>
-
-
-
-            <li><a href="/admin/managing-ingest-profiles.html">Managing Ingest Profiles</a></li>
-
-
-
-            <li><a href="/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
-
-
-
-            <li><a href="/admin/managing-profile-information.html">Managing Profile Information</a></li>
-
-
-
-            <li><a href="/admin/managing-users.html">Managing Users</a></li>
-
-
-
-            <li><a href="/admin/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html">Standard Ingest Profiles (DD & CAE)</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/registered-users/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Registered Users</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/registered-users/working-with-registered-users.html">Working with Registered Users</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/publishing-apps/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Publishing Apps</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li class="submenu-header">
-              <a href="/publishing-apps/general/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;General Information</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/publishing-apps/general/common-required-info.html">Common Required Information for Submitting Apps</a></li>
-
-
-
-                <li><a href="/publishing-apps/general/device-apps-validation-guide.html">Device Apps Validation Guide</a></li>
-
-
-
-                <li><a href="/publishing-apps/general/in-app-subscription-resources.html">In-App Subscription Resources</a></li>
-
-
-
-                <li><a href="/publishing-apps/general/schedule-apps.html">Scheduling App Releases in the App Stores</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/publish-videos/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Publishing Videos & Players</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/publish-videos/adding-3play-media-interactive-transcript-video.html">Adding a 3Play Media Interactive Transcript</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/adding-application-id-player-embed-code.html">Adding an Application ID to the Embed Code</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/adding-brightcove-player-facebook-fan-page.html">Adding a Player to a Facebook Fan Page</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/changing-video-player-without-changing-embed-code.html">Changing a Video in a Player</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/choosing-correct-embed-code.html">Choosing the Correct Embed Code</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/creating-and-publishing-high-quality-screencasts.html">Creating and Publishing High Quality Screencasts</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/deep-linking.html">Deep Linking</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/driving-video-views-through-email.html">Driving Video Views Through Email</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/dynamically-assigning-videos-player.html">Dynamically Assigning Videos to a Player</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/embedding-brightcove-player-google-sites-page.html">Embedding a Player on a Google Sites Page</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/publishing-brightcove-player-wordpress-page.html">Publishing a Player in a Wordpress Page</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/publishing-brightcove-players-facebook-instant-articles.html">Publishing Players in Facebook Instant Articles</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/publishing-brightcove-players-joomla.html">Publishing Players in Joomla</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/publishing-video-email.html">Publishing a Video to Email</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/publishing-videos-and-playlists-media-module.html">Publishing Videos and Playlists</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/step-step-using-players-module-create-and-publish-player.html">Step-by-Step:  Creating and Publishing a Player</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/using-multiple-players-one-page.html">Using Multiple Players on One Page</a></li>
+                  
+                
+                  
+                    <li><a href="/publish-videos/using-reference-ids.html">Using Reference IDs</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/publishing-apps/android/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Android</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/publishing-apps/android/submitting-to-android.html">Submitting New Apps to the Android Store</a></li>
-
-
-
-                <li><a href="/publishing-apps/android/updating-android-apps-to-bcb.html">Updating Android Apps to Brightcove CorpTV</a></li>
-
-
-
-                <li><a href="/publishing-apps/android/adding-subscriptions-in-android.html">Adding Subscriptions to Android</a></li>
-
-
-
-                <li><a href="/publishing-apps/android/improving-relevance-android.html">Improving Search Relevance in the Android Play Store</a></li>
-
-
-
-                <li><a href="/publishing-apps/android/installing-android-test-build.html">Installing an Android Test Build</a></li>
-
-
-
-                <li><a href="/publishing-apps/android/managing-google-subscriptions-1.html">Managing Google Subscriptions Part 1</a></li>
-
-
-
-                <li><a href="/publishing-apps/android/managing-google-subscriptions-2.html">Managing Google Subscriptions Part 2</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/social/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Social Sharing</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/social/creating-social-media-publishing-destinations.html">Creating Publishing Destinations</a></li>
+                  
+                
+                  
+                    <li><a href="/social/creating-video-clip-using-brightcove-social.html">Creating a Video Clip</a></li>
+                  
+                
+                  
+                    <li><a href="/social/getting-started-brightcove-social.html">Getting Started with Social</a></li>
+                  
+                
+                  
+                    <li><a href="/social/publishing-videos-social-media-platforms.html">Publishing Videos to Social Media</a></li>
+                  
+                
+                  
+                    <li><a href="/social/reviewing-social-analytics.html">Reviewing Social Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/social/reviewing-social-engagement-analytics.html">Reviewing Social Engagement Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/social/reviewing-social-views-analytics.html">Reviewing Social Views Analytics</a></li>
+                  
+                
+                  
+                    <li><a href="/social/setting-privacy-status-video.html">Setting the Privacy Status for a Video</a></li>
+                  
+                
+                  
+                    <li><a href="/social/using-auto-sync-synchronize-videos-social-media-accounts.html">Using Auto Sync</a></li>
+                  
+                
+                  
+                    <li><a href="/social/viewing-videos-published-social-media.html">Viewing Published Videos</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/publishing-apps/fire-tv/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Fire TV</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/publishing-apps/fire-tv/installing-fire-tv-test-build.html">Installing a Fire TV Test Build</a></li>
-
-
-
-                <li><a href="/publishing-apps/fire-tv/submitting-to-amazon.html">Submitting to the Amazon Store</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/styling/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Styling & Appearance</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/styling/branding-ott-apps.html">Branding Brightcove CorpTV Apps</a></li>
+                  
+                
+                  
+                    <li><a href="/styling/image-requirements.html">Image Specifications</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/publishing-apps/ios-tvos/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;iOS/tvOS</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/publishing-apps/ios-tvos/installing-ios-test-build.html">Installing an iOS/tvOS Test Build</a></li>
-
-
-
-                <li><a href="/publishing-apps/ios-tvos/submitting-to-apple.html">Submitting to the Apple Store</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/live/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Live Events</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/live/streaming-live-event.html">Streaming a Live Event</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/publishing-apps/roku/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Roku</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/publishing-apps/roku/configuring-inchannel-products.html">Configuring In-Channel Products in Roku</a></li>
-
-
-
-                <li><a href="/publishing-apps/roku/installing-roku-test-build.html">Installing a Roku Test Build</a></li>
-
-
-
-                <li><a href="/publishing-apps/roku/submitting-to-roku.html">Submitting to the Roku Store</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;General Information</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/authentication-using-oauth.html">Authentication Using OAuth</a></li>
+                  
+                
+                  
+                    <li><a href="/general/drm-output-protection-settings.html">DRM Output Protection Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/general/known-issues.html">Known Issues</a></li>
+                  
+                
+                  
+                    <li><a href="/general/overview-context-aware-encoding.html">Overview of Context Aware Encoding</a></li>
+                  
+                
+                  
+                    <li><a href="/general/overview-dynamic-delivery.html">Overview of Dynamic Delivery</a></li>
+                  
+                
+                  
+                    <li><a href="/general/protecting-videos-hls-encryption.html">Protecting Videos with HLS Encryption</a></li>
+                  
+                
+                  
+                    <li><a href="/general/related-content.html">Related Content</a></li>
+                  
+                
+                  
+                    <li><a href="/general/supported-video-and-audio-formats-codecs-and-containers.html">Supported Video and Audio Formats</a></li>
+                  
+                
+                  
+                    <li><a href="/general/using-multiple-languages.html">Using Multiple Languages</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-
-            <li class="submenu-header">
-              <a href="/publishing-apps/samsung/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Samsung</a>
-              <ul class="sidenav-subsubmenu" style="display:none;">
-
-
-                <li><a href="/publishing-apps/samsung/samsung-partner.html">Becoming a Samsung Partner</a></li>
-
-
-
-                <li><a href="/publishing-apps/samsung/submitting-to-samsung.html">Submitting to the Samsung Store</a></li>
-
-
+            
+          
+            
+              <h5 class="submenu-header"><a href="/ott-plugins/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;OTT Plugins</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/ott-plugins/learning-guide-corptv-plugins.html">Learning Guide: OTT Plugins</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/javascript-modules-beacon-plugins.html">Use JavaScript Modules for Plugins</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/dispatching-handling-events.html">Dispatch & Handle Events in Plugins</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/custom-page.html">Creating a Custom Page</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/buttons-and-events.html">Implement Buttons and Event Handlers</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/custom-divs.html">Implement Custom Sections</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/side-panel.html">Implement the Side Panel</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/user-events.html">Implement User Events</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/data-module.html">Storing Data in a Separate Module</a></li>
+                  
+                
+                  
+                    <li><a href="/ott-plugins/working-with-page-events.html">Working with Page Events</a></li>
+                  
+                
               </ul>
-            </li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/publish-videos/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Publishing Videos & Players</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/publish-videos/adding-3play-media-interactive-transcript-video.html">Adding a 3Play Media Interactive Transcript</a></li>
-
-
-
-            <li><a href="/publish-videos/adding-application-id-player-embed-code.html">Adding an Application ID to the Embed Code</a></li>
-
-
-
-            <li><a href="/publish-videos/adding-brightcove-player-facebook-fan-page.html">Adding a Player to a Facebook Fan Page</a></li>
-
-
-
-            <li><a href="/publish-videos/changing-video-player-without-changing-embed-code.html">Changing a Video in a Player</a></li>
-
-
-
-            <li><a href="/publish-videos/choosing-correct-embed-code.html">Choosing the Correct Embed Code</a></li>
-
-
-
-            <li><a href="/publish-videos/creating-and-publishing-high-quality-screencasts.html">Creating and Publishing High Quality Screencasts</a></li>
-
-
-
-            <li><a href="/publish-videos/deep-linking.html">Deep Linking</a></li>
-
-
-
-            <li><a href="/publish-videos/driving-video-views-through-email.html">Driving Video Views Through Email</a></li>
-
-
-
-            <li><a href="/publish-videos/dynamically-assigning-videos-player.html">Dynamically Assigning Videos to a Player</a></li>
-
-
-
-            <li><a href="/publish-videos/embedding-brightcove-player-google-sites-page.html">Embedding a Player on a Google Sites Page</a></li>
-
-
-
-            <li><a href="/publish-videos/publishing-brightcove-player-wordpress-page.html">Publishing a Player in a Wordpress Page</a></li>
-
-
-
-            <li><a href="/publish-videos/publishing-brightcove-players-facebook-instant-articles.html">Publishing Players in Facebook Instant Articles</a></li>
-
-
-
-            <li><a href="/publish-videos/publishing-brightcove-players-joomla.html">Publishing Players in Joomla</a></li>
-
-
-
-            <li><a href="/publish-videos/publishing-video-email.html">Publishing a Video to Email</a></li>
-
-
-
-            <li><a href="/publish-videos/publishing-videos-and-playlists-media-module.html">Publishing Videos and Playlists</a></li>
-
-
-
-            <li><a href="/publish-videos/step-step-using-players-module-create-and-publish-player.html">Step-by-Step: Creating and Publishing a Player</a></li>
-
-
-
-            <li><a href="/publish-videos/using-multiple-players-one-page.html">Using Multiple Players on One Page</a></li>
-
-
-
-            <li><a href="/publish-videos/using-reference-ids.html">Using Reference IDs</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/social/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Social Sharing</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/social/creating-social-media-publishing-destinations.html">Creating Publishing Destinations</a></li>
-
-
-
-            <li><a href="/social/creating-video-clip-using-brightcove-social.html">Creating a Video Clip</a></li>
-
-
-
-            <li><a href="/social/getting-started-brightcove-social.html">Getting Started with Social</a></li>
-
-
-
-            <li><a href="/social/publishing-videos-social-media-platforms.html">Publishing Videos to Social Media</a></li>
-
-
-
-            <li><a href="/social/reviewing-social-analytics.html">Reviewing Social Analytics</a></li>
-
-
-
-            <li><a href="/social/reviewing-social-engagement-analytics.html">Reviewing Social Engagement Analytics</a></li>
-
-
-
-            <li><a href="/social/reviewing-social-views-analytics.html">Reviewing Social Views Analytics</a></li>
-
-
-
-            <li><a href="/social/setting-privacy-status-video.html">Setting the Privacy Status for a Video</a></li>
-
-
-
-            <li><a href="/social/using-auto-sync-synchronize-videos-social-media-accounts.html">Using Auto Sync</a></li>
-
-
-
-            <li><a href="/social/viewing-videos-published-social-media.html">Viewing Published Videos</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/styling/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Styling & Appearance</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/styling/branding-ott-apps.html">Branding Brightcove CorpTV Apps</a></li>
-
-
-
-            <li><a href="/styling/image-requirements.html">Image Specifications</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/live/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Live Events</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/live/streaming-live-event.html">Streaming a Live Event</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/general/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;General Information</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/general/authentication-using-oauth.html">Authentication Using OAuth</a></li>
-
-
-
-            <li><a href="/general/drm-output-protection-settings.html">DRM Output Protection Settings</a></li>
-
-
-
-            <li><a href="/general/known-issues.html">Known Issues</a></li>
-
-
-
-            <li><a href="/general/overview-context-aware-encoding.html">Overview of Context Aware Encoding</a></li>
-
-
-
-            <li><a href="/general/overview-dynamic-delivery.html">Overview of Dynamic Delivery</a></li>
-
-
-
-            <li><a href="/general/protecting-videos-hls-encryption.html">Protecting Videos with HLS Encryption</a></li>
-
-
-
-            <li><a href="/general/related-content.html">Related Content</a></li>
-
-
-
-            <li><a href="/general/supported-video-and-audio-formats-codecs-and-containers.html">Supported Video and Audio Formats</a></li>
-
-
-
-            <li><a href="/general/using-multiple-languages.html">Using Multiple Languages</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/ott-plugins/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;OTT Plugins</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/ott-plugins/learning-guide-corptv-plugins.html">Learning Guide: OTT Plugins</a></li>
-
-
-
-            <li><a href="/ott-plugins/javascript-modules-beacon-plugins.html">Use JavaScript Modules for Plugins</a></li>
-
-
-
-            <li><a href="/ott-plugins/dispatching-handling-events.html">Dispatch & Handle Events in Plugins</a></li>
-
-
-
-            <li><a href="/ott-plugins/custom-page.html">Creating a Custom Page</a></li>
-
-
-
-            <li><a href="/ott-plugins/buttons-and-events.html">Implement Buttons and Event Handlers</a></li>
-
-
-
-            <li><a href="/ott-plugins/custom-divs.html">Implement Custom Sections</a></li>
-
-
-
-            <li><a href="/ott-plugins/side-panel.html">Implement the Side Panel</a></li>
-
-
-
-            <li><a href="/ott-plugins/user-events.html">Implement User Events</a></li>
-
-
-
-            <li><a href="/ott-plugins/data-module.html">Storing Data in a Separate Module</a></li>
-
-
-
-            <li><a href="/ott-plugins/working-with-page-events.html">Working with Page Events</a></li>
-
-
-          </ul>
-
-
-
-          <h5 class="submenu-header"><a href="/support/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Support</a></h5>
-          <ul class="sidenav-submenu" style="display:none;">
-
-
-            <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing the Brightcove System Status Page</a></li>
-
-
-
-            <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
-
-
-
-            <li><a href="/support/reset-support-portal-password.html">Reset Your Support Portal Password</a></li>
-
-
-
-            <li><a href="/support/contact-sales.html">Contact Sales</a></li>
-
-
-          </ul>
-
-
-        </nav>
-      </div>
-      <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
-        <!-- bootstrap layout -->
-
-        <p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
-
-        <!-- search bar -->
-        <div id="nav-search-box" style="margin-top: 1rem;"></div>
-        <!-- in-page navigation for narrow screens -->
-        <details class="centered-inpage-nav" id="centered_inpage_nav">
-          <summary>
-            <h6 class="toc">Page Contents</h6>
-          </summary>
-          <nav id="centered_toc"></nav>
-          <ul id="centered_in_page_toc" class="list-none"></ul>
-        </details>
-
-
-        <h1>Overview: Brightcove CorpTV Web Store</h1>
-        <article class="bcls-article">
-          <summary>This topic provides an overview of the Brightcove CorpTV Web Store service.</summary>
-          <section class="bcls-section">
-            <h2 id="Introduction">Introduction</h2>
-            <p>The CorpTV Web Store is a configuration, features and API integration that enables CorpTV licensees to implement subscriptions, in Bring Your Own (BYO) web stores. The content owners implement the store front and business logic for renting and selling and the payment system integration in the web store. An CorpTV API provides the interface for the store to add, remove and edit the resulting entitlement changes within the CorpTV CMS. The logic defining access and display of the content titles in CorpTV apps is unchanged.</p>
-            <p>Implementation of all financial reporting, dashboards, and tax payment are not managed or tracked in CorpTV and are the responsibility of the Content Owner.</p>
-          </section>
-          <section class="bcls-section">
-            <h2 id="glossary_of_terms">Glossary of terms</h2>
-            <p>The table below explains terms used in this topic.</p>
-            <table class="bcls-table">
-              <caption class="bcls-caption--table">Glossary of Terms</caption>
-              <thead class="bcls-table__head">
-                <tr>
-                  <th>Term</th>
-                  <th>Explanation</th>
-                </tr>
-              </thead>
-              <tbody class="bcls-table__body">
-                <tr>
-                  <td>Web Store</td>
-                  <td>A BYO commerce website for selling, renting and selling subscriptions</td>
-                </tr>
-                <tr>
-                  <td>Payment processor</td>
-                  <td>A system used by the web store to process transactions and deposit revenue into an account</td>
-                </tr>
-                <tr>
-                  <td>SKU</td>
-                  <td>Identifier for CorpTV Assets</td>
-                </tr>
-                <tr>
-                  <td>SVOD</td>
-                  <td>Subscription VOD, recurring payment model</td>
-                </tr>
-                <!-- <tr>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html"><span style="color:#8E9093">+</span>&nbsp;&nbsp;Support</a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing the Brightcove System Status Page</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/reset-support-portal-password.html">Reset Your Support Portal Password</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">Contact Sales</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Page Contents</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+
+
+<h1>Overview: Brightcove CorpTV Web Store</h1>
+<article class="bcls-article">
+  <summary>This topic provides an overview of the Brightcove CorpTV Web Store service.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>The CorpTV Web Store is a configuration, features and API integration that enables CorpTV licensees to implement subscriptions, in Bring Your Own (BYO) web stores. The content owners implement the store front and business logic for renting and selling and the payment system integration in the web store. An CorpTV API provides the interface for the store to add, remove and edit the resulting entitlement changes within the CorpTV CMS. The logic defining access and display of the content titles in CorpTV apps is unchanged.</p>
+    <p>Implementation of all financial reporting, dashboards, and tax payment are not managed or tracked in CorpTV and are the responsibility of the Content Owner.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="glossary_of_terms">Glossary of terms</h2>
+    <p>The table below explains terms used in this topic.</p>
+    <table class="bcls-table">
+      <caption class="bcls-caption--table">Glossary of Terms</caption>
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Term</th>
+          <th>Explanation</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>Web Store</td>
+          <td>A BYO commerce website for selling, renting and selling subscriptions</td>
+        </tr>
+        <tr>
+          <td>Payment processor</td>
+          <td>A system used by the web store to process transactions and deposit revenue into an account</td>
+        </tr>
+        <tr>
+          <td>SKU</td>
+          <td>Identifier for CorpTV Assets</td>
+        </tr>
+        <tr>
+          <td>SVOD</td>
+          <td>Subscription VOD, recurring payment model</td>
+        </tr>
+        <!-- <tr>
           <td>TVOD</td>
           <td>One time purchase or rental payment model</td>
         </tr> -->
-                <tr>
-                  <td>Plan</td>
-                  <td>An SVOD offer definition</td>
-                </tr>
-                <tr>
-                  <td>UMS</td>
-                  <td>User Management System</td>
-                </tr>
-                <tr>
-                  <td>Proxy UMS</td>
-                  <td>Proxy copies of users that map to master copies in BYO UMS. CorpTV entitlements are managed in the Proxy UMS system.</td>
-                </tr>
-                <tr>
-                  <td>OIDC</td>
-                  <td>Open ID Connect, a protocol to communication Authorization during Authentication</td>
-                </tr>
-                <tr>
-                  <td>Authentication</td>
-                  <td>Identification of specific users for the purpose of granting access </td>
-                </tr>
-                <tr>
-                  <td>Authorization</td>
-                  <td>Communicating user entitlements via tokens upon login</td>
-                </tr>
-                <tr>
-                  <td>In App Purchase (available in Q2 2021)</td>
-                  <td>For cases where customers are adding CorpTV apps to their web store product offers, and wish to sell the new product configurations through app stores, CorpTV Stores can be configured for in app purchase. </td>
-                </tr>
-                <tr>
-                  <td>Entitlements</td>
-                  <td>Access to CorpTV content or features</td>
-                </tr>
-                <tr>
-                  <td>Purchase Notifications</td>
-                  <td>A message, sent from a CorpTV store to CorpTV CMS that indicates a change in purchase status (purchase, cancel) of a subscription or asset rights</td>
-                </tr>
-                <tr>
-                  <td>Connected TVs</td>
-                  <td>HDMI connected external devices that provide app management support to televisions: Apple TV, FireTV, Roku, and Android TV STBs</td>
-                </tr>
-                <tr>
-                  <td>Smart TV</td>
-                  <td>Televisions with built-in support for app management</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section class="bcls-section">
-            <h2 id="Beacon_Store_Components">CorpTV Store components</h2>
-            <p>All CorpTV Store purchases are made through web stores. The selling model requires Viewers to visit the customer web store, purchase content and then open CorpTV apps on their supported devices as a separate action.</p>
-            <p>The required components are:</p>
-            <table class="bcls-table">
-              <caption class="bcls-caption--table">CorpTV Store Components</caption>
-              <thead class="bcls-table__head">
-                <tr>
-                  <th>Component</th>
-                  <th>Responsibility</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody class="bcls-table__body">
-                <tr>
-                  <td>Web Store</td>
-                  <td>Content Owner</td>
-                  <td>A user provided web store that implements the logic and process for selling and renting access to individual content titles and renewable subscriptions.</td>
-                </tr>
-                <tr>
-                  <td>Payment Processor</td>
-                  <td>Content Owner</td>
-                  <td>A system for processing payments for items sold through the web store. This service will transact credit card debit card, e-wallet, and QR code payments in local currency and settle with the bank of the content owner.</td>
-                </tr>
-                <tr>
-                  <td>User Management System</td>
-                  <td>Content Owner</td>
-                  <td>A User Management System must be provided for storing records of registered users. The owners of existing web stores will want to maintain their existing UMS since it contains all of the historical information about their customers.</td>
-                </tr>
-                <tr>
-                  <td>Brightcove CorpTV</td>
-                  <td>Brightcove</td>
-                  <td>Brightcove CorpTV provides configuration and packaging of content into named SKUs that are sold on the web store and the CorpTV Entitlements API where the web store registers entitlements for specific content access rights in viewer records.</td>
-                </tr>
-                <tr>
-                  <td>Entitlement Notifications</td>
-                  <td>Brightcove and Content Owner</td>
-                  <td>
-                    The Webstore sends notifications of commerce events such as subscription purchase or cancellation to CorpTV and CorpTV updates the user entitlements to CorpTV assets in the CorpTV UMS.
-                    <p>(Coming in Q2 2021) In cases where CorpTV Store In App Purchases are required, the web store will maintain a separate entitlements database that must be updated. CorpTV will send notifications to an end point defined by the customer and their system is responsible for maintaining the matching entitlements. </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section class="bcls-section">
-            <h2 id="Beacon_Store_Workflows_and_Configurations">CorpTV Store Workflows and Configurations</h2>
-            <p>You may well have already had a commerce web sites as an integral component of their businesses prior to introducing CorpTV and want to add CorpTV subscriptions to your web store products. The web stores consist of three components:</p>
-            <ol>
-              <li><strong>Web store</strong> - The web store is your organization’s commerce site. It presents the products, pricing and purchase models. </li>
-              <li><strong>Payment processor</strong> - The payment processor is a system that processes transactions, accepting payment from credit cards, debit cards and e-wallets, deposits the payments in the organization’s bank account and sends receipts to the purchaser.</li>
-              <li><strong>User Management System</strong> - Your organization maintains a list of their registered patrons in their UMS.</li>
-            </ol>
+        <tr>
+          <td>Plan</td>
+          <td>An SVOD offer definition</td>
+        </tr>
+        <tr>
+          <td>UMS</td>
+          <td>User Management System</td>
+        </tr>
+        <tr>
+          <td>Proxy UMS</td>
+          <td>Proxy copies of users that map to master copies in BYO UMS. CorpTV entitlements are managed in the Proxy UMS system.</td>
+        </tr>
+        <tr>
+          <td>OIDC</td>
+          <td>Open ID Connect, a protocol to communication Authorization during Authentication</td>
+        </tr>
+        <tr>
+          <td>Authentication</td>
+          <td>Identification of specific users for the purpose of granting access </td>
+        </tr>
+        <tr>
+          <td>Authorization</td>
+          <td>Communicating user entitlements via tokens upon login</td>
+        </tr>
+        <tr>
+          <td>In App Purchase (available in Q2 2021)</td>
+          <td>For cases where customers are adding CorpTV apps to their web store product offers, and wish to sell the new product configurations through app stores, CorpTV Stores can be configured for in app purchase. </td>
+        </tr>
+        <tr>
+          <td>Entitlements</td>
+          <td>Access to CorpTV content or features</td>
+        </tr>
+        <tr>
+          <td>Purchase Notifications</td>
+          <td>A message, sent from a CorpTV store to CorpTV CMS that indicates a change in purchase status (purchase, cancel) of a subscription or asset rights</td>
+        </tr>
+        <tr>
+          <td>Connected TVs</td>
+          <td>HDMI connected external devices that provide app management support to televisions: Apple TV, FireTV, Roku, and Android TV STBs</td>
+        </tr>
+        <tr>
+          <td>Smart TV</td>
+          <td>Televisions with built-in support for app management</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Beacon_Store_Components">CorpTV Store components</h2>
+    <p>All CorpTV Store purchases are made through web stores. The selling model requires Viewers to visit the customer web store, purchase content and then open CorpTV apps on their supported devices as a separate action.</p>
+    <p>The required components are:</p>
+    <table class="bcls-table">
+      <caption class="bcls-caption--table">CorpTV Store Components</caption>
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Component</th>
+          <th>Responsibility</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>Web Store</td>
+          <td>Content Owner</td>
+          <td>A user provided web store that implements the logic and process for selling and renting access to individual content titles and renewable subscriptions.</td>
+        </tr>
+        <tr>
+          <td>Payment Processor</td>
+          <td>Content Owner</td>
+          <td>A system for processing payments for items sold through the web store. This service will transact credit card debit card, e-wallet, and QR code payments in local currency and settle with the bank of the content owner.</td>
+        </tr>
+        <tr>
+          <td>User Management System</td>
+          <td>Content Owner</td>
+          <td>A User Management System must be provided for storing records of registered users. The owners of existing web stores will want to maintain their existing UMS since it contains all of the historical information about their customers.</td>
+        </tr>
+        <tr>
+          <td>Brightcove CorpTV</td>
+          <td>Brightcove</td>
+          <td>Brightcove CorpTV provides configuration and packaging of content into named SKUs that are sold on the web store and the CorpTV Entitlements API where the web store registers entitlements for specific content access rights in viewer records.</td>
+        </tr>
+        <tr>
+          <td>Entitlement Notifications</td>
+          <td>Brightcove and Content Owner</td>
+          <td>
+            The Webstore sends notifications of commerce events such as subscription purchase or cancellation to CorpTV and CorpTV updates the user entitlements to CorpTV assets in the CorpTV UMS.
+            <p>(Coming in Q2 2021) In cases where CorpTV Store In App Purchases are required, the web store will maintain a separate entitlements database that must be updated. CorpTV will send notifications to an end point defined by the customer and their system is responsible for maintaining the matching entitlements. </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Beacon_Store_Workflows_and_Configurations">CorpTV Store Workflows and Configurations</h2>
+    <p>You may well have already had a commerce web sites as an integral component of their businesses prior to introducing CorpTV and want to add CorpTV subscriptions to your web store products. The web stores consist of three components:</p>
+    <ol>
+      <li><strong>Web store</strong> - The web store is your organization’s commerce site. It presents the products, pricing and purchase models. </li>
+      <li><strong>Payment processor</strong> - The payment processor is a system that processes transactions, accepting payment from credit cards, debit cards and e-wallets, deposits the payments in the organization’s bank account and sends receipts to the purchaser.</li>
+      <li><strong>User Management System</strong> - Your organization maintains a list of their registered patrons in their UMS.</li>
+    </ol>
 
-            <p>The CorpTV Store integration has two development activities</p>
-            <ol>
-              <li><strong>CorpTV receives notifications of financial transactions from the web store</strong> - Sales and cancellations of CorpTV subscriptions from the web store are reported to a CorpTV API. CorpTV adds or removes entitlements based on these notifications.</li>
-              <li><strong>Connect and synchronize the CorpTV and Web Store User Management Systems</strong> - The Webstore UMS user record contains the master record and the user and is the source of stored user data. Proxy users are created in the CorpTV UMS for each of the registered patrons. CorpTV assigns entitlements to the proxy user record upon receiving transaction notifications. Changes in the store UMS such as adding and deleting users are applied to matching user records in the CorpTV UMS.
-              </li>
-            </ol>
-          </section>
-          <section class="bcls-section">
-            <h2 id="Beacon_Store_Configurations">CorpTV Store Configurations</h2>
-            <p>CorpTV Stores are pre-existing, customer owned and operated BYO web stores that are integrated with CorpTV for the purpose of adding CorpTV subscriptions to the list of products sold on the web store. Arts organizations provide an example illustrating the two primary selling models for supporting this objective.</p>
-            <p>Arts organizations currently sell subscriptions, tickets and physical merchandise related to performances through their web stores. Therefore, there are existing web stores, user management, payment processing and entitlement tracking systems in place to manage that commerce.</p>
-            <p>Some organizations have decided to expand their audience by including virtual access to these same events as well as recorded content. They further want to consolidate the entire commerce management process within their web stores.</p>
-            <p>A subset of organizations want to achieve the same result with their web stores, and want to sell those same products as in app purchases in the app stores (Apple Store, Google Play, Amazon, Roku and the Stripe integration with the CorpTV Web app).</p>
-          </section>
-          <section class="bcls-section">
-            <h2 id="Web_Store_Only_Purchases">Web Store Only Purchases</h2>
-            <p>Web store only workflow is implemented as shown in Figure 1. The customer brings their own web store, payment processor and UMS. The integration points are:</p>
-            <ul>
-              <li>
-                <strong>UMS Proxy Users</strong> - The full records of the registered users are maintained in the customer’s BYO UMS and that is the source of truth for user account and account management of the user. User authentication on login occurs in the BYO UMS. Proxy users are created in the CorpTV UMS upon authentication or subscription. When users are deleted from the UMS, proxy users are also deleted from CorpTV.
-                <p>The synchronization for authentication and account management is accomplished using OIDC (<a href="https://openid.net/developers/specs/">Open ID Connect</a>) protocol, an extension of OAuth 2.0. You must either provide a system with native OIDC support or update your UMS interface to support OIDC.</p>
-              </li>
-              <li><strong>Purchase Notification</strong> - The web store is modified by you to send notifications of Commerce Events to the CorpTV Entitlements API. The notification includes the USER ID and PRODUCT SKU. When CorpTV receives the notification the appropriate update to the entitlement in the User record is recorded in the CorpTV UMS. Thus bestowing or revoking the entitlement that enables the user to view content in CorpTV apps. The technical Entitlements API interface is defined in <a href="/CorpTV-web-store/integration-details.html">CorpTV Integration Details</a></li>
-            </ul>
-            <figure class="bcls-figure">
-              <img class="bcls-image" src="/assets/images/CorpTV-web-store/CorpTV-store.png" alt="CorpTV Store">
-              <figcaption class="bcls-caption--image">CorpTV Store</figcaption>
-            </figure>
-            <p>Configuration details:</p>
-            <ul>
-              <li>The subscription definitions in webstore and CorpTV <strong>MUST</strong> be configured with the IDENTICAL SKU names.</li>
-              <li>The web store notifications are sent to a web hook URL that is presented from the CorpTV CMS.</li>
-            </ul>
-          </section>
-          <section class="bcls-section">
-            <h2 id="Beacon_Store_with_In_App_Purchases">CorpTV Store with In App Purchases</h2>
-            <p>The Web store within the app purchase workflow is implemented as shown in Figure 2. In this model, in app purchases can be made from the Amazon, Apple, Google and Roku stores and the your web store. You are responsible for:</p>
-            <ul>
-              <li>Your own web store</li>
-              <li>The payment processor</li>
-              <li>The UMS</li>
-              <li>Merchant accounts at the required stores</li>
-            </ul>
-            <p>Brightcove CorpTV provides the in app purchase integrations. The integration points are modified from what is described in the previous section to include payment notification FROM CorpTV TO the webstore of successful in app purchases that occur. The notification messages generate by CorpTV follow a similar schema.</p>
-            <figure class="bcls-figure">
-              <img class="bcls-image" src="/assets/images/CorpTV-web-store/CorpTV-store-with-in-app-purchases.png" alt="CorpTV Store with In-App Purchases">
-              <figcaption class="bcls-caption--image">CorpTV Store with In-App Purchases</figcaption>
-            </figure>
-            <p>Configuration details:</p>
-            <ul>
-              <li>The subscription definitions in webstore and CorpTV <strong>MUST</strong> be configured with the IDENTICAL SKU names.</li>
-              <li>The web store notifications are sent to a web hook URL that is presented from the CorpTV CMS.</li>
-              <li>CorpTV communications are sent to a webhook URL that is presented from a service of the your choosing.</li>
-            </ul>
-          </section>
-          <section class="bcls-section">
-            <h2 id="User_Management_Systems">User Management Systems</h2>
-            <p>The typical use case for CorpTV stores is the integration of CorpTV with a pre-existing, established web store. Less common is the launch of a new service with a new web store for managing commerce.</p>
-            <h3>Externally Connected UMS</h3>
-            <p>Pre-existing web stores are always integrated with user management and payment processing systems. In this case, your goal is to integrate CorpTV within the pre-existing commerce configuration. Your UMS will remain the point of authentication and user record management. Therefore, the integration will use the customers UMS to authenticate and Authorize CorpTV users. The user’s email address is used as the account ID and the entitlements are associated with that account. All user personal information data is stored in the BYO UMS.</p>
-            <p>External BYO UMS systems interface with CorpTV using the OIDC interface protocol. Open ID Connect is an extension to OAuth that standardizes identity token schemas.</p>
-            <h3>Mobile and Web UMS Configuration</h3>
-            <figure class="bcls-figure">
-              <img class="bcls-image" src="/assets/images/CorpTV-web-store/mobile-web-ums.png" alt="Mobile and Web UMS">
-              <figcaption class="bcls-caption--image">Mobile and Web UMS</figcaption>
-            </figure>
-            <ol>
-              <li>User selects to login in CorpTV App</li>
-              <li>App interacts with the OIDC provider to guide users through login flow. On success, access, refresh and identity tokens are provided to the app</li>
-              <li>App uses access token to connect to CorpTV backend</li>
-              <li>CorpTV backend validates access token</li>
-            </ol>
-            <h3>Connected and SmartTV UMS Configuration</h3>
-            <figure class="bcls-figure">
-              <img class="bcls-image" src="/assets/images/CorpTV-web-store/tv-ums.png" alt="Connected and SmartTV UMS">
-              <figcaption class="bcls-caption--image">Connected and SmartTV UMS</figcaption>
-            </figure>
-            <ol>
-              <li>User selects to login in CorpTV App</li>
-              <li>App requests a device code</li>
-              <li>User goes to Mobile or web device, enters authentication URL and device code</li>
-              <li>Device interacts with OIDC provider to authenticate user</li>
-              <li>Connected or Smart TV continuously poll the OIDC provider to find out if user authenticated, when authenticated, access, refresh and identity tokens are provided to the app</li>
-              <li>App uses access token to connect to CorpTV backend</li>
-              <li>CorpTV backend validates access token</li>
-            </ol>
-          </section>
-          <section class="bcls-section">
-            <h2 id="Beacon_User_Management_Autosync">CorpTV User Management Autosync</h2>
-            <p>When integrating an existing UMS with CorpTV, proxy users must be created in the CorpTV UMS so that entitlements created by CorpTV Store sales notifications can be assigned to the proper user.</p>
-            <p>Users are maintained in CorpTV as a result of events in the customer’s UMS. Through the OIDC interface, users are created in CorpTV when they authenticate in the external UMS or if an entitlement is sent to CorpTV. No manual synchronization is required.</p>
-          </section>
-          <section class="bcls-section">
-            <h2 id="Beacon_Store_Monetization_Models">CorpTV Store Monetization Models</h2>
-            <p>CorpTV Stores are configurable to support SVOD transactions. Configuration details:</p>
-            <h3>SVOD configuration</h3>
-            <h4>CorpTV configuration</h4>
-            <ol class="bcls-tasklist-restart">
-              <li>Create an SVOD Plan in CorpTV</li>
-              <li>Set state to UNPUBLISHED in CorpTV</li>
-              <li>Define a SKU for the plan in CorpTV</li>
-              <li>Assign content to the plan</li>
-            </ol>
-            <h4>Web store configuration</h4>
-            <ol class="bcls-tasklist-restart">
-              <li>Create an SVOD Plan/product in the web store and web store payment system</li>
-              <li>Give the play <strong>the same name as that used in CorpTV</strong></li>
-              <li>Copy the SKU from CorpTV into the SKU ID in the web store payment system</li>
-            </ol>
-            <!-- <h3>TVOD configuration</h3>
+    <p>The CorpTV Store integration has two development activities</p>
+    <ol>
+      <li><strong>CorpTV receives notifications of financial transactions from the web store</strong> - Sales and cancellations of CorpTV subscriptions from the web store are reported to a CorpTV API. CorpTV adds or removes entitlements based on these notifications.</li>
+      <li><strong>Connect and synchronize the CorpTV and Web Store User Management Systems</strong> - The Webstore UMS user record contains the master record and the user and is the source of stored user data. Proxy users are created in the CorpTV UMS for each of the registered patrons. CorpTV assigns entitlements to the proxy user record upon receiving transaction notifications. Changes in the store UMS such as adding and deleting users are applied to matching user records in the CorpTV UMS.
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Beacon_Store_Configurations">CorpTV Store Configurations</h2>
+    <p>CorpTV Stores are pre-existing, customer owned and operated BYO web stores that are integrated with CorpTV for the purpose of adding CorpTV subscriptions to the list of products sold on the web store. Arts organizations provide an example illustrating the two primary selling models for supporting this objective.</p>
+    <p>Arts organizations currently sell subscriptions, tickets and physical merchandise related to performances through their web stores. Therefore, there are existing web stores, user management, payment processing and entitlement tracking systems in place to manage that commerce.</p>
+    <p>Some organizations have decided to expand their audience by including virtual access to these same events as well as recorded content. They further want to consolidate the entire commerce management process within their web stores.</p>
+    <p>A subset of organizations want to achieve the same result with their web stores, and want to sell those same products as in app purchases in the app stores (Apple Store, Google Play, Amazon, Roku and the Stripe integration with the CorpTV Web app).</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Web_Store_Only_Purchases">Web Store Only Purchases</h2>
+    <p>Web store only workflow is implemented as shown in Figure 1. The customer brings their own web store, payment processor and UMS. The integration points are:</p>
+    <ul>
+      <li>
+        <strong>UMS Proxy Users</strong> - The full records of the registered users are maintained in the customer’s BYO UMS and that is the source of truth for user account and account management of the user. User authentication on login occurs in the BYO UMS. Proxy users are created in the CorpTV UMS upon authentication or subscription. When users are deleted from the UMS, proxy users are also deleted from CorpTV.
+        <p>The synchronization for authentication and account management is accomplished using OIDC (<a href="https://openid.net/developers/specs/">Open ID Connect</a>) protocol, an extension of OAuth 2.0. You must either provide a system with native OIDC support or update your UMS interface to support OIDC.</p>
+      </li>
+      <li><strong>Purchase Notification</strong> - The web store is modified by you to send notifications of Commerce Events to the CorpTV Entitlements API. The notification includes the USER ID and PRODUCT SKU. When CorpTV receives the notification the appropriate update to the entitlement in the User record is recorded in the CorpTV UMS. Thus bestowing or revoking the entitlement that enables the user to view content in CorpTV apps. The technical Entitlements API interface is defined in <a href="/CorpTV-web-store/integration-details.html">CorpTV Integration Details</a></li>
+    </ul>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/CorpTV-web-store/CorpTV-store.png" alt="CorpTV Store">
+      <figcaption class="bcls-caption--image">CorpTV Store</figcaption>
+    </figure>
+    <p>Configuration details:</p>
+    <ul>
+      <li>The subscription definitions in webstore and CorpTV <strong>MUST</strong> be configured with the IDENTICAL SKU names.</li>
+      <li>The web store notifications are sent to a web hook URL that is presented from the CorpTV CMS.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Beacon_Store_with_In_App_Purchases">CorpTV Store with In App Purchases</h2>
+    <p>The Web store within the app purchase workflow is implemented as shown in Figure 2. In this model, in app purchases can be made from the Amazon, Apple, Google and Roku stores and the your web store. You are responsible for:</p>
+    <ul>
+      <li>Your own web store</li>
+      <li>The payment processor</li>
+      <li>The UMS</li>
+      <li>Merchant accounts at the required stores</li>
+    </ul>
+    <p>Brightcove CorpTV provides the in app purchase integrations. The integration points are modified from what is described in the previous section to include payment notification FROM CorpTV TO the webstore of successful in app purchases that occur. The notification messages generate by CorpTV follow a similar schema.</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/CorpTV-web-store/CorpTV-store-with-in-app-purchases.png" alt="CorpTV Store with In-App Purchases">
+      <figcaption class="bcls-caption--image">CorpTV Store with In-App Purchases</figcaption>
+    </figure>
+    <p>Configuration details:</p>
+    <ul>
+      <li>The subscription definitions in webstore and CorpTV <strong>MUST</strong> be configured with the IDENTICAL SKU names.</li>
+      <li>The web store notifications are sent to a web hook URL that is presented from the CorpTV CMS.</li>
+      <li>CorpTV communications are sent to a webhook URL that is presented from a service of the your choosing.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="User_Management_Systems">User Management Systems</h2>
+    <p>The typical use case for CorpTV stores is the integration of CorpTV with a pre-existing, established web store. Less common is the launch of a new service with a new web store for managing commerce.</p>
+    <h3>Externally Connected UMS</h3>
+    <p>Pre-existing web stores are always integrated with user management and payment processing systems. In this case, your goal is to integrate CorpTV within the pre-existing commerce configuration. Your UMS will remain the point of authentication and user record management. Therefore, the integration will use the customers UMS to authenticate and Authorize CorpTV users. The user’s email address is used as the account ID and the entitlements are associated with that account. All user personal information data is stored in the BYO UMS.</p>
+    <p>External BYO UMS systems interface with CorpTV using the OIDC interface protocol. Open ID Connect is an extension to OAuth that standardizes identity token schemas.</p>
+    <h3>Mobile and Web UMS Configuration</h3>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/CorpTV-web-store/mobile-web-ums.png" alt="Mobile and Web UMS">
+      <figcaption class="bcls-caption--image">Mobile and Web UMS</figcaption>
+    </figure>
+    <ol>
+      <li>User selects to login in CorpTV App</li>
+      <li>App interacts with the OIDC provider to guide users through login flow. On success, access, refresh and identity tokens are provided to the app</li>
+      <li>App uses access token to connect to CorpTV backend</li>
+      <li>CorpTV backend validates access token</li>
+    </ol>
+    <h3>Connected and SmartTV UMS Configuration</h3>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/CorpTV-web-store/tv-ums.png" alt="Connected and SmartTV UMS">
+      <figcaption class="bcls-caption--image">Connected and SmartTV UMS</figcaption>
+    </figure>
+    <ol>
+      <li>User selects to login in CorpTV App</li>
+      <li>App requests a device code</li>
+      <li>User goes to Mobile or web device, enters authentication URL and device code</li>
+      <li>Device interacts with OIDC provider to authenticate user</li>
+      <li>Connected or Smart TV continuously poll the OIDC provider to find out if user authenticated, when authenticated, access, refresh and identity tokens are provided to the app</li>
+      <li>App uses access token to connect to CorpTV backend</li>
+      <li>CorpTV backend validates access token</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Beacon_User_Management_Autosync">CorpTV User Management Autosync</h2>
+    <p>When integrating an existing UMS with CorpTV, proxy users must be created in the CorpTV UMS so that entitlements created by CorpTV Store sales notifications can be assigned to the proper user.</p>
+    <p>Users are maintained in CorpTV as a result of events in the customer’s UMS. Through the OIDC interface, users are created in CorpTV when they authenticate in the external UMS or if an entitlement is sent to CorpTV. No manual synchronization is required.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Beacon_Store_Monetization_Models">CorpTV Store Monetization Models</h2>
+    <p>CorpTV Stores are configurable to support SVOD transactions. Configuration details:</p>
+    <h3>SVOD configuration</h3>
+    <h4>CorpTV configuration</h4>
+    <ol class="bcls-tasklist-restart">
+      <li>Create an SVOD Plan in CorpTV</li>
+      <li>Set state to UNPUBLISHED in CorpTV</li>
+      <li>Define a SKU for the plan in CorpTV</li>
+      <li>Assign content to the plan</li>
+    </ol>
+    <h4>Web store configuration</h4>
+    <ol class="bcls-tasklist-restart">
+      <li>Create an SVOD Plan/product in the web store and web store payment system</li>
+      <li>Give the play <strong>the same name as that used in CorpTV</strong></li>
+      <li>Copy the SKU from CorpTV into the SKU ID in the web store payment system</li>
+    </ol>
+    <!-- <h3>TVOD configuration</h3>
     <p>(TBD)</p> -->
-          </section>
-        </article>
-        <!-- complete bootstrap layout -->
-        <!-- <nav id="more_resources">
+  </section>
+</article>
+<!-- complete bootstrap layout -->
+<!-- <nav id="more_resources">
   <h2 id="more_resources_header" style="margin-left: 1rem !important;">More Resources</h2>
   <ul style="list-style: none;">
     <li><a href="" target="_blank"><img src="/assets/images/feather/search.svg" alt="Search" >Search Brightcove CorpTV Documentation <i data-feather="external-link"></i></a></li>
@@ -1605,130 +1593,130 @@
     <li><a href="https://supportportal.brightcove.com/s/login/" target="_blank"><img src="/assets/images/feather/message-circle.svg" alt="Contact Support"> Contact Support <img src="/assets/images/feather/external-link-blue.svg" alt="External Link"class="external-link-icon"></a></li>
   </ul>
 </nav> -->
-      </div>
-      <div class="col-sm-2 right-side-bar">
-
-        <nav class="right-side-nav" id="right_side_nav">
-          <h6 class="toc">Page Contents</h6>
-          <ul id="in_page_nav" class="list-none"></ul>
-        </nav>
-
-
-      </div>
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+      
     </div>
   </div>
+</div>
 
-  <hr>
-  <div id="last_updated" class="last-updated">
-    Page last updated on 03 Feb 2022
-  </div>
+<hr>
+<div id="last_updated" class="last-updated">
+  Page last updated on 03 Feb 2022
+</div>
 
 
 
 
-  <div class="footer-container">
-    <footer class="bcls-footer" role="contentinfo">
-      <div class="row">
-        <div class="region region-footer-top-center col-md-12">
-          <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
-            <img src="https://support.brightcove.com/site-assets/images/site/SVG/COVE004_Brightcove_Logo_093020_RGB_KO.svg" class="bc-footer-logo" alt="Brightcove">
-
-            <h2>Brightcove Support</h2>
-
-            <ul class="menu">
-              <li>
-                <a href="https://status.brightcove.com">System Status</a>
-              </li>
-              <li>
-                <a href="https://supportportal.brightcove.com">Contact Support</a>
-              </li>
-              <li>
-                <a href="https://support.brightcove.com/">Documentation</a>
-              </li>
-            </ul>
-
-          </nav>
-          <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
-
-            <h2>Training</h2>
-
-            <ul class="menu">
-              <li>
-                <a href="https://studio.support.brightcove.com/training/online-training-courses.html">Online Courses</a>
-              </li>
-              <li>
-                <a href="https://studio.support.brightcove.com/training/register-training.html">Register for a course</a>
-              </li>
-              <li>
-                <a href="https://university.brightcove.com/">Brightcove University</a>
-              </li>
-            </ul>
-
-          </nav>
-          <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
-
-            <h2>Brightcove</h2>
-
-            <ul class="menu">
-              <li>
-                <a href="https://www.brightcove.com">Brightcove.com</a>
-              </li>
-              <li>
-                <a href="https://supportportal.brightcove.com">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+<div class="footer-container">
+  <footer class="bcls-footer" role="contentinfo">
+    <div class="row">
+      <div class="region region-footer-top-center col-md-12">
+        <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+          <img src="https://support.brightcove.com/site-assets/images/site/SVG/COVE004_Brightcove_Logo_093020_RGB_KO.svg" class="bc-footer-logo" alt="Brightcove">
+  
+          <h2>Brightcove Support</h2>
+  
+          <ul class="menu">
+            <li>
+              <a href="https://status.brightcove.com">System Status</a>
+            </li>
+            <li>
+              <a href="https://supportportal.brightcove.com">Contact Support</a>
+            </li>
+            <li>
+              <a href="https://support.brightcove.com/">Documentation</a>
+            </li>
+          </ul>
+  
+        </nav>
+        <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+  
+          <h2>Training</h2>
+  
+          <ul class="menu">
+            <li>
+              <a href="https://studio.support.brightcove.com/training/online-training-courses.html">Online Courses</a>
+            </li>
+            <li>
+              <a href="https://studio.support.brightcove.com/training/register-training.html">Register for a course</a>
+            </li>
+            <li>
+              <a href="https://university.brightcove.com/">Brightcove University</a>
+            </li>
+          </ul>
+  
+        </nav>
+        <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+  
+          <h2>Brightcove</h2>
+  
+          <ul class="menu">
+            <li>
+              <a href="https://www.brightcove.com">Brightcove.com</a>
+            </li>
+            <li>
+              <a href="https://supportportal.brightcove.com">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="row">
-        <div class="region region-footer-bottom-center col-md-12">
-          <div class="bcls-copyright footer-menu">
-            <table>
-              <tr>
-                <td>
-                  <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
-                </td>
-                <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
-                <td>
-                  <div class="gf-links-cols footer-menu">
-                    <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" target="_blank" class="gf-social-linkedin" style="margin-right: 1rem;"><i data-feather="linkedin" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" target="_blank" class="gf-social-twitter" style="margin-right: 1rem;"><i data-feather="twitter" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" target="_blank" class="gf-social-facebook"><i data-feather="facebook" style="color:#8E9093;height: 1.25rem;"></i></a>
-                    </div>
+    </div>
+    <div class="row">
+      <div class="region region-footer-bottom-center col-md-12">
+        <div class="bcls-copyright footer-menu">
+          <table>
+            <tr>
+              <td>
+                <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+              </td>
+              <td><a href="https://www.brightcove.com/en/legal/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+              <td>
+                <div class="gf-links-cols footer-menu">
+                  <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" target="_blank" class="gf-social-linkedin" style="margin-right: 1rem;"><i data-feather="linkedin" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" target="_blank" class="gf-social-twitter" style="margin-right: 1rem;"><i data-feather="twitter" style="color:#8E9093;height: 1.25rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" target="_blank" class="gf-social-facebook"><i data-feather="facebook" style="color:#8E9093;height: 1.25rem;"></i></a>
                   </div>
-                </td>
-              </tr>
-            </table>
-          </div>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
+</div>
 
-  <script translate="no">
-
-    var searchBox = sajari.init({
-      mode: "search-box",
-      project: "1588255093746585379", // Set this to your project.
-      collection: "brightcove-documentation", // Set this to your collection.
-      instantPipeline: "autocomplete", // Pipeline used as you type
-      inputPlaceholder: "Search", // Input element placeholder
-      maxSuggestions: 5, // Maximum number of suggestions to show
-      attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
-    });
-
+<script translate="no">
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documentation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
     searchBox("sub", "pipeline.search-sent", function (_, query) {
       window.location = "/search.html?q=" + encodeURIComponent(query.q);
     });
+  
 
-
-  </script>
+</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
   <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
-
+  
   <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
-
+  
   <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
   <script src="https://support.brightcove.com/site-assets/js/learning-paths/learning-paths.js"></script>
   <!-- <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script> -->
@@ -1739,9 +1727,9 @@
   <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
   <script src="https://support.brightcove.com/site-assets/js/site/sajari-reindex.js"></script>
   <script src="/assets/js/feedback.js"></script>
-
+  
   <script src="/assets/js/sajari-search-foot.js"></script>
-
+  
   <script translate="no">
     feather.replace()
   </script>
@@ -1751,13 +1739,12 @@
     a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
       background-color: lightblue;
     }
-
     div.sj-tabs__tab {
       margin-top: 3rem;
       margin-left: .3rem;
       border-top-left-radius: .4rem;
       border-top-right-radius: .4rem;
-      background-color: #e8e8e8;
+      background-color:#e8e8e8;
     }
 
     div.sj-tabs__tab.sj-tabs__tab--selected {
@@ -1773,7 +1760,7 @@
       color: navy;
       font-size: 1.4rem;
     }
-  </style>
+    </style>
 
 </body>
 
