@@ -1341,12 +1341,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <ul>
       <li>First, you see there are three entities involved in plugin implementation, those being:
         <ul>
-          <li>The user of the Beacon app</li>
-          <li>The Beacon app itself</li>
-          <li>The Beacon plugin functionality</li>
+          <li>The user of the CorpTV app</li>
+          <li>The CorpTV app itself</li>
+          <li>The OTT plugin functionality</li>
         </ul>
       </li>
-      <li>When the user performs an action, the Beacon app dispatches an event for which the plugin listens.</li>
+      <li>When the user performs an action, the CorpTV app dispatches an event for which the plugin listens.</li>
       <li>You can write code to perform actions in the event listener, and if needed access data in the event object data. </li>
       <li>For some events you will never or rarely code actions to perform, while other events are repeatedly utilized.</li>
     </ul>
@@ -1358,7 +1358,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
   <section class="bcls-section">
     <h2 id="Dispatching_events">Dispatching events</h2>
-    <p>Some of the Beacon plugin elements have events you can dispatch. The following describes how to dispatch events in OTT Plugins.</p>
+    <p>Some of the OTT plugin elements have events you can dispatch. The following describes how to dispatch events in OTT Plugins.</p>
     <p>The generic code for dispatching an event is:</p>
     <pre class="line-numbers"><code class="language-javascript" translate="No">window.postMessage({
   event: "<em>eventType</em>",
@@ -1405,7 +1405,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><code>function</code>: Function to run when the event occurs</li>
       <li><code>useCapture</code>: Very technical issue concerning when the event is executed; this is always <code>false</code> for OTT Plugins.</li>
     </ul>
-    <p>Following is the generic code for handling an event in Beacon plugin code:</p>
+    <p>Following is the generic code for handling an event in OTT plugin code:</p>
     <pre class="line-numbers"><code class="language-javascript" translate="No">window.addEventListener("message", (event) => {
   const originsAllowed = [
     'validhost1',
