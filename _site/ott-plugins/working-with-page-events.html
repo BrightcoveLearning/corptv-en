@@ -1336,8 +1336,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <aside class="bcls-aside bcls-aside--information language-editable">This document is one part of the OTT Plugins document collection. Since OTT Plugins are implemented using JavaScript and CSS, the target audience for this document is developers with some experience with both of those technologies. To learn more about OTT Plugins see the <a href="/ott-plugins/index.html">OTT Plugins documentation home page</a>.</aside>
     <h2 id="Introduction">Introduction</h2>
-    <p>The Beacon web apps allow you to add some of your own customizations. For example, you can create a JavaScript plugin to listen for web page events and process custom code based on your requirements. For details, see the <a href="https://beacon.support.brightcove.com/ott-plugins/index.html">OTT Plugins</a> documents.</p>
-    <p>Beacon page events are triggered by user interactions with the Beacon app. This diagram shows the relationship between the user, your Beacon web app and your plugin code.</p>
+    <p>The CorpTV web apps allow you to add some of your own customizations. For example, you can create a JavaScript plugin to listen for web page events and process custom code based on your requirements. For details, see the <a href="/ott-plugins/index.html">OTT Plugins</a> documents.</p>
+    <p>Beacon page events are triggered by user interactions with the CorpTV app. This diagram shows the relationship between the user, your CorpTV web app and your plugin code.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Beacon page events" src="/assets/images/s-ott-plugins-img/page-events/page-event-diagram.svg" />
       <figcaption class="bcls-caption--image">Beacon page events</figcaption>
     </figure>
@@ -1347,14 +1347,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3>Use cases</h3>
     <p>Here are some use cases when listening to page events:</p>
     <ul>
-      <li><code translate="No">onBeaconPageLoad</code> - When this event is triggered, you can add custom buttons, populate custom sections, and create custom pages for your Beacon web app</li>
-      <li><code translate="No">loadedBeaconVideoMetadata</code> - When this event is triggered, you can display data for the current video in your Beacon web app</li>
+      <li><code translate="No">onBeaconPageLoad</code> - When this event is triggered, you can add custom buttons, populate custom sections, and create custom pages for your CorpTV web app</li>
+      <li><code translate="No">loadedBeaconVideoMetadata</code> - When this event is triggered, you can display data for the current video in your CorpTV web app</li>
     </ul>
   </section>
 
   <section class="bcls-section">
     <h2 id="Event_listeners">Event listeners</h2>
-    <p>The following page events can be listened for by your Beacon plugin code:</p>
+    <p>The following page events can be listened for by your OTT plugin code:</p>
     <table class="bcls-table">
       <thead class="bcls-table__head">
         <tr>
@@ -1373,7 +1373,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </tr>
         <tr>
           <td><code translate="No">onBeaconPageChange</code></td>
-          <td>Called when there is a change on the Beacon web app page. For example, when you are watching a video on the details page, and select a new series, season or episode. For the Live TV page, it is also called when the selected linear channel changes.</td>
+          <td>Called when there is a change on the CorpTV web app page. For example, when you are watching a video on the details page, and select a new series, season or episode. For the Live TV page, it is also called when the selected linear channel changes.</td>
         </tr>
         <tr>
           <td><code translate="No">loadedBeaconVideoMetadata</code></td>
@@ -1522,14 +1522,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
   <section class="bcls-section">
     <h2 id="Module_implementation">Module implementation</h2>
-    <p>The following shows how to listen to Beacon web page events. For some customization examples, see the <a href="https://beacon.support.brightcove.com/ott-plugins/index.html">OTT Plugins</a> documents.</p>
-    <p>While our examples use JavaScript modules, you may implement your JavaScript in the manner of your choice. Further details on this module implementation can be found in the <a href="">Implementing Beacon Plugin Code Using Modules</a> document.</p>
+    <p>The following shows how to listen to CorpTV web page events. For some customization examples, see the <a href="/ott-plugins/index.html">OTT Plugins</a> documents.</p>
+    <p>While our examples use JavaScript modules, you may implement your JavaScript in the manner of your choice. Further details on this module implementation can be found in the <a href="">Implementing OTT Plugin Code Using Modules</a> document.</p>
 
     <h3><code translate="No">index.js</code></h3>
     <p>Here is our example code:</p>
     <pre class="line-numbers"><code class="language-javascript" translate="No">window.addEventListener(&quot;message&quot;, (event) =&gt; {
   const originsAllowed = [
-    &apos;<span class="bcls-input">your Beacon app URL</span>&apos;
+    &apos;<span class="bcls-input">your CorpTV app URL</span>&apos;
   ];
   if (originsAllowed.includes(event.origin)) {
 
