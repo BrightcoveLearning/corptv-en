@@ -209,6 +209,8 @@
           url: /channels/cloud-playout/cloud-playout-overview.html
         - name: Creating a Cloud Playout Channel
           url: /channels/cloud-playout/cloud-playout-stream-vod.html
+        - name: Configuring S3 Buckets
+          url: /channels/cloud-playout/configuring-s3-buckets.html
         - name: Using Live Redundancy
           url: /_includes/s-cloudplayout/channel-live-redundancy.html
         - name: Managing the Channel Program
