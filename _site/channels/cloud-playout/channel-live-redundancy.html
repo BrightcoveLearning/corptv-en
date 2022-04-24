@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="This topic covers how to replace a video source file." />
+  <meta name="description" content="Cloud Playout allows you to make use of Live Redundancy using either Studio module or Channels API. This topic covers Live redundancy integration using Studio." />
 
-  <title>Replacing a Video Source File</title>
+  <title>Using Live Redundancy with Channels</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -50,11 +50,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
       
       
-      <li class="breadcrumb-item"><a href="/media/">Media</a></li>
+      <li class="breadcrumb-item"><a href="/channels/">Channels</a></li>
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Replacing a Video Source File</li>
+      <li class="breadcrumb-item"><a href="/channels/cloud-playout/">Cloud playout</a></li>
+      
+      
+      
+      <li class="breadcrumb-item active" aria-current="page">Using Live Redundancy with Channels</li>
       
       
     </nav>
@@ -1333,40 +1337,40 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 </details>
 
 
+
+<h1>Using Live Redundancy with Channels</h1>
 <article class="bcls-article">
-  <h1>Replacing a Video Source File</h1>
-  <summary>This topic covers how to replace a video source file.</summary>
+  <summary>Cloud Playout allows you to make use of Live Redundancy using either Studio module or Channels API. This topic covers Live redundancy integration using Studio.</summary>
   <section class="bcls-section">
-    <p>There may be times when you want to replace the source file for a video. One common case is when you need to edit a video that was already published. If you delete the video and re-upload, you will have to re-enter all of the video metadata and you will lose any video analytics associated with the video.</p>
-    <p>While the new renditions are being created, the video will remain playable using the existing renditions.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: You cannot replace the source file for videos that have been shared to your account.</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: Video file names (including the extension) must not exceed 120 single-byte (60 double-byte) characters. If it does, the video will be ingested successfully, but you will not be able to retranscode it later.</aside>
+    <h2 id="live_redundancy">Live redundancy</h2>
+    <p>Live redundancy allows you to combine two or more live jobs into a single stream with automatic failover for uninterrupted, reliable playback.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note that integration with Live Redundancy is not turned by default. If you would like to have it turned on for your account, contact your account manager.</aside>
+    <p>The simplest way to get redundancy is to let Cloud Playout create the group:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/cloud-playout/create-redundancy-group.png" alt="Cloud Playout Creates Redundant Group">
+      <figcaption class="bcls-caption--image">Cloud Playout Creates Redundant Group</figcaption>
+    </figure>
+    <p>If you prefer to create the redundant group yourself, see <a href="https://live.support.brightcove.com/live-module/live-redundancy.html">Using Live Redundancy</a>. Once redundant groups are created using the above document you can use them in Cloud Playout.</p>
+    <h3>Redundant groups eligibility criteria</h3>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note that if you have Cloud Playout create the redundant group, it will meet the necessary criteria automatically.</aside>
+    <p>To be available for use as a Cloud Playout channel destination, a redundant group must meet the following criteria:</p>
+    <ul>
+      <li>The redundant group should contain exactly 2 live jobs.</li>
+      <li>Both live jobs in the redundant group must be of <strong>Static Entry Point</strong> type.</li>
+      <li>Set the region for <strong>one</strong> of the jobs to the region that you think will be closest to the majority of your viewers. This will be the "primary region", which you should also select as the <strong>Output Region</strong> in the Destination settings when you create the channel. Brightcove will automatically set the region for the 2nd live job to the region closest to the primary region.</li>
+      <li>The redundant group (and the jobs in it) must be in <strong>standby</strong> state.</li>
+      <li>If the Cloud Playout channel is SSAI-enabled then the redundant group must also be SSAI-enabled with <strong>RTP-FEC</strong> protocol. See <a href="https://live.support.brightcove.com/live-module/implementing-server-side-ads-live-module.html">Implementing Server-Side Ads in the Live Module</a> for more information.</li>
+    </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="steps">Steps to replace a video source file</h2>
-    <p>To replace a video source file, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the Media module.</li>
-      <li>Click <strong>All videos</strong> in the panel navigation.</li>
-      <li>Click the link for the video you want to replace the source file for.</li>
-      <li>Click the <strong>Video and Tracks</strong> tab.</li>
-      <li>Locate the <strong>Video Files</strong> section and click<strong> Replace Source File</strong>.</li>
-      <li>The <strong>Upload</strong> module will open in another tab. Confirm that the Upload module indicates that you are replacing a source file.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/replace-source-upload.png" /></figure>
-      </li>
-      <li>Select an ingest profile to use.
-        <aside class="bcls-aside bcls-aside--information">Note: Videos that were initially transcoded using a Dynamic Delivery or Context Aware ingest profile can only be retranscoded using one of those ingest profile types. Videos transcoded using a Legacy ingest profile can be retranscoded with any type of profile.</aside>
-      </li>
-      <li>Use the Upload module to upload a new source file.</li>
-      <li>Check <strong>Keep existing thumbnail and video still images</strong> to keep the existing thumbnail and poster images. Uncheck the option to have new images generated from the new source file.</li>
-      <li>Check <strong>Keep existing audio tracks</strong> to keep the existing audio tracks. Uncheck the option to have new audio tracks generated from the new source file.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/replace-source-keep-images.png" /></figure>
-      </li>
-      <li>Click <strong>Process</strong> to begin the transcoding. A <strong>Processing Complete</strong> message will display. Note that there will be a delay before the updated renditions are available. Check the <strong>Upload Date</strong> values in the <strong>Video Files</strong> section of the Media module to verify that the new renditions are available.</li>
-    </ol>
+    <h2 id="">Using Live redundancy with a channel</h2>
+    <p>A redundant group can be set as the destination for a channel either in the <strong>New Channel</strong> dialog when you create a new channel, or in the <strong>Edit Channel</strong>:</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/cloud-playout/live-redundancy-destination.png" alt="Destination: Redundant Group">
+      <figcaption class="bcls-caption--image">Destination: Redundant Group</figcaption>
+    </figure>
   </section>
 </article>
-
 <!-- complete bootstrap layout -->
 <!-- <nav id="more_resources">
   <h2 id="more_resources_header" style="margin-left: 1rem !important;">More Resources</h2>
@@ -1392,7 +1396,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div id="last_updated" class="last-updated">
-  Page last updated on 26 Jan 2022
+  Page last updated on 24 Apr 2022
 </div>
 
 
