@@ -19,7 +19,7 @@ echo 'Adding Layout images'
 git submodule add https://github.com/BrightcoveLearning/s-layout-img
 echo 'Adding Admin images'
 git submodule add https://github.com/BrightcoveLearning/s-admin-img
-echo 'Adding Admin images'
+echo 'Adding Social images'
 git submodule add https://github.com/BrightcoveLearning/s-social-img
 cd ..
 git submodule update --init --recursive
