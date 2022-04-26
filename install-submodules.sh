@@ -5,8 +5,10 @@ echo 'Adding Cloud Playout'
 git submodule add https://github.com/BrightcoveLearning/s-cloudplayout
 echo 'Adding Layout'
 git submodule add https://github.com/BrightcoveLearning/s-layout
-echo 'Adding Layout'
+echo 'Adding Admin'
 git submodule add https://github.com/BrightcoveLearning/s-admin
+echo 'Adding Social'
+git submodule add https://github.com/BrightcoveLearning/s-social
 cd ..
 cd assets/images
 echo 'Adding OTT plugins images'
@@ -17,5 +19,7 @@ echo 'Adding Layout images'
 git submodule add https://github.com/BrightcoveLearning/s-layout-img
 echo 'Adding Admin images'
 git submodule add https://github.com/BrightcoveLearning/s-admin-img
+echo 'Adding Admin images'
+git submodule add https://github.com/BrightcoveLearning/s-social-img
 cd ..
 git submodule update --init --recursive
