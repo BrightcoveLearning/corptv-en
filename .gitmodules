@@ -14,3 +14,10 @@
 	path = assets/images/s-cloudplayout-img
 	url = https://github.com/BrightcoveLearning/s-cloudplayout-img
 	branch = main
+[submodule "_includes/s-layout"]
+	path = _includes/s-layout
+	url = https://github.com/BrightcoveLearning/s-layout
+  branch = main
+[submodule "assets/images/s-layout-img"]
+	path = assets/images/s-layout-img
+	url = https://github.com/BrightcoveLearning/s-layout-img
