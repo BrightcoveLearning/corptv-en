@@ -832,6 +832,16 @@
       
         <url>
           
+            <loc>https://corptv.support.brightcove.com/layout/live-immediately.html</loc>
+          
+            <lastmod>2022-04-26</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://corptv.support.brightcove.com/layout/clearing-cache.html</loc>
           
             <lastmod>2022-04-26</lastmod>

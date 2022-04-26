@@ -183,6 +183,8 @@
       url: /layout/managing-playlists-on-pages.html
     - name: Page Details Overview
       url: /layout/page-details-overview.html
+    - name: Page Updates Live Immediately
+      url: /layout/live-immediately.html
     - name: Refreshing the App Cache
       url: /layout/clearing-cache.html
     - name: Using Core Pages
