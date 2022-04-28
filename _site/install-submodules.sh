@@ -11,6 +11,8 @@ echo 'Adding Social'
 git submodule add https://github.com/BrightcoveLearning/s-social
 echo 'Adding Players'
 git submodule add https://github.com/BrightcoveLearning/s-players
+echo 'Adding Publish'
+git submodule add https://github.com/BrightcoveLearning/s-publish
 cd ..
 cd assets/images
 echo 'Adding OTT plugins images'
@@ -25,5 +27,7 @@ echo 'Adding Social images'
 git submodule add https://github.com/BrightcoveLearning/s-social-img
 echo 'Adding Players images'
 git submodule add https://github.com/BrightcoveLearning/s-players-img
+echo 'Adding Publish images'
+git submodule add https://github.com/BrightcoveLearning/s-publish-img
 cd ..
 git submodule update --init --recursive
