@@ -83,12 +83,10 @@
   name: Managing Media
   url: /media/index.html
   docs:
-    - name: Adding an Application ID
-      url: /media/adding-application-id-player-embed-code.html
     - name: Adding Audio Tracks to Videos
-      url: /media/adding-audio-tracks-videos.html
+      url: /media/adding-audio-tracks-videos-using-media-module.html
     - name: Adding Captions to Videos
-      url: /media/adding-captions-videos.html
+      url: /media/adding-captions-videos-using-media-module.html
     - name: Adding Chapters to a Video
       url: /media/adding-chapters-video.html
     - name: Capturing Poster and Thumbnail Images
@@ -112,13 +110,13 @@
     - name: 'Creating Series, Seasons & Episodes'
       url: /media/creating-series-seasons-episodes.html
     - name: Downloading Videos
-      url: /media/downloading-videos.html
+      url: /media/downloading-videos-video-cloud.html
     - name: Editing Series Details
       url: /media/editing-series-details.html
     - name: Editing Video Details
       url: /media/editing-video-details.html
     - name: Editing Details using Quick Edit
-      url: /media/editing-video-details-using-quick-edit.html
+      url: /media/editing-video-properties-using-quick-edit.html
     - name: Editing Series Details
       url: /media/editing-series-details.html
     - name: Exporting Video Data
@@ -142,25 +140,25 @@
     - name: Replacing a Video Source File
       url: /media/replacing-video-source-file.html
     - name: Retranscoding Videos
-      url: /media/retranscoding-videos.html
+      url: /media/retranscoding-videos-using-media-module.html
     - name: Searching Videos and Playlists
-      url: /media/searching-videos-and-playlist.html
+      url: /media/how-search-videos-and-playlists-media-module.html
     - name: Setting Required Fields
       url: /media/setting-required-fields-videos.html
     - name: Sharing Videos
-      url: /media/sharing-videos-other-accounts.html
+      url: /media/media-sharing-using-media-module.html
     - name: Styling Captions
       url: /media/styling-captions.html
     - name: Uploading Videos
-      url: /media/uploading-videos.html
+      url: /media/uploading-videos-using-upload-module.html
     - name: Uploading Video Images
-      url: /media/uploading-video-images.html
+      url: /media/uploading-poster-and-thumbnail-images.html
     - name: Uploading Videos Remote URLs
       url: /media/uploading-videos-remote-urls.html
     - name: Working with 360° Videos
       url: /media/working-360deg-videos.html
     - name: Working with Cue Points
-      url: /media/working-cue-points.html
+      url: /media/working-cue-points-media-module.html
     - name: Working with Multi-Lingual Metadata
       url: /media/working-multi-lingual-metadata.html
     - name: Working with Remote Asset Videos

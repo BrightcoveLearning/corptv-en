@@ -344,7 +344,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/adding-application-id-player-embed-code.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/adding-audio-tracks-videos-using-media-module.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -354,17 +354,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/adding-audio-tracks-videos.html</loc>
-          
-            <lastmod>2022-05-03</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-        <url>
-          
-            <loc>https://corptv.support.brightcove.com/media/adding-captions-videos.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/adding-captions-videos-using-media-module.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -484,7 +474,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/downloading-videos.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/downloading-videos-video-cloud.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -514,7 +504,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/editing-video-details-using-quick-edit.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/editing-video-properties-using-quick-edit.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -634,7 +624,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/retranscoding-videos.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/retranscoding-videos-using-media-module.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -644,7 +634,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/searching-videos-and-playlist.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/how-search-videos-and-playlists-media-module.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -664,7 +654,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/sharing-videos-other-accounts.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/media-sharing-using-media-module.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -684,7 +674,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/uploading-videos.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/uploading-videos-using-upload-module.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -694,7 +684,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/uploading-video-images.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/uploading-poster-and-thumbnail-images.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
@@ -724,7 +714,7 @@
       
         <url>
           
-            <loc>https://corptv.support.brightcove.com/media/working-cue-points.html</loc>
+            <loc>https://corptv.support.brightcove.com/media/working-cue-points-media-module.html</loc>
           
             <lastmod>2022-05-03</lastmod>
             <changefreq>daily</changefreq>
