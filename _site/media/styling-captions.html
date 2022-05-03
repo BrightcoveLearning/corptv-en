@@ -1341,14 +1341,16 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <h1>Styling Captions</h1>
   <summary>In this topic you will learn ways to style captions.</summary>
   <section class="bcls-section">
-    <p>The default look and feel of the captions is subject to change so you may wish to style the captions. There are a few ways that captions can be styled:</p>
+    <p>The default look and feel of the captions is subject to change so you may wish to style the captions. When styling captions, be cautious to preserve <a href="https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=122#contrast-minimum" title="https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=122#contrast-minimum">adequate color contrast to meet WCAG accessibility guidelines</a> and consider  end viewers when making styling changes. </p>
+    <p>There are a few ways that captions can be styled:</p>
     <ul>
       <li><a href="#infile">By adding styling options to the WebVTT file</a></li>
-      <li><a href="#css">By creating a custom class in a CSS file</a></li>
       <li><a href="#cssguide">CSS style guide</a></li>
       <li><a href="#user">User styling options</a></li>
     </ul>
+    <aside class="bcls-aside bcls-aside--information">Note:  Never use <code>!important</code> or any other CSS tricks to override user preferences (those set in the Captions Settings dialog).</aside>
     <aside class="bcls-aside bcls-aside--information">Note:  Safari uses native captions on the device and the device settings take precedence over vtt styles.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note:  Currently, only in-line styling is supported.  Style blocks are not supported.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="infile">Adding styling options to the WebVTT file</h2>
@@ -1356,49 +1358,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <ul>
       <li>Bold text
         <pre class="line-numbers">
-<code class="language-html">&lt;b&gt;Lorem ipsum&lt;/b&gt;</code></pre>
+<code class="language-html" translate="No">&lt;b&gt;Lorem ipsum&lt;/b&gt;</code></pre>
       </li>
       <li>Italic text
         <pre class="line-numbers">
-<code class="language-html">&lt;i&gt;dolor sit amet&lt;/i&gt;</code></pre>
+<code class="language-html" translate="No">&lt;i&gt;dolor sit amet&lt;/i&gt;</code></pre>
       </li>
       <li>Underlined text
         <pre class="line-numbers">
-<code class="language-html">&lt;u&gt;consectetuer adipiscing&lt;/u&gt;</code></pre>
+<code class="language-html" translate="No">&lt;u&gt;consectetuer adipiscing&lt;/u&gt;</code></pre>
       </li>
     </ul>
     <p>Because the Brightcove Player manages the positioning of captions, you can not use styles to change the location or orientation of the captions. The inline styles don't provide many styling options. For a greater variety of styling options, you can use a CSS file as described in the next section.</p>
     <p>For details about inline styles, see <a href="https://www.w3.org/TR/webvtt1/#styling">this link</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="css">Creating a custom class in a CSS file</h2>
-    <p>A custom class can be created as part of a CSS file and then applied to elements in the WebVTT file. For example, the class below changes the text color to white, background color to blue and bolds the font.</p>
-    <pre>
-<code translate="no">
-&lt;style&gt;
-   .captionstyle {
-      color:white;
-      background-color:blue;
-      font-weight:bold
-    }
-&lt;/style&gt;</code></pre>
-    <p>Then, the WebVTT file can be modified to apply the new <code translate="no">captionstyle</code> selector. The <code translate="no">c</code> prefix is used to denote the style used is a class selector (this is a WebVTT format standard).</p>
-    <pre>
-WEBVTT
-
-
-00:00:00.000 --&gt; 00:00:03.530 align:middle line:84%
-
-
-00:00:03.530 --&gt; 00:00:06.510 align:middle line:90%
-<code translate="no">&lt;c.captionstyle&gt;</code>In this video we'll learn how
-to login to and navigate around<code translate="no">&lt;/c&gt;</code>
-
-
-00:00:06.510 --&gt; 00:00:09.550 align:middle line:84%
-<code translate="no">&lt;c.captionstyle&gt;</code>inside of CorpTV Studio.<code translate="no">&lt;/c&gt;</code>
-            </pre>
-    <p>For more information on styling options for caption files, see the <a href="https://dev.w3.org/html5/webvtt/#css-extensions">W3C WebVTT specification document</a> or see <a href="https://www.w3.org/TR/webvtt1/#styling">this link</a>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="cssguide">CSS Style Guide</h2>
@@ -1413,97 +1385,97 @@ to login to and navigate around<code translate="no">&lt;/c&gt;</code>
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td><code translate="no">font-family</code></td>
+          <td><code translate="No">font-family</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">font-size</code></td>
+          <td><code translate="No">font-size</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">font-weight</code></td>
+          <td><code translate="No">font-weight</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">color</code></td>
+          <td><code translate="No">color</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">background</code></td>
+          <td><code translate="No">background</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">background-color</code></td>
+          <td><code translate="No">background-color</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">opacity</code></td>
+          <td><code translate="No">opacity</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">visibility</code></td>
+          <td><code translate="No">visibility</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">text-decoration</code></td>
+          <td><code translate="No">text-decoration</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">text-shadow</code></td>
+          <td><code translate="No">text-shadow</code></td>
           <td style="text-align:center">✔</td>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><code translate="no">width</code></td>
+          <td><code translate="No">width</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
         <tr>
-          <td><code translate="no">height</code></td>
+          <td><code translate="No">height</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
         <tr>
-          <td><code translate="no">line-height</code></td>
+          <td><code translate="No">line-height</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
         <tr>
-          <td><code translate="no">white-space</code></td>
+          <td><code translate="No">white-space</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
         <tr>
-          <td><code translate="no">word-wrap</code></td>
+          <td><code translate="No">word-wrap</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
         <tr>
-          <td><code translate="no">top</code></td>
+          <td><code translate="No">top</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
         <tr>
-          <td><code translate="no">left</code></td>
+          <td><code translate="No">left</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
         <tr>
-          <td><code translate="no">display</code></td>
+          <td><code translate="No">display</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
         <tr>
-          <td><code translate="no">direction</code></td>
+          <td><code translate="No">direction</code></td>
           <td>&nbsp;</td>
           <td style="text-align:center">✔</td>
         </tr>
@@ -1515,7 +1487,7 @@ to login to and navigate around<code translate="no">&lt;/c&gt;</code>
     <h2 id="user">User styling of captions</h2>
     <p>For users on iOS devices, caption styling is controlled through the iOS Settings. To access the settings select <strong>Settings</strong> &gt; <strong>General</strong> &gt; <strong>Accessibility</strong> &gt; <strong>Subtitles &amp; Captioning</strong> &gt; <strong>Style</strong>. Here you can select a predefined style or create new styles.</p>
     <p>Viewers on desktop and Android devices can change the appearance of the captions by using the captions settings menu.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/captions-settings-menu.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/node15481-caption-settings-menu.png" /></figure>
     <p>Clicking on the captions settings menu will display an overlay which allows the following caption properties to be set:</p>
     <ul>
       <li>Foreground color and opacity</li>
@@ -1525,7 +1497,7 @@ to login to and navigate around<code translate="no">&lt;/c&gt;</code>
       <li>Text edge style</li>
       <li>Font family</li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/captions-settings.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/node15481-caption-settings.png" /></figure>
     <p>Click <strong>Defaults</strong> to return the captions to their default styling.</p>
   </section>
   <section class="bcls-section">
