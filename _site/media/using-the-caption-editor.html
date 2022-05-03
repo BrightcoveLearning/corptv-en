@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="In this topic you will learn how to add audio tracks to videos using the Media module." />
+  <meta name="description" content="In this topic you will learn how to edit captions using the caption editor." />
 
-  <title>Adding Audio Tracks to Videos</title>
+  <title>Using the Caption Editor</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -54,7 +54,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Adding Audio Tracks to Videos</li>
+      <li class="breadcrumb-item active" aria-current="page">Using the Caption Editor</li>
       
       
     </nav>
@@ -1342,139 +1342,74 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Adding Audio Tracks to Videos</h1>
-  <summary>In this topic you will learn how to add audio tracks to videos using the Media module.</summary>
+  <h1>Using the Caption Editor</h1>
+  <summary>In this topic you will learn how to edit captions using the caption editor.</summary>
   <section class="bcls-section">
-    <p>Videos can be configured with multiple audio tracks. Multiple audio tracks can be used to:</p>
+    <p>Captions can be added to videos and provide additional or interpretive information to individuals who wish to access it. Captions are associated with videos as part of the <strong>Text Track</strong> properties. CorpTV provides the ability to <a href="generating-captions-videos.html">auto-generate captions</a> for a video or captions can be <a href="adding-captions-videos-using-media-module.html">manually associated</a> with videos. </p>
+    <p>Once captions have been added to videos, the caption editor can be used to edit the caption files. The text tracks properties can be configured to provide captions for a video. </p>
+    <aside class="bcls-aside bcls-aside--information">Note: The caption editor can't be used with videos that have been ingested using a Legacy profile (a grey cloud icon <img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/node14464-dd-icon-grey.png" /> will appear next to the video name).</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: Any type of text tracks (i.e. <a href="adding-chapters-video.html">chapters</a>) can be edited using the caption editor as long as it is a VTT file. When editing, the text will appear in the preview player as a caption but that is not necessarily how it will display to the end viewer.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="open">Opening the caption editor</h2>
+    <p>To open the caption editor, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong>  module.</li>
+      <li>Click a video name  to open the video properties page.</li>
+      <li>Icons above the preview player can be used to display the preview player or the caption editor. Click the <strong>CC</strong> icon to open the caption editor.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-cc-icon.png" /></figure>
+      </li>
+    </ol>
+    <p>The first text track will be loaded into the editor. If there are no text tracks, the editor will be empty.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-captions-loaded.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: If you would like to disable the caption editor for your account, contact Brightcove Support.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit">Editing a caption file</h2>
+    <p>To edit a caption file, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the caption editor.</li>
+      <li>The caption editor will load the first text track into the editor. If you need to edit a different text track, click <span class="button-blue">Choose text track ˇ</span> and select the text track to edit. The editor will display the tracks and the associated start and end times.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-choose-track.png" /></figure>
+      </li>
+      <li>Edit the text track content as needed. The preview player can be used to preview changes to the text track.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-captions-edited.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: You must click out of the caption line and then back in to view your changes in the preview player.</aside>
+        <aside class="bcls-aside bcls-aside--information">Note: For videos longer than one hour, the timecode format will change to 00:00:00:000.</aside>
+      </li>
+      <li>Click <span class="button-blue">Publish text track</span> to save the changes. CorpTV will upload the updated text tracks file.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-status-published.png" /></figure>
+      </li>
+      <aside class="bcls-aside bcls-aside--information">Note: There will be a slight delay before  updates to text tracks appear in players.</aside>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="auto-caption">Generating captions</h2>
+    <p>The caption editor can be used to generate captions for a video. To generate captions for a video, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the caption editor.</li>
+      <li>Click <span class="button-blue">Auto caption</span>.</li>
+      <li>Select the <strong>Language</strong> to generate the captions in. If a <strong>Language</strong> is not selected, the video language is auto-detected. Selecting a language will improve the caption file generation time and may improve overall accuracy.</li>
+      <li>Enter a <strong>Label</strong>. The label is typically set to the language used in the video. The label will be displayed in the CC dropdown in the video player and will be used by viewers to select the captions to be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-caption-settings.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Done</span>.</li>
+    </ol>
+    <p>The page will need to be refreshed when the captions are complete for them to populate in the caption editor. The generated captions will have a <strong>Published</strong> status after they are generated.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="draft">Saving drafts</h2>
+    <p>When a caption file is saved as a draft, it will not be displayed to viewers. Drafts are useful when you are in the process of editing or reviewing a caption file. To save a caption file as a draft, open caption editor and click <span class="button-blue">Save draft</span>. The caption editor will display a status of <strong>Draft</strong>.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-media-img/capedit-status-draft.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="issues">Known issues and feature gaps</h2>
+    <p>Because the caption Editor is not yet a finished feature, there are some known issues/feature gaps that you may want to be aware of. These are listed below and will be resolved in the coming weeks. </p>
     <ul>
-      <li>Play back the same video in different languages </li>
-      <li>Provide audio with descriptions for the visually challenged</li>
-      <li>Provide stereo vs. multi-channel (surround sound) audio</li>
+      <li><strong>Publish and Unsave workflow</strong> - We recognize that it is not ideal to have to publish a text track and then unpublish separately to hide the captions from end viewers. We are working on making this a single action.</li>
+      <li><strong>Overlapping captions</strong> - If one caption has a start time with the same timecode as the previous caption’s end time, they will appear to overlap in the caption player. It will not appear that way to end viewers - the caption line with the same start timecode will win the conflict.</li>
+      <li><strong>Timecode errors</strong> - Only numbers and colons are allowed in the timecode field. If you enter in any other character-types (e.g. letters, commas), it will result in an error. To fix this, replace the disallowed characters with a number or colon. </li>
     </ul>
-    <p>Multiple audio tracks are supported for HLS V4+ and DASH - with and without DRM protection. Videos with multiple audio tracks will display a headphone icon (<img alt="" src="/assets/images/media/audio-tracks-headphone-icon.png" />) in the controlbar. When the icon is clicked, the viewer can select between audio tracks.</p>
-    <aside class="bcls-aside bcls-aside--information">Notes:
-      <ul>
-        <li>Multiple audio tracks can only be used with videos set up for <a href="/general/overview-dynamic-delivery.html">Dynamic Delivery</a>. In addition, your account must be enabled for multiple audio tracks. Contact your account manager for details.</li>
-        <li>If audio tracks are added to a title after the video was originally ingested; the default ingest profile for the publisher's account is selected when processing the audio track. We recommend processing audio tracks with the same ingest profile as the original video title to ensure the same audio bitrate/renditions are used. For more details in setting the default ingest profile, please refer to <a href="/admin/managing-ingest-profiles.html#default">Managing Ingest Profiles</a>.</li>
-        <li>When a video is uploaded using a Dynamic Delivery ingest profile, the source audio for the video will be transcoded according to the ingest profile and will appear in the <strong>Audio Tracks</strong> section for the video in the Media module. By default, the audio <strong>Language</strong> is set to <strong>English</strong> with a <strong>Variant</strong> type of <strong>main</strong>. The defaults can be changed by Brightcove Support. Additional audio tracks can then be added.</li>
-        <li>When you add additional audio tracks to a video, they must all have the same bitrate/rendition profile to ensure successful playback in HLS (DASH playback will still work).</li>
-      </ul>
-    </aside>
-    <p>Below is an example of a video that has been configured with multiple audio tracks.</p>
-    <p> 
-      <!-- <iframe src="//players.brightcove.net/1752604059001/default_default/index.html?videoId=6033855353001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" allow="encrypted-media" width="640" height="360"></iframe> -->
-    <div style="position: relative; display: block; max-width: 640px;">
-      <div style="padding-top: 56.25%;">
-        <iframe src="https://players.brightcove.net/57838016001/default_default/index.html?videoId=5413700943001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe>
-      </div>
-    </div>
-    </p>
-    <aside class="bcls-aside bcls-aside--information">Note: Multiple audio tracks can also be added to videos using the APIs. For information, see <a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/implementing-multiple-audio-tracks-using-apis.html">Implementing Multiple Audio Tracks Using the APIs</a>.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="audiotrack">Configuring the audio track properties</h2>
-    <p>Audio track files can be uploaded and hosted by Brightcove or reside at an internet accessible URL. To view and edit the audio track properties for a video, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the Media module.</li>
-      <li>In the panel navigation, click <strong>All videos</strong>.</li>
-      <li>Click the video title link.</li>
-      <li> Click the <strong>Video and Tracks</strong> tab and locate the <strong>Audio Tracks</strong> section. The audio track for the source video will appear.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/audio-tracks-section.png" /></figure>
-      </li>
-      <li>Click <strong>Edit</strong> or double-click in the section.</li>
-      <li>Click <strong>Add Audio Track</strong>.</li>
-      <li>Select if the audio track file will be uploaded from the local file system or from an external URL.
-        <ul>
-          <li><strong>File Upload</strong> - Click <strong>Browse</strong> and select the audio track file from the local file system. The file will be uploaded to Video Cloud.</li>
-          <li><strong>URL Upload</strong> - Enter the public URL where the audio track file resides and then click <strong>Upload</strong>. The file will be uploaded to Video Cloud.
-            <aside class="bcls-aside bcls-aside--information">Note: Audio track file names with parentheses, question marks, quotation marks, spaces and other special characters will silently fail when uploading. Brightcove recommends using file names without special characters.</aside>
-          </li>
-        </ul>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/audio-tracks-properties.png" /></figure>
-      </li>
-      <li>The <strong>Language</strong> field should contain the <a href="http://www.w3schools.com/tags/ref_language_codes.asp">language code</a> that specifies the language of the track text data.</li>
-      <li>Select the <strong>Variant</strong> of text track. The <strong>Variant</strong> describes the kind of audio track. Options include:
-        <ul>
-          <li><strong class="notranslate">main</strong> - The main track, usually the one muxed into the video file</li>
-          <li><strong class="notranslate">alternate</strong> - An alternate audio track</li>
-          <li><strong class="notranslate">commentary</strong> - An audio track that provides commentary on the video track</li>
-          <li><strong class="notranslate">dub</strong> - A track containing a dubbed version of spoken words in a different language</li>
-          <li><strong class="notranslate">descriptive</strong> - The track is descriptive of the video content in some way</li>
-        </ul>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/audio-tracks-spanish-audio.png" /></figure>
-      </li>
-      <li>Click <strong>Add Audio Track</strong> to save the audio track information.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/audio-tracks-spanish-audio-added.png" /></figure>
-      </li>
-      <li>Click <strong>Add Audio Track</strong> to add another audio track or<strong> Save</strong> to save the audio tracks. The newly added audio tracks will appear in the list when processing is finished.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/audio-tracks-added.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: Changes made to the audio track properties may take up to 15 minutes to appear in published players.</aside>
-      </li>
-    </ol>
-    <p>To delete an audio track, click the delete icon (<img alt="" src="/assets/images/media/audio-tracks-delete-icon.png" />) next to the audio track. Note that there may be a delay before the UI is updated and the audio track no longer appears.</p>
-    <p>When a video with multiple audio tracks is published, a headphone button (<img alt="" src="/assets/images/media/audio-tracks-headphone-icon.png" />) will appear on the player chrome. Click the<strong> </strong>button to select an audio track.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/audio-tracks-headphone-icon-in-player.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="defaulttrack">Setting a default audio track</h2>
-    <p>When a video is uploaded, the source audio will be set as the main (default) track. To set an audio track to be the default track, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <strong>Edit</strong> or double-click in the <strong>Audio Tracks</strong> section.</li>
-      <li>Click on the track that is currently the default audio track.</li>
-      <li>Uncheck the <strong>Default</strong> option. Click <strong>Update Audio Track</strong>.</li>
-      <li>Click on the track that will be set as the default audio track.</li>
-      <li>Check the <strong>Default</strong> option.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/audio-tracks-set-default-track.png" /></figure>
-      </li>
-      <li>Click <strong>Update Audio Track</strong>.</li>
-      <li>Click <strong>Save</strong>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="limitations">Limitations</h2>
-    <p>The following limitations apply when using multiple audio tracks</p>
-    <dl>
-      <dt>Audio masters not stored</dt>
-      <dd>If you retranscode the video from the video master, the additional audio tracks will be lost, and must be re-added</dd>
-      <dt>Audio-only files must be used</dt>
-      <dd>Audio tracks must be audio-only files without video tracks</dd>
-      <dt>HLSv3, HLS with audio and video in the same segment</dt>
-      <dd>
-        <ul>
-          <li>The playback API will not return HLSv3 manifests</li>
-          <li>All HLS manifests will include de-muxed video/audio</li>
-        </ul>
-      </dd>
-      <dt>Smooth Streaming</dt>
-      <dd>Smooth Streaming URLs will not be available.</dd>
-      <dt>Social Distribution</dt>
-      <dd>It is not possible to select which audio track will be used for distribution. The track included in the video source (the muxed in audio) will be used, always.</dd>
-      <dt>Ordering of audio tracks beyond the one "default" track</dt>
-      <dd>
-        <ul>
-          <li>You can pick a default audio track with CMS API per title by setting the <code translate="no">is_default</code> field to <code translate="no">true</code></li>
-          <li>There is also an account default, which can be set by Support</li>
-          <li>This will only affect the "default" track in HLS manifests</li>
-          <li>No other ordering is possible</li>
-        </ul>
-      </dd>
-      <dt>Ingesting more than one audio track from a single source</dt>
-      <dd>We support <strong>one audio track from the source supplied in ".master"</strong>, and one for each source under ".audio_tracks.masters".</dd>
-      <dt>DRM protection on videos that include only audio</dt>
-      <dd>As soon as a video track is added, DRM protection will be enabled.</dd>
-      <dt>End-user friendly labels</dt>
-      <dd>We do not support custom labels for audio tracks. If you require that, you will need to make the change on the client side via the Player API.</dd>
-      <dt>In some instances, switching tracks may cause the Brightcove Player to become unstable</dt>
-      <dd>
-        <ul>
-          <li>Track switching before all audio segments have been downloaded</li>
-          <li>When the video is played back using the Silverlight plugin (in versions of IE less than 10, or any version of IE in versions of Window less than 8) - multiple audio tracks are <strong>not</strong> supported in Silverlight.</li>
-          <li>If the audio and video are different durations, the player will may stop whenever the shorter one runs out.</li>
-        </ul>
-      </dd>
-      <dt>Video "duration"</dt>
-      <dd>The video <code translate="no">duration</code> reported by the catalog/Playback API may be incorrect if the audio tracks have different durations.</dd>
-    </dl>
   </section>
 </article>
 
@@ -1503,7 +1438,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div id="last_updated" class="last-updated">
-  Page last updated on 26 Jan 2022
+  Page last updated on 02 May 2022
 </div>
 
 

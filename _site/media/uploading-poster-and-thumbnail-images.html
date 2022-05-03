@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="In this topic you will learn how to use the Quick Edit feature inside of the Media module to edit video details for multiple videos." />
+  <meta name="description" content="In this topic you will learn how to upload video images using the Media module." />
 
-  <title>Editing Video Details using Quick Edit</title>
+  <title>Uploading Video Images</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -54,7 +54,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Editing Video Details using Quick Edit</li>
+      <li class="breadcrumb-item active" aria-current="page">Uploading Video Images</li>
       
       
     </nav>
@@ -1342,41 +1342,48 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Editing Video Details using Quick Edit</h1>
-  <summary>In this topic you will learn how to use the Quick Edit feature inside of the Media module to edit video details for multiple videos.</summary>
+  <h1>Uploading Video Images</h1>
+  <summary>In this topic you will learn how to upload video images using the Media module.</summary>
   <section class="bcls-section">
-    <p>The Quick Edit feature provides a convenient way to edit videos details for multiple videos. In the panel navigation, click <strong>All videos</strong>. Multiple videos can be selected by clicking on a checkbox and then shift-clicking on another checkbox (hold down the Shift key while clicking the second video, and the two videos and all those between will be selected). Clicking <strong>Quick Edit</strong> will open the Quick Edit panel on the right side of the Media module.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/quick-edit.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <p>The Quick Edit panel will display a subset of the video properties:</p>
+    <p>Videos in your Brightcove CorpTV account have associated poster, thumbnail, portrait, landscape and ultrawide images. These images allow viewers to pick which videos they want to see in a playlist or other listing of your content. Poster and thumbnail images can be seen in the following areas:</p>
     <ul>
-      <li>Name</li>
-      <li>Short Description</li>
-      <li>Long Description</li>
-      <li>Tags to Add</li>
-      <li>Tags to Remove</li>
-      <li>Related Link URL</li>
-      <li>Related Link Text</li>
-      <li>Advertising</li>
-      <li>Ad Keys</li>
-      <li>Scheduling Start/End Dates</li>
-      <li>Geofiltering</li>
-      <li>Custom Fields</li>
+      <li>In the Media module, the thumbnail image is displayed next to the video; the poster image will appear in the preview player on the video details page</li>
+      <li>The thumbnail image will appear when publishing a playlist</li>
+      <li>The poster image is displayed in the playback area of the video player after the player loads and the video metadata is available; the poster will display until the viewer presses the play button</li>
     </ul>
-    <aside class="bcls-aside bcls-aside--information">Note: For a description of all of these properties, see the <a href="/media/editing-video-details.html">Editing Video Details</a> document.</aside>
-    <p>Use the Quick Edit panel to assign values. When done, click <strong>Save</strong> to save the changes or <strong>Cancel</strong> to exit.</p>
+    <p>For videos that are uploaded to Brightcove CorpTV, poster and thumbnail images are created automatically by taking a snapshot from the source video at the midway point. The size of the poster and thumbnail is based upon the dimensions specified in the ingest profile used when uploading the video. If you don't like the default images that were captured, you can upload other images or <a href="/media/capturing-poster-and-thumbnail-images.html">capture new images</a> to use as the poster and thumbnail.</p>
+    <p>When uploading custom poster and thumbnail images, we recommend:</p>
+    <ul>
+      <li><strong>Poster image</strong> - Recommended aspect ratio of 16:9 and a minimum width of 640px</li>
+      <li><strong>Thumbnail image</strong> - Recommended aspect ratio of 16:9 and a minimum width of 160px</li>
+      <li><strong>Landscape image</strong> - Recommended aspect ratio of 16:9</li>
+      <li><strong>Portrait image</strong> - Recommended aspect ratio of 2:3</li>
+      <li><strong>Ultrawide image</strong> - Recommended aspect ratio of 21:9
+        <aside class="bcls-aside bcls-aside--information">Note: Uploaded images should use the sRGB color format.</aside>
+      </li>
+    </ul>
+    <p>When you upload new poster and thumbnail images, the image dimensions will be based upon the image dimensions specified in the default ingest profile for the account. For information on increasing the quality of poster and thumbnail images, see <a href="/media/increasing-quality-poster-and-thumbnail-images.html">Increasing the Quality of Poster and Thumbnail Images</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="notes">Notes on using Quick Edit</h2>
+    <h2 id="steps">Steps to upload new  images</h2>
+    <p>To upload a new image, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Click <strong>All videos</strong> in the panel navigation.</li>
+      <li>Click the link for the video you want to edit.</li>
+      <li>Click the <strong>Images</strong> tab.</li>
+      <li>Hover over the appropriate image and click the upload button.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/upload-poster-edit-images.png" /></figure>
+      </li>
+      <li>Browse and select a new image. It may take a minute for the processing to complete and for the images to appear in the Media module.
+        <aside class="bcls-aside bcls-aside--information">Note: .png and .jpg images are supported.</aside>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Limitations">Limitations</h2>
     <ul>
-      <li>When at least one video has values assigned to a property, <strong>Edit Mixed Value</strong> will be displayed
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/quick-edit-mixed-values.png" /></figure>
-      </li>
-      <li>An asterisk (*) following the property name indicates a required property</li>
-      <li>To cancel changes made to a property, click <strong>Restore</strong>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/media/quick-edit-restore.png" /></figure>
-      </li>
+      <li>The ingestion system does not allow concurrent jobs on the same video. Therefore, if you attempt to upload images while the video is being ingested or retranscoded, the image upload will fail.</li>
     </ul>
   </section>
 </article>
@@ -1406,7 +1413,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div id="last_updated" class="last-updated">
-  Page last updated on 26 Jan 2022
+  Page last updated on 26 Apr 2022
 </div>
 
 
