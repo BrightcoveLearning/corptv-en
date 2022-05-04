@@ -230,11 +230,6 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/media/choosing-correct-embed-code.html",
-      "oldURL": "/choosing-correct-embed-code"
-  },
-
-  {
       "newURL": "https://corptv.support.brightcove.com/layout/clearing-cache.html",
       "oldURL": "/clearing-cache"
   },
@@ -360,12 +355,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/admin/configuring-server-side-ad-settings.html",
+      "newURL": "https://corptv.support.brightcove.com/monetization/ssai/configuring-server-side-ad-settings.html",
       "oldURL": "/configuring-server-side-ad-settings"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/monetization/ssai/configuring-server-side-ad-settings.html",
+      "newURL": "https://corptv.support.brightcove.com/admin/configuring-server-side-ad-settings.html",
       "oldURL": "/configuring-server-side-ad-settings"
   },
 
@@ -870,82 +865,7 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/release-notes/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/dashboard/help/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/publishing-apps/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/social/help/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/publishing-apps/panasonic/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/media/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/registered-users/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/monetization/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/social/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/publishing-apps/roku/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/monetization/ssai/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/ott-plugins/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/publishing-apps/lg/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/players/help/",
+      "newURL": "https://corptv.support.brightcove.com/admin/help/",
       "oldURL": "/index"
   },
 
@@ -955,72 +875,7 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/basics/admin/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/admin/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/basics/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/basics/media/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/analytics/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/admin/help/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/channels/ott-channels/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/monetization/general/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://corptv.support.brightcove.com/players/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/ott-web-store/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/publishing-apps/android/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/publish/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/channels/cloud-playout/help/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
@@ -1030,7 +885,72 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/basics/players/",
+      "newURL": "https://corptv.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/layout/help/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/publishing-apps/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/publishing-apps/panasonic/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/publishing-apps/roku/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/media/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/layout/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/channels/cloud-playout/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/publishing-apps/lg/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/publishing-apps/android/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/channels/cloud-playout/help/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/channels/ott-channels/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/players/help/",
       "oldURL": "/index"
   },
 
@@ -1045,22 +965,77 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/layout/help/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://corptv.support.brightcove.com/publishing-apps/samsung/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/registered-users/help/",
+      "newURL": "https://corptv.support.brightcove.com/admin/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/publishing-apps/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/analytics/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/basics/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/release-notes/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/dashboard/help/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/monetization/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/social/help/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/social/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/monetization/ssai/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/basics/media/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/monetization/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/publish/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/basics/admin/",
       "oldURL": "/index"
   },
 
@@ -1070,12 +1045,17 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/styling/",
+      "newURL": "https://corptv.support.brightcove.com/basics/players/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/channels/cloud-playout/",
+      "newURL": "https://corptv.support.brightcove.com/ott-web-store/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/styling/",
       "oldURL": "/index"
   },
 
@@ -1090,12 +1070,27 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/publishing-apps/general/",
+      "newURL": "https://corptv.support.brightcove.com/registered-users/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/layout/",
+      "newURL": "https://corptv.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/ott-plugins/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/registered-users/help/",
       "oldURL": "/index"
   },
 
