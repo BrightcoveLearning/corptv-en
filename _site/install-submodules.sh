@@ -17,6 +17,8 @@ echo 'Adding Media'
 git submodule add https://github.com/BrightcoveLearning/s-media
 echo 'Adding Publishing Apps'
 git submodule add https://github.com/BrightcoveLearning/s-publishing-apps
+echo 'Adding Analytics'
+git submodule add https://github.com/BrightcoveLearning/s-analytics
 cd ..
 cd assets/images
 echo 'Adding OTT plugins images'
@@ -37,5 +39,7 @@ echo 'Adding Media images'
 git submodule add https://github.com/BrightcoveLearning/s-media-img
 echo 'Adding Publishing Apps images'
 git submodule add https://github.com/BrightcoveLearning/s-publishing-apps-img
+echo 'Adding Analytics Images'
+git submodule add https://github.com/BrightcoveLearning/s-analytics-img
 cd ..
 git submodule update --init --recursive
