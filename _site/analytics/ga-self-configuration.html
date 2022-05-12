@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="In this topic, you will learn how to configure Google Analytics to work with {{ site.product }} when you either can't, or choose not to, allow Brightcove to do this process for you." />
+  <meta name="description" content="In this topic, you will learn how to configure Google Analytics to work with Brightcove Beacon when you either can't, or choose not to, allow Brightcove to do this process for you." />
 
   <title>Google Analytics Self Configuration</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -1355,7 +1355,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>Google Analytics Self Configuration</h1>
 <article class="bcls-article">
-  <summary>In this topic, you will learn how to configure Google Analytics to work with {{ site.product }} when you either can't, or choose not to, allow Brightcove to do this process for you.</summary>
+  <summary>In this topic, you will learn how to configure Google Analytics to work with Brightcove Beacon when you either can't, or choose not to, allow Brightcove to do this process for you.</summary>
 
   <section class="bcls-section">
     <h2 id="Introduction">Introduction</h2>
@@ -1380,7 +1380,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><strong>Firebase</strong> - Firebase is a platform developed by Google for creating mobile and web applications. Firebase includes the <strong>Firebase Realtime Database</strong>, which is a cloud-hosted database.</li>
       <li><strong>Google Data Studio</strong> - Google Data Studio is a "free tool that turns your data into informative, easy to read, easy to share, and fully customizable dashboards and reports."</li>
     </ul>
-    <p>The following diagram details the interaction/flow of these tools when gathering analytics for Brightcove CorpTV:</p>
+    <p>The following diagram details the interaction/flow of these tools when gathering analytics for Brightcove Beacon:</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/analytics/self-config-ga/tool-diagram.png" alt="">
     </figure>
@@ -1388,7 +1388,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
   <section class="bcls-section">
     <h2 id="Obtain_the_templates_and_configuration_files">Obtain templates and configuration files</h2>
-    <p>There are a number of files/URLs you need to successfully complete your setup of analytics for Brightcove CorpTV. The files/URLs are detailed in the following bullets. You need to contact your Brightcove onboarding manager to obtains these files/URLs. You will receive: </p>
+    <p>There are a number of files/URLs you need to successfully complete your setup of analytics for Brightcove Beacon. The files/URLs are detailed in the following bullets. You need to contact your Brightcove onboarding manager to obtains these files/URLs. You will receive: </p>
     <ul>
       <li>URLs to three pre-built Google Analytics Dashboard configurations, one each for mobile, web and smart tv.</li>
       <li>Four JSON files which configure each of the four containers created in Google Tag Manager.</li>
@@ -1411,17 +1411,17 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h3>Create four properties</h3>
     <p>You need to create these four properties:</p>
     <ul>
-      <li>CorpTV Android</li>
-      <li>CorpTV iOS</li>
-      <li>CorpTV STV (Smart TV)</li>
-      <li>CorpTV Web</li>
+      <li>Beacon Android</li>
+      <li>Beacon iOS</li>
+      <li>Beacon STV (Smart TV)</li>
+      <li>Beacon Web</li>
     </ul>
-    <p>The following steps guide you through creating the <strong>CorpTV Android</strong> property. You will need to create the others following the same process.</p>
+    <p>The following steps guide you through creating the <strong>Beacon Android</strong> property. You will need to create the others following the same process.</p>
     <ol class="bcls-tasklist">
       <li>Log in to your Google Analytics account.</li>
       <li>Click the <strong>Admin (gear)</strong> icon on the bottom-left of the screen.</li>
       <li>On the top of the middle column, click <strong>Create Property</strong>.</li>
-      <li>In the <strong>Property setup</strong>, supply the <strong>Property name</strong>, for the first property, use <samp>CorpTV Android</samp>.</li>
+      <li>In the <strong>Property setup</strong>, supply the <strong>Property name</strong>, for the first property, use <samp>Beacon Android</samp>.</li>
       <li>Supply the <strong>Reporting time zone</strong>.</li>
       <li>Supply the <strong>Currency</strong>.</li>
       <li>Click the <strong>Show advanced options</strong> link.</li>
@@ -1449,9 +1449,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </li>
       <li>Perform the proceeding steps to create the three other required properties:
         <ol>
-          <li>CorpTV iOS</li>
-          <li>CorpTV STV</li>
-          <li>CorpTV WEB</li>
+          <li>Beacon iOS</li>
+          <li>Beacon STV</li>
+          <li>Beacon WEB</li>
         </ol>
       </li>
     </ol>
@@ -1465,8 +1465,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </li>
       <li>From the three-paneled dropdown, select:
         <ul type="a">
-          <li>Your Brightcove CorpTV account</li>
-          <li>The <strong>CorpTV Android</strong> property</li>
+          <li>Your Brightcove Beacon account</li>
+          <li>The <strong>Beacon Android</strong> property</li>
           <li>The <strong>All Web Site Data</strong> view</li>
         </ul>
         <figure class="bcls-figure">
@@ -1508,8 +1508,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <ul>
       <li>Steps will be shown how to create a single custom dimension.</li>
       <li>Steps will be shown how to create a single custom metric.</li>
-      <li>A table will show the dimensions required for the properties <strong>CorpTV Android</strong> and <strong>CorpTV iOS</strong>.</li>
-      <li>A table will show the dimensions required for the properties <strong>CorpTV STV</strong> and <strong>CorpTV WEB</strong>.</li>
+      <li>A table will show the dimensions required for the properties <strong>Beacon Android</strong> and <strong>Beacon iOS</strong>.</li>
+      <li>A table will show the dimensions required for the properties <strong>Beacon STV</strong> and <strong>Beacon WEB</strong>.</li>
       <li>A table will show the single metric that <strong>all four</strong> properties must have.</li>
     </ul>
     <p>You will then need to create the dimensions and metric for each of the four properties.</p>
@@ -1560,7 +1560,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ol>
     <aside class="bcls-aside bcls-aside--information">This is the only custom metric you will need to create for each of the four properties.</aside>
     <h4>Android and iOS dimensions and metric</h4>
-    <p>The following table displays the custom dimensions that must be added to the CorpTV Android and CorpTV iOS properties.</p>
+    <p>The following table displays the custom dimensions that must be added to the Beacon Android and Beacon iOS properties.</p>
     <aside class="bcls-aside bcls-aside--warning">It is crucial that the <strong>Index</strong> matches the dimension name as shown in the tables below. To do this, simply create the dimensions in the order shown in the table.</aside>
     <table class="bcls-table">
       <thead class="bcls-table__head">
@@ -1654,7 +1654,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </tbody>
     </table>
     <h4>STV and WEB dimensions and metric</h4>
-    <p>The following table displays the custom dimensions that must be added to the CorpTV STV and CorpTV Web properties.</p>
+    <p>The following table displays the custom dimensions that must be added to the Beacon STV and Beacon Web properties.</p>
     <aside class="bcls-aside bcls-aside--warning">It is crucial that the <strong>Index</strong> matches the dimension name as shown in the tables below. To do this, simply create the dimensions in the order shown in the table.</aside>
     <table class="bcls-table">
       <thead class="bcls-table__head">
@@ -1840,9 +1840,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>
         <p>Enter values for your new account page:</p>
         <ul>
-          <li><strong>Account Name</strong>: Your company name, or perhaps <samp>CorpTV</samp>.</li>
+          <li><strong>Account Name</strong>: Your company name or name of service.</li>
           <li><strong>Country</strong>: Home country for your company.</li>
-          <li><strong>Container Name</strong>: <samp>CorpTV WEB</samp> You will be creating a container for each property.</li>
+          <li><strong>Container Name</strong>: <samp>Beacon WEB</samp> You will be creating a container for each property.</li>
           <li><strong>Target Platform</strong>: Web</li>
         </ul>
       <li>Be sure your container information is filled in similar to the following:</li>
@@ -1877,19 +1877,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td>CorpTV Android</td>
+              <td>Beacon Android</td>
               <td>Android</td>
             </tr>
             <tr>
-              <td>CorpTV iOS</td>
+              <td>Beacon iOS</td>
               <td>iOS</td>
             </tr>
             <tr>
-              <td>CorpTV STV</td>
+              <td>Beacon STV</td>
               <td>Web</td>
             </tr>
             <tr>
-              <td>CorpTV WEB</td>
+              <td>Beacon WEB</td>
               <td>Web</td>
             </tr>
           </tbody>
@@ -1900,7 +1900,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
           <img class="bcls-image" src="/assets/images/analytics/self-config-ga/tm-all-containers-created.png" alt="all containers list">
         </figure>
       </li>
-      <li>At this point it is critical you take a screen shot of this dropdown. The Brightcove CorpTV engineers need this data, that being the container names and associated <strong>GTM</strong> ID. You will send this file to your onboarding manager along with other files downloaded, as explained in the <a href="#Publish_each_container">Publish each container</a> section that comes later in this document. Please be sure the screenshot is clear and legible:
+      <li>At this point it is critical you take a screen shot of this dropdown. The Brightcove Beacon engineers need this data, that being the container names and associated <strong>GTM</strong> ID. You will send this file to your onboarding manager along with other files downloaded, as explained in the <a href="#Publish_each_container">Publish each container</a> section that comes later in this document. Please be sure the screenshot is clear and legible:
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/analytics/self-config-ga/tm-containers-with-ids.png" alt="containers with IDs">
         </figure>
@@ -1935,7 +1935,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>You will now copy from Google Analytics the tracking ID for each property, then paste it into the corresponding container.</p>
     <ol class="bcls-tasklist-restart">
       <li>Log in to Google Analytics.</li>
-      <li>Use the account/property selector at the top of the page to choose the <strong>CorpTV Android</strong> property.
+      <li>Use the account/property selector at the top of the page to choose the <strong>Beacon Android</strong> property.
         <figure class="bcls-figure">
           <img class="bcls-image" src="/assets/images/analytics/self-config-ga/tm-ga-choose-property.png" alt="select android">
         </figure>
@@ -1952,7 +1952,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </figure>
       </li>
       <li>Return to Google Tag Manager.</li>
-      <li>Be sure you are editing the <strong>CorpTV Android</strong> container.</li>
+      <li>Be sure you are editing the <strong>Beacon Android</strong> container.</li>
       <li>Click <strong>Variables</strong> from the left side navigation.</li>
       <li>Click the <strong>Tracking Code</strong> variable.</li>
       <li>Paste the copied tracking ID from Google Analytics into the <strong>Value</strong> form field.
@@ -1983,7 +1983,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><strong>For iOS and Android containers</strong>: Contact your onboarding manager and send these downloaded files to her/him, along with the screenshot of your containers and corresponding IDs. The files will be added to your corresponding apps.</li>
       <li>Be sure all containers are published.</li>
     </ol>
-    <aside class="bcls-aside bcls-aside--warning">To reiterate, at this point you need to send the downloaded files, along with the screenshot showing each container name and associated <strong>GTM</strong> ID, to your onboarding manager. These files will then be routed to the Brightcove CorpTV engineering staff and to configure your apps.</aside>
+    <aside class="bcls-aside bcls-aside--warning">To reiterate, at this point you need to send the downloaded files, along with the screenshot showing each container name and associated <strong>GTM</strong> ID, to your onboarding manager. These files will then be routed to the Brightcove Beacon engineering staff and to configure your apps.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="section-name">Configure Firebase</h2>
@@ -2049,7 +2049,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </figure>
       </li>
     </ol>
-    <p>That's it! Congratulations you have configured Google Analytics for Brightcove CorpTV.</p>
+    <p>That's it! Congratulations you have configured Google Analytics for Brightcove Beacon.</p>
   </section>
 </article>
 <!-- complete bootstrap layout -->

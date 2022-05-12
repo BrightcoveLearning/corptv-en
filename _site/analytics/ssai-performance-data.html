@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="This topic lists the terms that are used in the Analytics module UI." />
+  <meta name="description" content="In this topic, you will learn how to use the Analytics module to monitor the performance of your ad configurations associated with Server-Side Ad Insertion (SSAI)." />
 
-  <title>Analytics Module UI Glossary</title>
+  <title>SSAI Performance Analytics</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -54,7 +54,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Analytics Module UI Glossary</li>
+      <li class="breadcrumb-item active" aria-current="page">SSAI Performance Analytics</li>
       
       
     </nav>
@@ -1353,368 +1353,171 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 </details>
 
 
+<h1>SSAI Performance Analytics</h1>
 <article class="bcls-article">
-  <h1>Analytics Module UI Glossary</h1>
-  <summary>This topic lists the terms that are used in the Analytics module UI.</summary>
-<p>
-<style type="text/css">dt {font-weight: bold;}
-dd { padding-bottom: 10px; }
-</style>
-</p>
-
-<p>| <a href="#A">-A-</a> | <a href="#B">-B-</a> | <a href="#C">-C-</a> | <a href="#D">-D-</a> | <a href="#E">-E-</a> | <a href="#F">-F-</a> | <a href="#G">-G-</a> | <a href="#H">-H-</a> | <a href="#I">-I-</a> | <a href="#J">-J-</a> | <a href="#K">-K-</a> | <a href="#L">-L-</a> | <a href="#M">-M-</a> | <a href="#N">-N-</a> | <a href="#O">-O-</a> | <a href="#P">-P-</a> | <a href="#Q">-Q-</a> | <a href="#R">-R-</a> | <a href="#S">-S-</a> | <a href="#T">-T-</a> | <a href="#U">-U-</a> | <a href="#V">-V-</a> | <a href="#W">-W-</a> | <a href="#X">-X-</a> | <a href="#Y">-Y-</a> | <a href="#Z">-Z-</a> |</p>
-
-<aside class="bcls-aside bcls-aside--information">Note: For a list of data items that are returned by the <span translate="No">Analytics API</span> and when exporting analytics data, see the <a href="https://apis.support.brightcove.com/analytics/general/analytics-api-glossary.html">Analytics API Glossary</a>.</aside>
-
-<section class="bcls-section">
-<h2 id="A">A</h2>
-
-<dl>
-	<dt id="active_media">Active Media</dt>
-	<dd>The number of active videos in the account. Note that this data is not real-time - it is synced from your video library once a day. Also note that this data may not be accurate if you are looking at "real-time" analytics data (less than 3 days old).</dd>
-	<dt id="api">Analytics API</dt>
-	<dd>REST-based application programming interface that allows developers to retrieve analytics metrics for Video Cloud videos directly in JSON format. The <span translate="No">Analytics API</span> provides the data for the Analytics UI in Video Cloud Studio.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="B">B</h2>
-
-<dl>
-	<dt id="totalbandwidth">Total Bandwidth</dt>
-	<dd>Total bandwidth used to deliver videos, images and player loads. Note that some parts of bandwidth data are delayed, because they come from external sources such as CDNs. Normally the information is complete within 48 hours, but in some cases the day may be as much as 5 days.</dd>
-	<dt id="browser_type">Browser Type</dt>
-	<dd>The brower type. Typical values are:
-	<ul>
-		<li>chrome</li>
-		<li>safari</li>
-		<li>firefox</li>
-		<li>ie</li>
-	</ul>
-	</dd>
-	<dt id="bytes_delivered">Bytes Delivered</dt>
-	<dd>The total data, in bytes, delivered to viewers, including video/audio data (including buffered data whether or not it was played), poster and thumbnail images, and any data associated with the video player.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="C">C</h2>
-
-<dl>
-	<dt id="city">City</dt>
-	<dd>City where a video was viewed.</dd>
-	<dt id="country">Country</dt>
-	<dd>English short name of the country where the video was viewed. Follows the <a href="http://en.wikipedia.org/wiki/ISO_3166">ISO 3166</a> standard.</dd>
-	<dt id="csv">CSV</dt>
-	<dd>Comma-separated values. Analytics data can be exported in this format.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="D">D</h2>
-
-<dl>
-	<dt id="daily-unique-users">Daily Unique Users</dt>
-	<dd>This is the estimated number of unique viewers that a video had on a given day. This data is only available reconciled data (after 3 days), and only at the account level. For more information, see <a href="https://apis.support.brightcove.com/analytics/general/analytics-api-unique-users.html">Analytics API: Unique Users</a>.</dd>
-	<dt id="day">Day</dt>
-	<dd>Day of the month the video was viewed.</dd>
-	<dt id="device">Device</dt>
-	<dd>Combination of <a href="#device_type">device type</a> and <a href="#device_os">device operating system</a> used to view a video.</dd>
-	<dt id="device_os">Device Operating System</dt>
-	<dd>Device operating system used on the device to view a video. Possible values are:
-	<ul>
-		<li>Android</li>
-		<li>Bada</li>
-		<li>iOS</li>
-		<li>Linux</li>
-		<li>OS X</li>
-		<li>RIM (Blackberry)</li>
-		<li>Symbian</li>
-		<li>Web OS</li>
-		<li>Windows</li>
-		<li>Other - for user-agents which are not mapped to any of the above</li>
-	</ul>
-	</dd>
-	<dt id="device_manufacterer">Device Manufacterer</dt>
-	<dd>The manufacterer of the device. Some typical values are:
-	<ul>
-		<li>lenovo</li>
-		<li>apple</li>
-		<li>sony</li>
-		<li>microsoft</li>
-	</ul>
-	</dd>
-	<dt id="device_type">Device Type</dt>
-	<dd>Device type used to view a video. Possible values are:
-	<ul>
-		<li>Desktop - includes desktop and laptop computers</li>
-		<li>Tablet - includes iPads, Android tablets, etc.</li>
-		<li>Mobile - mobile phones</li>
-		<li>Connected TV/Game Console/Companion Device - includes Smart TVs, set-top boxes and game consoles</li>
-		<li>Other - for user-agents which are not mapped to any of the above</li>
-	</ul>
-	</dd>
-	<dd>&nbsp;</dd>
-	<dt id="dimension">Dimension</dt>
-	<dd>Dimensions are analytics data categories that you can report and filter on. Current dimensions available are:
-	<ul>
-		<li><a href="#player">Player</a></li>
-		<li><a href="#video">Video</a></li>
-		<li><a href="#country">Country</a></li>
-		<li><a href="#day">Day</a></li>
-		<li><a href="#display_domain">Display Domain</a></li>
-		<li><a href="#device">Device</a></li>
-		<li><a href="#device_type">Device Type</a></li>
-		<li><a href="#device_os">Device OS</a></li>
-		<li><a href="#traffic_sources">Source of Traffic</a></li>
-	</ul>
-	</dd>
-	<dd>&nbsp;</dd>
-	<dt id="display_domain">Display Domain</dt>
-	<dd>Referring domain reported by the client (browser or other).</dd>
-	<dt id="display_url">Display URL</dt>
-	<dd>The URL the viewer was on when they watched a video.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="E">E</h2>
-
-<dl>
-	<dt id="engagement_score">Engagement Score</dt>
-	<dd>The average percent watched per video view (calculated by adding all the percentage watched divided by the number of Video Views). For more information on how this is calculated, see <a href="/analytics/calculating-video-engagement-score.html">Calculating Video Engagement Score</a>.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="F">F</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="G">G</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="H">H</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="I">I</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="J">J</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="K">K</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="L">L</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="M">M</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="N">N</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="O">O</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="P">P</h2>
-
-<dl>
-	<dt id="play_rate">Play Rate</dt>
-	<dd>Play rate is the number of times a video was played back (video_view) divided by the number of opportunities for playback (video_impression).</dd>
-	<dt id="play_request">Play Request</dt>
-	<dd>A play request is counted every time the play button is clicked.</dd>
-	<dt id="player">Player</dt>
-	<dd>Video Cloud player ID.</dd>
-	<dt id="player_load">Player Load</dt>
-	<dd>Number of times a player was loaded.</dd>
-	<dt id="player_name">Player Name</dt>
-	<dd>Name of the Video Cloud player.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="Q">Q</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="R">R</h2>
-
-<dl>
-	<dt id="region">Region</dt>
-	<dd>Province or state name where a video was viewed. Follows the <a href="http://en.wikipedia.org/wiki/ISO_3166">ISO 3166</a> standard.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="S">S</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="T">T</h2>
-
-<dl>
-	<dt id="traffic_sources">Traffic Sources</dt>
-	<dd>An indication of how the viewer reached the player page. Possible values are:
-	<ul>
-		<li>Referral - User followed a link to the video</li>
-		<li>Direct - User typed the link directly, used a bookmark, or used a link from an email</li>
-		<li>Organic Search - User performed a search and clicked on a result to get to the video</li>
-		<li>Paid Search - User performed a search and clicked on a paid result to get to the video</li>
-		<li>Secure Search - User logged in with a Google account, performed a search and clicked on a result (either paid or organic; search information is not included in this case)</li>
-	</ul>
-	</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="U">U</h2>
-
-<dl>
-	<dt id="unique-users">Unique Users</dt>
-	<dd>See <a href="#daily-unique-users">Daily Unique Users</a></dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="V">V</h2>
-
-<dl>
-	<dt id="video">Video</dt>
-	<dd>Video Cloud ID of the video.</dd>
-	<dt id="videobandwidth">Video Bandwidth</dt>
-	<dd>Total bandwidth used to deliver videos only.</dd>
-	<dt id="video_duration">Video Duration</dt>
-	<dd>Length of the video in seconds.</dd>
-	<dt id="video_engagement">Video Engagement</dt>
-	<dd>A measure of the average percent watched per video view (calculated by adding all the percentage watched divided by the number of Video Views). For more information on how this is calculated, see <a href="/analytics/calculating-video-engagement-score.html">Calculating Video Engagement Score</a>.</dd>
-	<dt id="video_name">Video Name</dt>
-	<dd>Name of the video.</dd>
-	<dt id="video_view">Video Views</dt>
-	<dd>The number of times a video started playing, recorded when the stream is started (does not include rewind or replay). It is not a measure of individual viewers.</dd>
-	<dt id="video_view">Viewed Minutes</dt>
-	<dd>The total number of minutes a video was viewed</dd>
-	<dt id="video_engagement_1">Views at 1%</dt>
-	<dd>The number of views recorded at the 1% point of the video.</dd>
-	<dt id="video_engagement_25">Views at 25%</dt>
-	<dd>The number of views recorded at the 25% point of the video.</dd>
-	<dt id="video_engagement_50">Views at 50%</dt>
-	<dd>The number of views recorded at the 50% point of the video.</dd>
-	<dt id="video_engagement_75">Views at 75%</dt>
-	<dd>The number of views recorded at the 75% point of the video.</dd>
-	<dt id="video_engagement_100">Views at 100%</dt>
-	<dd>The number of views recorded at the 100% point of the video.</dd>
-	<dt id="video_impression">Video Impression</dt>
-	<dd>The number of times a video was loaded into a player and ready for interaction.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="W">W</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="X">X</h2>
-
-<dl>
-	<dt id="xlsx">XLSX</dt>
-	<dd>Microsoft Excel file. Analytics data can be exported in this format.</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="Y">Y</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-
-<section class="bcls-section">
-<h2 id="Z">Z</h2>
-
-<dl>
-	<dt id="">&nbsp;</dt>
-	<dd>&nbsp;</dd>
-</dl>
-</section>
-    </article>
+  <summary>In this topic, you will learn how to use the Analytics module to monitor the performance of your ad configurations associated with Server-Side Ad Insertion (SSAI).</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>Brightcove Server-Side Ad Insertion (SSAI) stitches ads into your content stream while it is being delivered. Because ad stitching happens on the server-side, SSAI works with any platform. For details about SSAI, see the <a href="https://ssai.support.brightcove.com/getting-started/video-cloud-ssai-overview.html">Video Cloud SSAI Overview</a> document.</p>
+    <p>SSAI Performance analytics are supported with the following:</p>
+    <ul>
+      <li>Both VOD and live streams</li> 
+      <li>Brightcove's web player, the Native SDKs, and Beacon apps</li>
+      <li>Video Cloud and remote assets</li>
+    </ul>
+    <p>In CorpTV Studio, within the <strong>Analytics</strong> module, the <strong>SSAI Performance</strong> section allows you monitor the efficiency of your ad providers and ad configurations. Here, you can track the performance and errors associated with your server-side advertising. </p>
+    
+    <aside class="bcls-aside bcls-aside--information">There may be some latency of 30-60 mins before you see data in the Studio UI. In some cases, it may take up to a day to see SSAI Performance data.</aside>
+    
+    <!-- <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="2346841845001">&nbsp;</div>
+      <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> --> 
+  </section>
+  <section class="bcls-section">
+    <h2 id="Setup">Setup</h2>
+    <p>This feature is available to any customer who has SSAI enabled for their account. Contact your account manager for the following:</p>
+    <ul>
+      <li>Ensure your account is enable for Brightcove Server-Side Ad Insertion (SSAI).</li>
+      <li>Enable your account for SSAI Performance analytics.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Work_flow">Work flow</h2>
+    <p>Follow this work flow to start seeing analytics data associated with SSAI:</p>
+    <ol class="bcls-tasklist">
+      <li>
+        <p>Create an ad configuration ( <code translate="No">AdConfig</code>) with tracking enabled. To do this, you will include the <code translate="No">ad_tracking_sample_percentage</code> parameter in the configuration.</p>
+        <ul>
+          <li>For VOD, see the <a href="https://apis.support.brightcove.com/ssai/getting-started/video-cloud-ssai-ad-config-api.html#Manage_ad_configurations">Video Cloud SSAI API</a> document.</li>
+          <li>For Live streams, see the <a href="https://apis.support.brightcove.com/live-api/references/reference.html#operation/CreateAdConfiguration">Create Ad Configuration</a> reference.</li>
+        </ul>
+        <aside class="bcls-aside bcls-aside--information"> if you create a new <code translate="No">AdConfig</code>, you will need to enable tracking.</aside>
+      </li>
+      <li>Associate the ad configuration with your player.
+        <ul>
+          <li>For Brightcove web player, see the <a href="https://player.support.brightcove.com/plugins/implementing-server-side-ads-brightcove-player.html#Implementing_SSAI_using_Studio">Implementing Server-Side Ads with Brightcove Player</a> document.</li>
+          <li>For the Native SDKs, see the <a href="https://sdks.support.brightcove.com/features/implementing-server-side-ads-native-player-sdks.html">Implementing Server-Side Ads with the Native SDKs</a> document.</li>
+          <li>For the Brightcove Beacon apps, see the <a href="https://beacon-help.support.brightcove.com/monetization/ssai/index.html">SSAI related topics</a>.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="SSAI_Performance">SSAI Performance</h2>
+    <p>The SSAI Performance page provides a summary of ad requests, both success and errors.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="SSAI Performance" src="/assets/images/s-analytics-img/ssai/performance.png" />
+      <figcaption class="bcls-caption--image">SSAI Performance</figcaption>
+    </figure>
+    <h3>Date range</h3>
+    <P>Use the dropdown menu to select a pre-defined date range or enter a custom date or date range.</P>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Date range" src="/assets/images/s-analytics-img/ssai/date-range.png" />
+      <figcaption class="bcls-caption--image">Date range</figcaption>
+    </figure>
+    <h3>Data views</h3>
+    <p>The data on this page shows the response codes from each request to your ad server. There are two points of communication with the ad server:</p>
+    <ul>
+      <li><strong>Ad Request</strong> - When the player makes a request for an ad</li>
+      <li><strong>Ad Tracker</strong> - When ad tracking events are fired from the Brightcove SSAI server; these can include the following:
+        <ul>
+          <li><code translate="No">AdStart</code></li>
+          <li><code translate="No">AdComplete</code></li>
+          <li><code translate="No">AdfirstQuartile</code></li>
+          <li><code translate="No">Admidpoint</code></li>
+          <li><code translate="No">AdthirdQuartile</code></li>
+          <li><code translate="No">AdcreativeView</code></li>
+        </ul>
+      </li>
+    </ul>
+    <p>The page is broken into five sections of data:</p>
+    <ul>
+      <li><strong>SSAI request codes</strong> - All of the response codes from each request to your ad server, including success and error codes</li>
+      <li><strong>Ad request errors by ad provider</strong> - A list of request errors sorted by ad provider</li>
+      <li><strong>Ad request errors by ad configuration</strong> - A list of request errors sorted by ad configuration</li>
+      <li><strong>Tracker errors by ad provider</strong> - A list of tracker errors sorted by ad provider</li>
+      <li><strong>Tracker errors by ad configuration</strong> - A list of tracker errors sorted by ad configuration</li>
+    </ul>
+    <p>Click <strong>view more</strong> to see more details.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Ad_Error_Codes">Ad Error Codes</h2>
+    <p>The SSAI Performance page provides a summary of ad requests, both success and errors.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad Error Codes" src="/assets/images/s-analytics-img/ssai/ad-error-codes.png" />
+      <figcaption class="bcls-caption--image">Ad Error Codes</figcaption>
+    </figure>
+    <h3>Ad providers</h3>
+    <P>Use the dropdown menu to filter results for a specific ad provider or show data for <strong>All ad providers</strong>.</P>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad providers" src="/assets/images/s-analytics-img/ssai/ad-providers.png" />
+      <figcaption class="bcls-caption--image">Ad providers</figcaption>
+    </figure>
+    <h3>Ad configurations</h3>
+    <P>Use the dropdown menu to filter results for a specific ad configuration or show data for <strong>All ad configurations</strong>.</P>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad configurations" src="/assets/images/s-analytics-img/ssai/ad-configurations.png" />
+      <figcaption class="bcls-caption--image">Ad configurations</figcaption>
+    </figure>
+    <h3>SSAI errors</h3>
+    <P>Use the dropdown menu to filter results for <strong>Ad Request Errors</strong>, <strong>Ad Tracker Impression Errors</strong>, or show data for <strong>All SSAI Errors</strong>.</P>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="SSAI errors" src="/assets/images/s-analytics-img/ssai/ssai-errors.png" />
+      <figcaption class="bcls-caption--image">SSAI errors</figcaption>
+    </figure>
+    <h3>Data view</h3>
+    <p>The graph shows the number of SSAI ad errors by date. The details display below the graph:</p>
+    <ul>
+      <li><strong>Request Code</strong> - The error code returned from the ad provider</li>
+      <li><strong># of Requests</strong> - The number of requests associated with the error code</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Ad_Provider_Performance">Ad Provider Performance</h2>
+    <p>The Ad Provider Performance page shows the number of successful ad requests and the number of errors associated with each ad provider. This allows you to quickly see the percentage of ad errors for each provider.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad Provider Performance" src="/assets/images/s-analytics-img/ssai/ad-provider-performance.png" />
+      <figcaption class="bcls-caption--image">Ad Provider Performance</figcaption>
+    </figure>
+    <h3>Ad configurations</h3>
+    <P>Use the dropdown menu to filter results for a specific ad configuration or show data for <strong>All ad configurations</strong>.</P>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad configurations" src="/assets/images/s-analytics-img/ssai/ad-configurations.png" />
+      <figcaption class="bcls-caption--image">Ad configurations</figcaption>
+    </figure>
+    <h3>All calls</h3>
+    <P>Use the dropdown menu to filter results for <strong>All Tracker Impressions</strong>, <strong>All Ad Requests</strong>, or show data for <strong>All calls</strong>.</P>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="All calls" src="/assets/images/s-analytics-img/ssai/all-calls.png" />
+      <figcaption class="bcls-caption--image">All calls</figcaption>
+    </figure>
+    <h3>Data view</h3>
+    <p>Here are the data details displayed on this page:</p>
+    <ul>
+      <li><strong>Ad provider</strong> - Your ad provider</li>
+      <li><strong>Total calls</strong> - Total number of ad request calls</li>
+      <li><strong>Errors</strong> - Number of ad request errors associated with the ad provider</li>
+      <li><strong>Success</strong> - Number of successful ad request calls to the ad provider</li>
+      <li><strong>Percent of total errors</strong> - The ratio of the total number of errors/total number of ad requests</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Ad_Config_Performance">Ad Config Performance</h2>
+    <p>The Ad Config Performance page shows the number of successful ad requests and the number of errors associated with each ad configuration. This allows you to quickly see the percentage of ad errors for each configuration.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad Config Performance" src="/assets/images/s-analytics-img/ssai/ad-config-performance.png" />
+      <figcaption class="bcls-caption--image">Ad Config Performance</figcaption>
+    </figure>
+    <h3>Ad providers</h3>
+    <P>Use the dropdown menu to filter results for a specific ad provider or show data for <strong>All ad providers</strong>.</P>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Ad providers" src="/assets/images/s-analytics-img/ssai/ad-providers.png" />
+      <figcaption class="bcls-caption--image">Ad providers</figcaption>
+    </figure>
+    <h3>All calls</h3>
+    <P>Use the dropdown menu to filter results for <strong>All Tracker Impressions</strong>, <strong>All Ad Requests</strong>, or show data for <strong>All calls</strong>.</P>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="All calls" src="/assets/images/s-analytics-img/ssai/all-calls.png" />
+      <figcaption class="bcls-caption--image">All calls</figcaption>
+    </figure>
+    <h3>Data view</h3>
+    <p>Here are the data details displayed on this page:</p>
+    <ul>
+      <li><strong>Ad Configurations</strong> - A list of your ad configurations being used</li>
+      <li><strong>Total calls</strong> - Total number of ad request calls</li>
+      <li><strong>Errors</strong> - Number of ad request errors associated with the ad configuration</li>
+      <li><strong>Success</strong> - Number of successful ad request calls associated with the ad configuration</li>
+      <li><strong>Percent of total errors</strong> - The ratio of the total number of errors/total number of ad requests</li>
+    </ul>
+  </section>
+</article>
 
 <!-- complete bootstrap layout -->
 <!-- <nav id="more_resources">
@@ -1741,7 +1544,7 @@ dd { padding-bottom: 10px; }
 
 <hr>
 <div id="last_updated" class="last-updated">
-  Page last updated on 03 Feb 2022
+  Page last updated on 12 May 2022
 </div>
 
 
