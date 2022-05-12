@@ -372,6 +372,8 @@
           url: /analytics/exporting-data-analytics-module.html
         - name: Resources for Analytics
           url: /analytics/resources.html
+        - name: SSAI Performance Analytics
+          url: /analytics/ssai-performance-data.html
     - name: Third-Party Analytics
       url: /analytics/index.html
       docs:
