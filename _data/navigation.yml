@@ -580,27 +580,87 @@
     - name: Streaming a Live Event
       url: /live/streaming-live-event.html
 - section:
-  name: General Information
-  url: /general/index.html
+  name: 'General Information'
+  url: '/general/index.html'
   docs:
-    - name: Authentication Using OAuth
-      url: /general/authentication-using-oauth.html
-    - name: DRM Output Protection Settings
-      url: /general/drm-output-protection-settings.html
-    - name: Known Issues
-      url: /general/known-issues.html
-    - name: Overview of Context Aware Encoding
-      url: /general/overview-context-aware-encoding.html
-    - name: Overview of Dynamic Delivery
-      url: /general/overview-dynamic-delivery.html
-    - name: Protecting Videos with HLS Encryption
-      url: /general/protecting-videos-hls-encryption.html
-    - name: Related Content
-      url: /general/related-content.html
-    - name: Supported Video and Audio Formats
-      url: /general/supported-video-and-audio-formats-codecs-and-containers.html
-    - name: Using Multiple Languages
-      url: /general/using-multiple-languages.html
+    - name: 'References'
+      url: '/general/references/index.html'
+      docs:
+        - name: 'Best Practices: Transcoding and Uploading'
+          url: /general/references/best-practices-video-creating-transcoding-and-uploading-workflow.html
+        - name: 'Common Required Information for Submitting Apps'
+          url: '/publishing-apps/general/common-required-info.html'
+        - name: Glossary
+          url: /general/references/glossary.html
+        - name: Known Issues
+          url: /general/references/known-issues.html
+        - name: Making Your Video Content Indexable
+          url: /general/references/making-your-video-content-indexable.html
+        - name: Optimal Video Dimensions
+          url: /general/references/optimal-video-dimensions.html
+        - name: 'Overview: China Delivery Overview'
+          url: /general/references/china-delivery-overview.html
+        - name: Product Release Notes
+          url: /release-notes/product-updates.html
+        - name: Related Content
+          url: /general/references/related-content.html
+        - name: Resetting Your Studio Password
+          url: /general/references/resetting-your-studio-password.html
+        - name: Supported Video and Audio Formats
+          url: /general/references/supported-video-and-audio-formats-codecs-and-containers.html
+        - name: Video Source File Specs and Recommendations
+          url: /general/references/video-source-file-specifications-and-recommendations.html
+        - name: Using Multiple Languages
+          url: /general/references/using-multiple-languages.html
+        - name: When to Use Beacon Studio / Beacon Classic
+          url: /general/references/beacon-studio-or-classic.html
+        - name: Working with 360° Videos
+          url: /general/references/working-360deg-videos.html
+        - name: Working with Audio-Only Content
+          url: /general/references/working-audio-content.html
+    - name: 'Architecture'
+      url: '/general/architecture/index.html'
+      docs:
+        - name: Content Delivery Options
+          url: /general/architecture/content-delivery-options.html
+        - name: 'Domains and Ports for Video Cloud'
+          url: '/general/architecture/domains-and-ports-must-be-accessible-video-cloud.html'
+        - name: Overview of Context Aware Encoding
+          url: /general/architecture/overview-context-aware-encoding.html
+        - name: Overview of Dynamic Delivery
+          url: /general/architecture/overview-dynamic-delivery.html
+    - name: 'Authentication'
+      url: '/general/authentication/index.html'
+      docs:
+        - name: Authentication Using OAuth
+          url: /general/authentication/authentication-using-oauth.html
+        - name: Login Durations
+          url: /general/authentication/login-durations.html
+        - name: 'OIDC Configuration and Testing'
+          url: '/general/authentication/oidc-authentication-for-beacon.html'
+        - name: 'OIDC Example: Integrating with the Beacon Web Store'
+          url: '/beacon-web-store/integration-details.html'
+    - name: 'Content Protection'
+      url: '/general/content-protection/index.html'
+      docs:
+        - name: DRM Output Protection Settings
+          url: /general/content-protection/drm-output-protection-settings.html
+        - name: 'Overview: Digital Rights Management (DRM)'
+          url: /general/content-protection/overview-digital-rights-management-drm-video-cloud.html
+        - name: Protecting Videos with HLS Encryption
+          url: /general/content-protection/protecting-videos-hls-encryption.html
+        - name: TLS for Media, Player, and API URLs
+          url: /general/content-protection/tls-media-player-and-api-urls.html
+    - name: 'Cookie Consent'
+      url: '/general/cookie-consent/index.html'
+      docs:
+        - name: Managing Cookie Consent Using OneTrust
+          url: /general/cookie-consent/managing-cookie-consent.html
+    - name: 'Notifications'
+      url: '/general/notifications/index.html'
+      docs:
+        - name: Sending App Notifications
+          url: /general/notifications/sending-app-notifications.html
 - section:
   name: OTT Plugins
   url: /ott-plugins/index.html
