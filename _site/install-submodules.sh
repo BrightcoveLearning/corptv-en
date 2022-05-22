@@ -1,6 +1,8 @@
 echo 'Adding Scripts'
 git submodule add https://github.com/BrightcoveLearning/s-scripts
 cd _includes
+echo 'Adding includes submodule'
+git submodule add https://github.com/BrightcoveLearning/s-jekyll-page-includes
 echo 'Adding OTT plugins'
 git submodule add https://github.com/BrightcoveLearning/s-ott-plugins
 echo 'Adding Cloud Playout'
@@ -23,6 +25,8 @@ echo 'Adding Analytics'
 git submodule add https://github.com/BrightcoveLearning/s-analytics
 echo 'Adding General'
 git submodule add https://github.com/BrightcoveLearning/s-general
+echo 'Adding Support'
+git submodule add https://github.com/BrightcoveLearning/s-support
 cd ..
 cd assets/images
 echo 'Adding OTT plugins images'
@@ -47,5 +51,9 @@ echo 'Adding Analytics Images'
 git submodule add https://github.com/BrightcoveLearning/s-analytics-img
 echo 'Adding General Images'
 git submodule add https://github.com/BrightcoveLearning/s-general-img
+echo 'Adding Support Images'
+git submodule add https://github.com/BrightcoveLearning/s-support-img
+echo 'Adding Feather Images'
+git submodule add https://github.com/BrightcoveLearning/s-feather-img
 cd ..
 git submodule update --init --recursive
