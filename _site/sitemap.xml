@@ -1817,7 +1817,34 @@
         
           <url>
             
+              <loc>https://corptv.support.brightcove.com/publishing-apps/ios-tvos/account-deletion.html</loc>
+            
+            <lastmod>2022-05-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://corptv.support.brightcove.com/publishing-apps/ios-tvos/fairplay-certificate.html</loc>
+            
+            <lastmod>2022-05-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
               <loc>https://corptv.support.brightcove.com/publishing-apps/ios-tvos/installing-ios-test-build.html</loc>
+            
+            <lastmod>2022-05-23</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://corptv.support.brightcove.com/publishing-apps/ios-tvos/resources.html</loc>
             
             <lastmod>2022-05-23</lastmod>
             <changefreq>daily</changefreq>
