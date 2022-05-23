@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Learn how to get help from Brightcove Support">
+  <meta name="description" content="In this topic, you will learn a CorpTV iOS app must have a Delete Account button, and what that button does.">
   
-  <title>Support</title>
+  <title>Account Deletion</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -63,7 +63,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Support</li>
+      <li class="breadcrumb-item"><a href="/publishing-apps/ios-tvos/">ios-tvos</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Account Deletion</li>
     </ol>
   </nav>
 </header>
@@ -1509,80 +1511,42 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<style translate="no">
-  .card-wrapper {
-  justify-content: start;
-  min-width: 100%;
-  }
-
-  .bcls-card {
-    min-width: 100%;
-  }
-</style>
-<h1>Support</h1>
+<h1>Account Deletion</h1>
 <article class="bcls-article">
-  <summary>Learn how to get help from Brightcove Support</summary>
-  <section class="card-wrapper">
-    <section class="bcls-card">
-      <div class="card-content">
-        <h2 id="Topics_in_this_section">Topics in this section</h2>
-        <ul>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing the Brightcove System Status Page</a>  </li>
-          
-          <li><a href="/support/opening-case-with-brightcove-support.html">Opening a Support Case</a>  </li>
-          
-          <li><a href="/support/reset-support-portal-password.html">Reset Your Support Portal Password</a>  </li>
-          
-          <li><a href="/support/contact-sales.html">Contact Sales</a>  </li>
-          
-          
-          
-        </ul>
-      </div>
-    </section>
-  </section>
-</article>
+  <summary>In this topic, you will learn a CorpTV iOS app must have a <strong>Delete Account</strong> button, and what that button does.</summary>
 
+  <section class="bcls-section">
+    <h2 id="Apple_Consent_Compliance">Apple Consent Compliance</h2>
+    <p>Apple requires that iOS/tvOS apps must have a delete button to remove a viewer's account. See Apple's App Store Review Guidelines document, <a href="https://developer.apple.com/app-store/review/guidelines/#5.1.1">Legal - Data Collection and Storage</a> section for full details.</p>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Brightcove_CorpTV_implementation">Brightcove CorpTV implementation</h2>
+    <p>In the app's <strong>Settings -> My Account</strong> options a <strong>Delete Account</strong> option is present</p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-publishing-apps-img/ios-tvos/account-deletion/apple-account-deletion.png" alt="account deletion option">
+    </figure>
+    <p>When the viewer clicks the button, CorpTV performs the following tasks:</p>
+    <ul>
+      <li>Confirms the viewer wishes to delete the account.</li>
+      <li>Alerts the viewer that they must cancel all active subscriptions with other platform's stores before CorpTV account deletion can occur.</li>
+      <li>CorpTV's backend verifies all of the viewer's active subscriptions with other platform's stores that there are no active subscriptions.</li>
+      <li>Removal of viewer information from Stripe and Evergent (name, contact info, payment data)</li>
+      <li>CorpTV's user management service deletes the account and all associated data associated with that account, like preferences, favorites, recently watched, etc.</li>
+      <li>Notifies the user the account is deleted, via a message in an app alert, when all conditions are met and deletion processes completed.</li>
+    </ul>
+    <p>Note that if a viewer uses an OIDC login and logs in after the account has been removed, an account with those credentials will be created, but it is a new, separate account and no previous data associated with that account is retrieved.</p>
+  </section>
+
+</article>
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -1590,7 +1554,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 22 May 2022
+  Page last updated on 23 May 2022
 </div>
 
 
