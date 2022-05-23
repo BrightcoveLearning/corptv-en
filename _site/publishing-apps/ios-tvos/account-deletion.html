@@ -1521,18 +1521,18 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
 
   <section class="bcls-section">
-    <h2 id="Brightcove_CorpTV_implementation">Brightcove CorpTV implementation</h2>
+    <h2 id="Brightcove_Beacon_implementation">Brightcove Beacon implementation</h2>
     <p>In the app's <strong>Settings -> My Account</strong> options a <strong>Delete Account</strong> option is present</p>
     <figure class="bcls-figure">
       <img class="bcls-image" src="/assets/images/s-publishing-apps-img/ios-tvos/account-deletion/apple-account-deletion.png" alt="account deletion option">
     </figure>
-    <p>When the viewer clicks the button, CorpTV performs the following tasks:</p>
+    <p>When the viewer clicks the button, Beacon performs the following tasks:</p>
     <ul>
       <li>Confirms the viewer wishes to delete the account.</li>
-      <li>Alerts the viewer that they must cancel all active subscriptions with other platform's stores before CorpTV account deletion can occur.</li>
-      <li>CorpTV's backend verifies all of the viewer's active subscriptions with other platform's stores that there are no active subscriptions.</li>
+      <li>Alerts the viewer that they must cancel all active subscriptions with other platform's stores before Beacon account deletion can occur.</li>
+      <li>Beacon's backend verifies all of the viewer's active subscriptions with other platform's stores that there are no active subscriptions.</li>
       <li>Removal of viewer information from Stripe and Evergent (name, contact info, payment data)</li>
-      <li>CorpTV's user management service deletes the account and all associated data associated with that account, like preferences, favorites, recently watched, etc.</li>
+      <li>Beacon's user management service deletes the account and all associated data associated with that account, like preferences, favorites, recently watched, etc.</li>
       <li>Notifies the user the account is deleted, via a message in an app alert, when all conditions are met and deletion processes completed.</li>
     </ul>
     <p>Note that if a viewer uses an OIDC login and logs in after the account has been removed, an account with those credentials will be created, but it is a new, separate account and no previous data associated with that account is retrieved.</p>
