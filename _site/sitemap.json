@@ -165,12 +165,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/authentication-using-oauth.html",
+      "newURL": "https://corptv.support.brightcove.com/general/authentication/authentication-using-oauth.html",
       "oldURL": "/authentication-using-oauth"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/authentication/authentication-using-oauth.html",
+      "newURL": "https://corptv.support.brightcove.com/general/authentication-using-oauth.html",
       "oldURL": "/authentication-using-oauth"
   },
 
@@ -205,12 +205,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html",
+      "newURL": "https://corptv.support.brightcove.com/general/references/best-practices-video-creating-transcoding-and-uploading-workflow.html",
       "oldURL": "/best-practices-video-creating-transcoding-and-uploading-workflow"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/references/best-practices-video-creating-transcoding-and-uploading-workflow.html",
+      "newURL": "https://corptv.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html",
       "oldURL": "/best-practices-video-creating-transcoding-and-uploading-workflow"
   },
 
@@ -260,12 +260,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/china-delivery-overview.html",
+      "newURL": "https://corptv.support.brightcove.com/general/references/china-delivery-overview.html",
       "oldURL": "/china-delivery-overview"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/references/china-delivery-overview.html",
+      "newURL": "https://corptv.support.brightcove.com/general/china-delivery-overview.html",
       "oldURL": "/china-delivery-overview"
   },
 
@@ -640,12 +640,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/domains-and-ports-must-be-accessible-video-cloud.html",
+      "newURL": "https://corptv.support.brightcove.com/general/architecture/domains-and-ports-must-be-accessible-video-cloud.html",
       "oldURL": "/domains-and-ports-must-be-accessible-video-cloud"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/architecture/domains-and-ports-must-be-accessible-video-cloud.html",
+      "newURL": "https://corptv.support.brightcove.com/general/domains-and-ports-must-be-accessible-video-cloud.html",
       "oldURL": "/domains-and-ports-must-be-accessible-video-cloud"
   },
 
@@ -660,12 +660,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/drm-output-protection-settings.html",
+      "newURL": "https://corptv.support.brightcove.com/general/content-protection/drm-output-protection-settings.html",
       "oldURL": "/drm-output-protection-settings"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/content-protection/drm-output-protection-settings.html",
+      "newURL": "https://corptv.support.brightcove.com/general/drm-output-protection-settings.html",
       "oldURL": "/drm-output-protection-settings"
   },
 
@@ -1015,12 +1015,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/getting-started/",
+      "newURL": "https://corptv.support.brightcove.com/general/notifications/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/notifications/",
+      "newURL": "https://corptv.support.brightcove.com/getting-started/",
       "oldURL": "/index"
   },
 
@@ -1030,12 +1030,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/support/",
+      "newURL": "https://corptv.support.brightcove.com/general/cookie-consent/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/cookie-consent/",
+      "newURL": "https://corptv.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -1255,12 +1255,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/references/known-issues.html",
+      "newURL": "https://corptv.support.brightcove.com/general/known-issues.html",
       "oldURL": "/known-issues"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/known-issues.html",
+      "newURL": "https://corptv.support.brightcove.com/general/references/known-issues.html",
       "oldURL": "/known-issues"
   },
 
@@ -1315,12 +1315,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/login-durations.html",
+      "newURL": "https://corptv.support.brightcove.com/general/authentication/login-durations.html",
       "oldURL": "/login-durations"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/authentication/login-durations.html",
+      "newURL": "https://corptv.support.brightcove.com/general/login-durations.html",
       "oldURL": "/login-durations"
   },
 
@@ -1440,6 +1440,11 @@
   },
 
   {
+      "newURL": "https://corptv.support.brightcove.com/general/references/marketplace.html",
+      "oldURL": "/marketplace"
+  },
+
+  {
       "newURL": "https://corptv.support.brightcove.com/media/media-sharing-using-media-module.html",
       "oldURL": "/media-sharing-using-media-module"
   },
@@ -1475,22 +1480,22 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/optimal-video-dimensions.html",
-      "oldURL": "/optimal-video-dimensions"
-  },
-
-  {
       "newURL": "https://corptv.support.brightcove.com/general/references/optimal-video-dimensions.html",
       "oldURL": "/optimal-video-dimensions"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/media/organizing-videos-using-folders.html",
-      "oldURL": "/organizing-videos-using-folders"
+      "newURL": "https://corptv.support.brightcove.com/general/optimal-video-dimensions.html",
+      "oldURL": "/optimal-video-dimensions"
   },
 
   {
       "newURL": "https://corptv.support.brightcove.com/basics/media/organizing-videos-using-folders.html",
+      "oldURL": "/organizing-videos-using-folders"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/media/organizing-videos-using-folders.html",
       "oldURL": "/organizing-videos-using-folders"
   },
 
@@ -1530,22 +1535,22 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/content-protection/overview-digital-rights-management-drm-video-cloud.html",
-      "oldURL": "/overview-digital-rights-management-drm-video-cloud"
-  },
-
-  {
       "newURL": "https://corptv.support.brightcove.com/general/overview-digital-rights-management-drm-video-cloud.html",
       "oldURL": "/overview-digital-rights-management-drm-video-cloud"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/architecture/overview-dynamic-delivery.html",
-      "oldURL": "/overview-dynamic-delivery"
+      "newURL": "https://corptv.support.brightcove.com/general/content-protection/overview-digital-rights-management-drm-video-cloud.html",
+      "oldURL": "/overview-digital-rights-management-drm-video-cloud"
   },
 
   {
       "newURL": "https://corptv.support.brightcove.com/general/overview-dynamic-delivery.html",
+      "oldURL": "/overview-dynamic-delivery"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/general/architecture/overview-dynamic-delivery.html",
       "oldURL": "/overview-dynamic-delivery"
   },
 
@@ -1630,12 +1635,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/protecting-videos-hls-encryption.html",
+      "newURL": "https://corptv.support.brightcove.com/general/content-protection/protecting-videos-hls-encryption.html",
       "oldURL": "/protecting-videos-hls-encryption"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/content-protection/protecting-videos-hls-encryption.html",
+      "newURL": "https://corptv.support.brightcove.com/general/protecting-videos-hls-encryption.html",
       "oldURL": "/protecting-videos-hls-encryption"
   },
 
@@ -1735,22 +1740,22 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/references/resetting-your-studio-password.html",
-      "oldURL": "/resetting-your-studio-password"
-  },
-
-  {
       "newURL": "https://corptv.support.brightcove.com/general/resetting-your-studio-password.html",
       "oldURL": "/resetting-your-studio-password"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/publishing-apps/ios-tvos/resources.html",
-      "oldURL": "/resources"
+      "newURL": "https://corptv.support.brightcove.com/general/references/resetting-your-studio-password.html",
+      "oldURL": "/resetting-your-studio-password"
   },
 
   {
       "newURL": "https://corptv.support.brightcove.com/monetization/general/resources.html",
+      "oldURL": "/resources"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/publishing-apps/ios-tvos/resources.html",
       "oldURL": "/resources"
   },
 
@@ -1810,12 +1815,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/sending-app-notifications.html",
+      "newURL": "https://corptv.support.brightcove.com/general/notifications/sending-app-notifications.html",
       "oldURL": "/sending-app-notifications"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/general/notifications/sending-app-notifications.html",
+      "newURL": "https://corptv.support.brightcove.com/general/sending-app-notifications.html",
       "oldURL": "/sending-app-notifications"
   },
 
