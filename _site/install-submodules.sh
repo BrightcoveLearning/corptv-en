@@ -27,6 +27,8 @@ echo 'Adding General'
 git submodule add https://github.com/BrightcoveLearning/s-general
 echo 'Adding Support'
 git submodule add https://github.com/BrightcoveLearning/s-support
+echo 'Adding Campaign'
+git submodule add https://github.com/BrightcoveLearning/s-campaign
 cd ..
 cd assets/images
 echo 'Adding OTT plugins images'
@@ -55,5 +57,7 @@ echo 'Adding Support Images'
 git submodule add https://github.com/BrightcoveLearning/s-support-img
 echo 'Adding Feather Images'
 git submodule add https://github.com/BrightcoveLearning/s-feather-img
+echo 'Adding Campaign Images'
+git submodule add https://github.com/BrightcoveLearning/s-campaign-img
 cd ..
 git submodule update --init --recursive
