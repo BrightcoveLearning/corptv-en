@@ -17,6 +17,8 @@
       url: /getting-started/design-best-practices.html
     - name: App Design Considerations
       url: /getting-started/app-design-considerations.html
+    - name: Training
+      url: /getting-started/training/index.html
 - section:
   name: Learn the Basics
   url: '/basics/index.html'
