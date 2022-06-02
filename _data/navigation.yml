@@ -3,22 +3,22 @@
   url: /index.html
 - section:
   name: Getting Started
-  url: /getting-started/index.html
+  url: /get-started/index.html
   docs:
     - name: Brightcove CorpTV Learning Guide
-      url: /getting-started/learning-guide-bc-ott.html
+      url: /get-started/learning-guide-bc-ott.html
     - name: Implementation Phases
-      url: /getting-started/implementation-phases.html
+      url: /get-started/implementation-phases.html
     - name: Getting Started with CorpTV Studio
-      url: /getting-started/getting-started-ott-studio.html
+      url: /get-started/getting-started-ott-studio.html
     - name: When to Use CorpTV Studio and/or CorpTV Classic
       url: /general/ott-studio-or-classic.html
     - name: App Design Best Practices
-      url: /getting-started/design-best-practices.html
+      url: /get-started/design-best-practices.html
     - name: App Design Considerations
-      url: /getting-started/app-design-considerations.html
+      url: /get-started/app-design-considerations.html
     - name: Training
-      url: /getting-started/training/index.html
+      url: /get-started/training/index.html
 - section:
   name: Learn the Basics
   url: '/basics/index.html'
