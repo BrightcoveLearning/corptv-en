@@ -89,6 +89,70 @@
         </url>
         
       
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/get-started/basics/index.html</loc>
+          
+            <lastmod>2022-06-08</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+          <url>
+            
+              <loc>https://corptv.support.brightcove.com/get-started/basics/layout/index.html</loc>
+            
+            <lastmod>2022-06-08</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://corptv.support.brightcove.com/get-started/basics/media/index.html</loc>
+            
+            <lastmod>2022-06-08</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://corptv.support.brightcove.com/get-started/basics/players/index.html</loc>
+            
+            <lastmod>2022-06-08</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://corptv.support.brightcove.com/get-started/basics/publish/index.html</loc>
+            
+            <lastmod>2022-06-08</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://corptv.support.brightcove.com/get-started/basics/analytics/index.html</loc>
+            
+            <lastmod>2022-06-08</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://corptv.support.brightcove.com/get-started/basics/admin/index.html</loc>
+            
+            <lastmod>2022-06-08</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+      
     
       <url>
         <loc>https://corptv.support.brightcove.com/basics/index.html</loc>
