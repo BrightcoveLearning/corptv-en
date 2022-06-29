@@ -29,7 +29,10 @@ echo 'Adding Support'
 git submodule add https://github.com/BrightcoveLearning/s-support
 echo 'Adding Campaign'
 git submodule add https://github.com/BrightcoveLearning/s-campaign
+echo 'Adding training'
 git submodule add https://github.com/BrightcoveLearning/s-training
+echo 'Adding audience insghts'
+git submodule add https://github.com/BrightcoveLearning/s-audience-insights
 cd ..
 cd assets/images
 echo 'Adding OTT plugins images'
@@ -61,6 +64,7 @@ git submodule add https://github.com/BrightcoveLearning/s-feather-img
 echo 'Adding Campaign Images'
 git submodule add https://github.com/BrightcoveLearning/s-campaign-img
 git submodule add https://github.com/BrightcoveLearning/s-training-img
+git submodule add https://github.com/BrightcoveLearning/s-audience-insights-img
 cd ..
 echo 'Adding site assets'
 git submodule add https://github.com/BrightcoveLearning/s-site-assets-favicons
