@@ -1325,6 +1325,16 @@
       
         <url>
           
+            <loc>https://corptv.support.brightcove.com/admin/creating-custom-live-ingest-profiles.html</loc>
+          
+            <lastmod>2022-07-12</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://corptv.support.brightcove.com/admin/creating-custom-metadata-fields.html</loc>
           
             <lastmod>2022-07-12</lastmod>
@@ -1346,6 +1356,16 @@
         <url>
           
             <loc>https://corptv.support.brightcove.com/admin/creating-ingest-profiles-dynamic-delivery.html</loc>
+          
+            <lastmod>2022-07-12</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/admin/fields-custom-live-ingest-profiles.html</loc>
           
             <lastmod>2022-07-12</lastmod>
             <changefreq>daily</changefreq>
@@ -1405,6 +1425,16 @@
       
         <url>
           
+            <loc>https://corptv.support.brightcove.com/admin/managing-live-settings.html</loc>
+          
+            <lastmod>2022-07-12</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
             <loc>https://corptv.support.brightcove.com/admin/managing-media-sharing-settings.html</loc>
           
             <lastmod>2022-07-12</lastmod>
@@ -1436,6 +1466,16 @@
         <url>
           
             <loc>https://corptv.support.brightcove.com/admin/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html</loc>
+          
+            <lastmod>2022-07-12</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        
+      
+        <url>
+          
+            <loc>https://corptv.support.brightcove.com/admin/standard-live-ingest-profiles.html</loc>
           
             <lastmod>2022-07-12</lastmod>
             <changefreq>daily</changefreq>
