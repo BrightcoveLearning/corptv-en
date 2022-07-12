@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="In this topic you will learn how to manage the settings for Brightcove Live.">
   
-  <title>Administering Accounts</title>
+  <title>Managing Live Settings</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -63,7 +63,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Administering Accounts</li>
+      <li class="breadcrumb-item"><a href="/admin/">Administering Accounts</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Managing Live Settings</li>
     </ol>
   </nav>
 </header>
@@ -1744,49 +1746,78 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<style translate="no">
-  td li {
-    margin-left: -2rem;;
-  }
-</style>
 <article class="bcls-article">
-  <h1>Administering Accounts</h1>
-  <summary>Learn how to create users and manage   account settings.</summary>
-  <br/>
+  <h1>Managing Live Settings</h1>
+  <summary>In this topic you will learn how to manage the settings for Brightcove Live.</summary>
   <section class="bcls-section">
-    <table width="100%" border="0">
-      <tbody>
-        <tr>
-          <th width="56%" scope="col"> <h4>General Information</h4></th>
-          <th width="1%" scope="col">&nbsp;</th>
-          <th width="43%" scope="col"> <h4>Managing Ingest Profiles</h4></th>
-        </tr>
-        <tr>
-          <td style="vertical-align:top;"><ul>
-              <li><a href="/admin/configuring-language-settings.html">Configuring Language Settings</a></li>
-              <li><a href="/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a></li>
-              <li><a href="/admin/managing-account-information.html">Managing Account Information</a></li>
-              <li><a href="/admin/managing-account-settings.html">Managing Account Settings</a></li>
-              <li><a href="/admin/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a></li>
-              <li><a href="/admin/managing-live-settings.html">Managing Live Settings</a></li>
-              <li><a href="/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
-              <li><a href="/admin/managing-profile-information.html">Managing Profile Information</a></li>
-              <li><a href="/admin/managing-users.html">Managing Users</a></li>
-            </ul></td>
-          <td>&nbsp;</td>
-          <td style="vertical-align:top;"><ul>
-              <li><a href="/admin/creating-custom-live-ingest-profiles">Creating Custom Live Ingest Profiles</a></li>
-              <li><a href="/admin/creating-ingest-profiles-context-aware-encoding.html">Creating Ingest Profiles for Context Aware Encoding</a></li>
-              <li><a href="/admin/creating-ingest-profiles-dynamic-delivery.html">Creating Ingest Profiles for Dynamic Delivery</a></li>
-              <li><a href="/admin/fields-custom-live-ingest-profiles.html">Fields for Custom Live Ingest Profiles</a></li>
-              <li><a href="/admin/ingest-profiles-best-practices.html">Ingest Profiles Best Practices</a></li>
-              <li><a href="/admin/managing-ingest-profiles.html">Managing Ingest Profiles</a></li>
-              <li><a href="/admin/standard-live-ingest-profiles">Standard Live Ingest Profiles</a></li>
-              <li><a href="/admin/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html">Standard Ingest Profiles for Dynamic Delivery and Context Aware Encoding</a></li>
-            </ul></td>
-        </tr>
-      </tbody>
-    </table>
+    <p>The Live settings allow you to manage fill slates and Live credentials.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Server-side ad configurations used by Brightcove Live are configured as part of the Server-Side Ad Settings administration. For information, see <a href="https://studio.support.brightcove.com/admin/configuring-server-side-ad-settings.html">Configuring Server-Side Ad Settings</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="fill_slate">Managing fill slates</h2>
+    <p>Fill slates are content that can be served when there are gaps in a live stream ad break. Slates can be used to provide a "Be right back" message or any other content you want to display. All Zencoder <a href="https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#format">input formats</a> are supported.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Fill slates can also be managed using the Live API. For information, see <a href="/live-api/ssai/live-api-server-side-ad-insertion-ssai.html#Managing_slates">Brightcove Live API: Server-Side Ad Insertion (SSAI)</a>.</aside>
+    <p>To add a fill slate, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Admin</strong> module.</li>
+      <li>In the left navigation, click <strong> Live Settings</strong>.
+        <aside class="bcls-aside bcls-aside--information">Note: You must be an account administrator to access the Admin menu.</aside>
+      </li>
+      <li>Click <span class="button-blue">+ Add Fill Slate</span>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-admin-img/node18588-fill-slate.png" /></figure>
+      </li>
+      <li>Enter a <strong>Name</strong>.</li>
+      <li>Enter the <strong>Source URL</strong> for the slate.</li>
+      <li>Click <span class="button-blue">Save</span>. The ingestion process for the slate will begin.</li>
+    </ol>
+    <p>To delete a fill slate, click the delete button (<img alt="" src="/assets/images/admin/icon-delete.png" />) next to the fill slate.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="credentials">Managing credentials</h2>
+    <p>Credentials are used by both the Live API and Live module. If you are creating a new Live Video Cloud credential, you must first create an API Authentication credential. The client ID and client secret that are created will be used when creating the Live Video Cloud credential. When creating FTP, S3 or RTMP credentials, an API Authentication credential is not needed.</p>
+    <p>If you are creating an S3, FTP or RTMP credential, skip to <strong>step 5</strong>. To create a Live Video Cloud credential, start by creating an API credential.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Admin</strong> module.
+        <aside class="bcls-aside bcls-aside--information">Note: You must be an account administrator to access the ADMIN menu.</aside>
+      </li>
+      <li>In the left navigation, click <strong>API Authentication</strong>. The API Authentication page will open displaying your current client registrations.</li>
+      <li>Click <span class="button-blue">Register New Application</span> to create a new API credential. The following APIs should be selected.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-admin-img/node18588-apis-to-select.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: For information on creating API Authentication Credentials, see <a href="/admin/managing-api-authentication-credentials.html">Managing API Authentication Credentials</a>.</aside>
+      </li>
+      <li>When the credential is created, save the <strong>Client ID</strong> and <strong>Client secret</strong> values. These will be needed when creating the Live Video Cloud credential.</li>
+      <li>In the left navigation, click <strong>Live Settings</strong>.</li>
+      <li>Click <span class="button-blue">+ Add Credential</span>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-admin-img/node18588-create-credential.png" /></figure>
+      </li>
+      <li>Enter a <strong>Label</strong>. This is the name that will be used internally to refer to the credential.</li>
+      <li>Select a <strong>Type</strong>:
+        <ul>
+          <li><strong>FTP</strong> - Used to save the VOD asset to an ftp location (API use)</li>
+          <li><strong>RTMP</strong> - Used to create RTMP credentials to be used by the encoder</li>
+          <li><strong>S3</strong> - Used to save the VOD asset to an Amazon S3 account (API use)</li>
+          <li><strong>Video Cloud</strong> - Used to save the VOD asset to a Video Cloud account (API use)</li>
+        </ul>
+      </li>
+      <li>For the <strong>Public Key / Username</strong>, enter the following depending on the type of credential:
+        <ul>
+          <li><strong>FTP</strong> - Enter the username for the FTP site</li>
+          <li><strong>RTMP</strong> - Enter the username that the encoder will use to authenticate</li>
+          <li><strong>S3</strong> - Enter the username for the S3 account</li>
+          <li><strong>Video Cloud</strong> - Enter the <strong>Client ID</strong> generated for the API Authentication credential</li>
+        </ul>
+      </li>
+      <li>For the <strong>Private Key / Password</strong>, enter the following depending on the type of credential:
+        <ul>
+          <li><strong>FTP </strong>- Enter the password for the FTP site</li>
+          <li><strong>RTMP</strong> - Enter the password that the encoder will use to authenticate</li>
+          <li><strong>S3</strong> - Enter the password for the S3 account</li>
+          <li><strong>Video Cloud</strong> - Enter the <strong>Client secret</strong> generated for the API Authentication credential</li>
+        </ul>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+    <p>The credential will appear in the list of credentials. To delete a credential, click the delete button (<img alt="" src="/assets/images/admin/icon-delete.png" />) next to the credential.</p>
   </section>
 </article>
 
@@ -1794,13 +1825,18 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </div>
     <div class="col-sm-2 right-side-bar">
       
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
     </div>
   </div>
 </div>
 
 <hr>
 <div class="last-updated">
-  Page last updated on 26 Jan 2022
+  Page last updated on 12 Jul 2022
 </div>
 
 
