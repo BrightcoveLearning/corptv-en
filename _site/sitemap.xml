@@ -2469,24 +2469,6 @@
       
     
       <url>
-        <loc>https://corptv.support.brightcove.com/live/index.html</loc>
-        <lastmod>2022-07-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-      </url>
-      
-        <url>
-          
-            <loc>https://corptv.support.brightcove.com/live/streaming-live-event.html</loc>
-          
-            <lastmod>2022-07-14</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-        </url>
-        
-      
-    
-      <url>
         <loc>https://corptv.support.brightcove.com/campaign/index.html</loc>
         <lastmod>2022-07-14</lastmod>
         <changefreq>daily</changefreq>
