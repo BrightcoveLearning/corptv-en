@@ -22,14 +22,14 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2728311-17"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XBJC11HF8Z"></script>
 <script translate="no">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-2728311-17');
+  gtag('config', 'G-XBJC11HF8Z');
 </script>
   <script src="/assets/s-site-assets-scripts/sajari-head.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
@@ -2082,6 +2082,17 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </tr>
       </tbody>
     </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="transmux_live_jobs">Transmux Live jobs</h2>
+    <p>Set the insertion of key frames so that it matches the request segmentation settings. For example, if the frame rate is 25 frames per second and the desire is for a 6 second segment then set the keyframe interval to be at least once every 300 frames.</p>
+    <p>Test the encoder settings/output with desired target devices. This is particularly important if using a broadcast contribution encoder that may have advanced settings that result in a stream that may not be compatible with all consumer devices. It is also a good idea to avoid particularly advanced settings - it is hard to say what these are exactly as there are so many possible encoders and options. But a general top rate profile should be something like:</p>
+    <ul>
+      <li>6Mbps peak bitrate</li>
+      <li>H264 High profile</li>
+      <li>B frames: 2</li>
+      <li>8bit 4:2:0 color</li>
+    </ul>
   </section>
   <section class="bcls-section">
     <h2 id="verification">Verification and testing</h2>
