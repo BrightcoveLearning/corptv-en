@@ -2680,14 +2680,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <summary>
     <p>The Brightcove Live Zoom integration allows to you to broadcast Zoom meetings easily using Brightcove Live.</p>
   </summary>
+  
   <section class="bcls-section">
     <h2 id="prerequisites">Prerequisites</h2>
     <h3>In the Zoom Marketplace</h3>
     <p>Zoom integration with Brightcove Live is managed by the <strong>Brightcove Live Connect</strong> app in the Zoom Marketplace. It is an account-level app intended for use by licensed Owner or Admin-level Zoom accounts. Please ensure your Zoom account has the correct privileges to support the integration.</p>
     <h3>In Brightcove Video Cloud</h3>
-    <p>Before starting an integration, you must have a custom metadata field to track whether an event is streaming from Zoom. This will track the state of the integration between sessions, i.e., if an event is currently linked to a Zoom meeting. 
-          
-      For specific details on how to add the custom metadata field, please review the <a href="/admin/creating-custom-metadata-fields.html" target="_blank">following documentation</a>. 
+    <p>Before starting an integration, you must have a custom metadata field to track whether an event is streaming from Zoom. This will track the state of the integration between sessions, i.e., if an event is currently linked to a Zoom meeting.
+      
+      For specific details on how to add the custom metadata field, please review the <a href="/admin/creating-custom-metadata-fields.html" target="_blank">following documentation</a>.
       
        </p>
     <ol class="bcls-tasklist-restart">
@@ -2700,7 +2701,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         <aside class="bcls-aside bcls-aside--information">Don't add any external Zoom Id or data into the custom field.</aside>
       </li>
       <li>For the <strong>Type</strong>, selecrt <strong>Text</strong>.</li>
-      <li>(Optional) Enter a <strong>Description</strong> for the custom  field.</li>
+      <li>(Optional) Enter a <strong>Description</strong> for the custom field.</li>
       <li>Click <span class="button-blue">Save field</span>.</li>
     </ol>
     <h3>Best Practices</h3>
@@ -2713,7 +2714,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="create">Creating a Zoom meeting</h2>
     <ol class="bcls-tasklist-restart">
-      <li>First, access your <a href="https://zoom.us/" target="_blank">Zoom account</a>, and create a Zoom meeting. For information on how to create a Zoom meeting, please follow the <a href="https://support.zoom.us/hc/en-us/articles/201362413-Scheduling-meetings" target= "_blank">Zoom documentation</a>. </li>
+      <li>First, access your <a href="https://zoom.us/" target="_blank">Zoom account</a>, and create a Zoom meeting. For information on how to create a Zoom meeting, please follow the <a href="https://support.zoom.us/hc/en-us/articles/201362413-Scheduling-meetings" target="_blank">Zoom documentation</a>. </li>
       <li>In Zoom, go to <strong>Settings</strong> > <strong>Meeting (Advanced)</strong> > <strong>live streaming meetings</strong>. </li>
       <li>Make sure your Zoom account settings have the <strong>Custom Live Streaming Service</strong> enabled.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" width="" height="" src="/assets/images/s-live-img/live-module/live-zoom-integration/zoom-service-enabled.png" /></figure>
@@ -2762,7 +2763,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" width="" height="" src="/assets/images/s-live-img/live-module/live-zoom-integration/zoom-start-event.png" /></figure>
         <aside class="bcls-aside bcls-aside--information">Note: Due to a Zoom limitation, before starting to broadcast the Zoom meeting to Brightcove Live, the Zoom meeting has to be started.</aside>
       </li>
-      <li>Back in the  Live <strong>Control Room</strong>, click the <strong>Start Broadcasting</strong> button.
+      <li>Back in the Live <strong>Control Room</strong>, click the <strong>Start Broadcasting</strong> button.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" width="" height="" src="/assets/images/s-live-img/live-module/live-zoom-integration/start_broadcasting_button.png" /></figure>
       </li>
       <li>After the last step, you will be able to see your Zoom Meeting in the <strong>Control Room</strong>.
@@ -2797,7 +2798,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ol>
   </section>
 </article>
-
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
