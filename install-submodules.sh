@@ -1,6 +1,8 @@
 echo 'Adding Scripts'
 git submodule add https://github.com/BrightcoveLearning/s-scripts
-cd _includes
+cd _data
+git submodule add https://github.com/BrightcoveLearning/s-site-assets-data
+cd ../_includes
 echo 'Adding includes submodule'
 git submodule add https://github.com/BrightcoveLearning/s-jekyll-page-includes
 echo 'Adding OTT plugins'

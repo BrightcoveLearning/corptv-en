@@ -162,3 +162,6 @@
 	path = assets/images/s-web-conferencing-img
 	url = https://github.com/BrightcoveLearning/s-web-conferencing-img
   branch = main
+[submodule "_data/s-site-assets-data"]
+	path = _data/s-site-assets-data
+	url = https://github.com/BrightcoveLearning/s-site-assets-data
