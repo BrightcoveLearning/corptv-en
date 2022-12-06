@@ -38,6 +38,7 @@ echo 'Adding audience insghts'
 git submodule add https://github.com/BrightcoveLearning/s-audience-insights
 git submodule add https://github.com/BrightcoveLearning/s-live
 git submodule add https://github.com/BrightcoveLearning/s-web-conferencing
+git submodule add https://github.com/BrightcoveLearning/s-template-page-includes
 cd ..
 cd assets/images
 echo 'Adding OTT plugins images'
