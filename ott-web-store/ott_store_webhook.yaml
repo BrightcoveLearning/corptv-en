@@ -21,7 +21,7 @@ paths:
         - WebHook
       summary: Update user CorpTV store
       description: 'CorpTV Entitlement update'
-      operationId: UpdateBeaconStore
+      operationId: UpdateCorpTVStore
       parameters:
         - $ref: '#/components/parameters/auth-token'
       requestBody:
@@ -31,7 +31,7 @@ paths:
             schema: {
               type: "array",
               items: {
-                $ref: '#/components/schemas/BeaconRequestBody'
+                $ref: '#/components/schemas/CorpTVRequestBody'
               }
             }
           }
@@ -43,7 +43,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/BeaconResponse'
+                $ref: '#/components/schemas/CorpTVResponse'
               examples:
                 1:
                   value:
@@ -54,7 +54,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/BeaconErrorResponse'
+                $ref: '#/components/schemas/CorpTVErrorResponse'
               examples: # Multiple examples
                 1: # Distinct name
                   value:
@@ -85,7 +85,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/BeaconErrorResponse'
+                $ref: '#/components/schemas/CorpTVErrorResponse'
               examples: # Multiple examples
                 1: # Distinct name
                   value:
@@ -110,7 +110,7 @@ paths:
 
 components:
   schemas:
-    BeaconRequestBody:
+    CorpTVRequestBody:
       properties:
         package_name:
           description: Package name for subscriptions (SVOD), or the product SKU for TVOD (buy/rent)
@@ -174,7 +174,7 @@ components:
         - start_date
         - notification_type
         - notification_date
-    BeaconResponse:
+    CorpTVResponse:
       properties:
         success:
           type: boolean
@@ -185,7 +185,7 @@ components:
           example: All subscriptions processed
       title: "CorpTV Success Response"
       type: object
-    BeaconErrorResponse:
+    CorpTVErrorResponse:
       properties:
         success:
           type: boolean

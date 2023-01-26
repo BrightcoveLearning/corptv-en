@@ -11,8 +11,8 @@ var token =
     Talla.OptionThemeColor('rgb(239, 108, 42)'),
     Talla.OptionDisplayName('Search Video Cloud Platform APIs Docs'),
     Talla.OptionKnowledgeGroups([]),
-    Talla.OptionWideBeacon(true),
-    Talla.OptionBeaconCTA("Search Video Cloud Platform APIs Docs"),
+    Talla.OptionWideCorpTV(true),
+    Talla.OptionCorpTVCTA("Search Video Cloud Platform APIs Docs"),
     Talla.OptionOpenIcon('https://support.brightcove.com/site-assets/images/site/search.png'),
     Talla.OptionBotIcon('https://support.brightcove.com/site-assets/images/site/search.png'),
     Talla.OptionAutodetectSession
