@@ -45,11 +45,18 @@ product_icon: "CorpTV_H_K.svg"
 search_id: '017969773216783359937:9ybe0wftqs0'
 feedbackify_id: '15610'
 defaults:
-  - scope:
-      path: ''
-      type: 'pages'
+  -
+    scope:
+      path: ""
+      type: "pages"
     values:
-      layout: 'page'
+      layout: "doc_pages"
+  -
+    scope:
+      path: "*/index.html"
+      type: "pages"
+    values:
+      layout: "index_pages"
 # plugins
 plugins:
   - jekyll-last-modified-at

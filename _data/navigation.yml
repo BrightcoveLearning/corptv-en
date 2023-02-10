@@ -209,6 +209,8 @@
 - section:
   name: Managing Pages
   url: '/layout/index.html'
+  icon: fa-regular fa-files
+  description: Learn how to create and manage pages.
   docs:
     - name: Getting Started with the Layout Module
       url: /layout/getting-started-layout-module.html

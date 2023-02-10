@@ -1,8 +1,41 @@
 ---
 title: Brightcove CorpTV Home
 parent: null
+layout: landing_page
 ---
-<h1>{{ site.product }} Home</h1>
+
+<!-- main content -->
+<div class="page-content">
+  <div class="container">
+    <div class="docs-overview py-5">
+      <div class="row justify-content-center">
+
+
+        {% for section in site.data.navigation offset:1 %}
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card card-hover shadow-sm">
+
+            <div class="card-body">
+              <h5 class="card-title mb-3">
+                <span class="span-icon card-icon-holder icon-theme me-2">
+                  <i class="{{ section.icon }}"></i>
+                </span><!--//card-icon-holder-->
+                <span class="card-title-text">{{ section.name }}</span>
+              </h5>
+              <div class="card-text">
+                {{ section.description }}
+              </div>
+              <a class="card-link-mask" href="{{ section.url }}"></a>
+            </div><!--//card-body-->
+          </div><!--//card-->
+        </div><!--//col-->
+        {% endfor %}
+      </div><!--//row-->
+    </div><!--//container-->
+  </div><!--//container-->
+</div><!--//page-content-->
+
+<!-- <h1>{{ site.product }} Home</h1>
 <article class="bcls-article">
   <summary>{{ site.description }}</summary>
   <section class="card-wrapper">
@@ -185,7 +218,7 @@ parent: null
         <p><a href="/general/index.html">View All...</a></p>
       </div>
     </section>
-    <!-- <section onclick="window.location.pathname = '/training/index.html';" class="bcls-card">
+    <section onclick="window.location.pathname = '/training/index.html';" class="bcls-card">
       <div class="card-content">
         <h2><a href="/admin/index.html">Training</a></h2>
         <p>On-Demand training and product training videos.</p>
@@ -205,7 +238,7 @@ parent: null
           <li><a href="/release-notes/product-updates.html">{{ site.product_short }} Studio Release Notes</a></li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <section onclick="window.location.pathname = '/support/index.html';" class="bcls-card">
       <div class="card-content">
         <h2><a href="/support/index.html">Support</a></h2>
@@ -218,4 +251,4 @@ parent: null
       </div>
     </section>
   </section>
-</article>
+</article> -->
