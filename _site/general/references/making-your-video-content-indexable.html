@@ -10,6 +10,7 @@
         <meta name="description" content="In this topic you will learn how about ways to ensure your video content is properly indexed by search engines.">
         
         <!-- Google Font -->
+        <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
         <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/fonts/articulat-site.css">
         <link href="/assets/s-site-assets-stylesheets/fonts/source-code-pro.css" rel="stylesheet">
         
@@ -3500,25 +3501,25 @@
   </section>
   <section class="bcls-section">
     <h2 id="sitemap">Standard Sitemaps</h2>
-    <p>Sitemaps follow the sitemap specification that is defined here: <a href="http://www.sitemaps.org/">www.sitemaps.org</a>. The purpose of the sitemap file is to provide a list of URLs on your site to the search engines. The only other information associated with a URL is when the page was last modified and how frequently the page changes. Note that there is no metadata about your content in this index. Because the sitemap is page-centric, we need to create a model where <i>each</i> video in your library will have a unique page, or URL, associated with it. This can be accomplished by having a single page whose behavior and content can be dynamically changed by passing in different query parameters to the page. For example, if you have a URL like <code translate="No">http://www.example.com/video.html?videoId=123</code>, you would have the <code translate="No">video.html</code> page look for the <code translate="No">videoId</code> query parameter (<code translate="No">videoId=123</code>) and modify the contents of the page returned to the browser to contain information about the video with id 123. This would be done on the server-side of your application where the page would look for the ID and then use the Brightcove <span translate="No">CMS API</span> to fetch metadata about the video and write it into the page. Alternatively, you could store the URL where the video is published in a custom field, so that the <span translate="No">CMS API</span> could retrieve it.</p>
+    <p>Sitemaps follow the sitemap specification that is defined here: <a href="https://www.sitemaps.org/">www.sitemaps.org</a>. The purpose of the sitemap file is to provide a list of URLs on your site to the search engines. The only other information associated with a URL is when the page was last modified and how frequently the page changes. Note that there is no metadata about your content in this index. Because the sitemap is page-centric, we need to create a model where <i>each</i> video in your library will have a unique page, or URL, associated with it. This can be accomplished by having a single page whose behavior and content can be dynamically changed by passing in different query parameters to the page. For example, if you have a URL like <code translate="No">https://www.example.com/video.html?videoId=123</code>, you would have the <code translate="No">video.html</code> page look for the <code translate="No">videoId</code> query parameter (<code translate="No">videoId=123</code>) and modify the contents of the page returned to the browser to contain information about the video with id 123. This would be done on the server-side of your application where the page would look for the ID and then use the Brightcove <span translate="No">CMS API</span> to fetch metadata about the video and write it into the page. Alternatively, you could store the URL where the video is published in a custom field, so that the <span translate="No">CMS API</span> could retrieve it.</p>
     <p>There is also a <code translate="No">changefreq</code> tag in the sitemap that tells search engines how often the content changes. If you update videos frequently, you would need to record that info in a tag or custom field also, so that the <span translate="No">CMS API</span> could return it. Many videos are rarely updated, so if that is the case for yours, you could just set the value of the tag to <code translate="No">yearly</code>, or you could omit this optional tag altogether. There is not clear evidence that site crawlers pay much attention to it anyway.</p>
     <p>For the purposes of this article, we assume that there is a single landing page on your site which can be used to play back all video content for your site. Different query parameters will be passed to the page to tell the page what video to play back and what video to surface metadata for. For example, let's say you have a page that displays the contents of an entire playlist and queues up a specific video in a player. You tell the page what playlist to display metadata for via a <code translate="No">bcpid</code> query parameter and what video to surface in a player via the <code translate="No">bcvid</code> parameter. Thus, what we want to do is create a URL for every unique playlist and video id combination.</p>
     <p>Here is an example of sitemap that would be created:</p>
     <pre>
 <code class="language-xml" translate="No">
 &lt;?xml version="1.0" encoding="UTF-8" ?&gt;
- &lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+ &lt;urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"&gt;
    &lt;url&gt;
-     &lt;loc&gt;http://www.example.com/video?bclid=345&amp;bctid=123&lt;/loc&gt;
+     &lt;loc&gt;https://www.example.com/video?bclid=345&amp;bctid=123&lt;/loc&gt;
      &lt;lastmod&gt;2015-01-01&lt;/lastmod&gt;
      &lt;changefreq&gt;weekly&lt;/changefreq&gt;
    &lt;/url&gt;
    &lt;url&gt;
-     &lt;loc&gt;http://www.example.com/video?bclid=12&amp;bctid=544&lt;/loc&gt;
+     &lt;loc&gt;https://www.example.com/video?bclid=12&amp;bctid=544&lt;/loc&gt;
      &lt;lastmod&gt;2015-03-01&lt;/lastmod&gt;
    &lt;/url&gt;
  &lt;/urlset&gt;</code></pre>
-    <p>To create a sitemap file, you can create a script that uses <span translate="No">CMS API</span> requests to walk through the playlists in the CorpTV account and, for each playlist, walks through its contained videos. For each playlist and video combination, the script creates an entry in the sitemap supplying a unique URL to the playlist/video combination. Once you've created a sitemap file for your site, place the resulting <code translate="No">sitemap.xml</code> file in the root directory of your webserver. For example, if your domain is <code translate="No">www.example.com</code>, the sitemap file would be available at <code translate="No">http://www.example.com/sitemap.xml</code>. Even better would be to automatically generate this file with a server-side application and update the file on your live site.</p>
+    <p>To create a sitemap file, you can create a script that uses <span translate="No">CMS API</span> requests to walk through the playlists in the CorpTV account and, for each playlist, walks through its contained videos. For each playlist and video combination, the script creates an entry in the sitemap supplying a unique URL to the playlist/video combination. Once you've created a sitemap file for your site, place the resulting <code translate="No">sitemap.xml</code> file in the root directory of your webserver. For example, if your domain is <code translate="No">www.example.com</code>, the sitemap file would be available at <code translate="No">https://www.example.com/sitemap.xml</code>. Even better would be to automatically generate this file with a server-side application and update the file on your live site.</p>
   </section>
   <section class="bcls-section">
     <h2 id="videositemap">Video Sitemaps</h2>
@@ -3573,15 +3574,15 @@
     <p>For a list of all the supported tags and a more detailed explanation of tags, see the <a href="https://support.google.com/webmasters/answer/80471">Google documentation</a>.</p>
     <p>Below is a sample video sitemap.</p>
     <pre>
-&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"&gt;
+&lt;urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"&gt;
    &lt;url&gt;
-     &lt;loc&gt;http://www.example.com/videos/video_landing_page.html&lt;/loc&gt;
+     &lt;loc&gt;https://www.example.com/videos/video_landing_page.html&lt;/loc&gt;
      &lt;video:video&gt;
-       &lt;video:thumbnail_loc&gt;http://www.example.com/thumbs/123.jpg&lt;/video:thumbnail_loc&gt;
+       &lt;video:thumbnail_loc&gt;https://www.example.com/thumbs/123.jpg&lt;/video:thumbnail_loc&gt;
        &lt;video:title&gt;Grilling steaks for summer&lt;/video:title&gt;
        &lt;video:description&gt;Get perfectly done steaks every time&lt;/video:description&gt;
-       &lt;video:content_loc&gt;http://brightcove04.brightcove.com/22/20318290001/201510/2249/20318290001_4582301804001_4582289844001.mp4?pubId=20318290001&amp;videoId=4582289844001&lt;/video:content_loc&gt;
-       &lt;video:player_loc&gt;http://players.brightcove.net/20318290001/default_default/index.html?videoId=4582289844001&lt;/video:player_loc&gt;
+       &lt;video:content_loc&gt;https://brightcove04.brightcove.com/22/20318290001/201510/2249/20318290001_4582301804001_4582289844001.mp4?pubId=20318290001&amp;videoId=4582289844001&lt;/video:content_loc&gt;
+       &lt;video:player_loc&gt;https://players.brightcove.net/20318290001/default_default/index.html?videoId=4582289844001&lt;/video:player_loc&gt;
        &lt;video:duration&gt;600&lt;/video:duration&gt;
        &lt;video:publication_date&gt;2014-11-05T19:20:30+08:00.&lt;/video:publication_date&gt;
        &lt;video:tag&gt;steak&lt;/video:tag&gt;
@@ -3609,8 +3610,8 @@
     <p>In addition to video sitemaps, you can increase the visibility of video content on your site by using micro-formats.</p>
     <p>While HTML tags tell the browser how to display your content, it doesn't provide any information about what the content means. Your site may be generated from structured data, probably stored in databases, but the structure is lost when it is formatted in HTML. Search engines can benefit from knowing about the structure of the data on your site.</p>
     <p>A collection of schemas (i.e. HTML tags) has been created to identify the type of content on your web pages. Search engines including Bing, Google and Yahoo rely on this markup to improve search results.</p>
-    <p>These schemas, or micro-formats, provide you with a collection of shared vocabularies to add to your markup that will define the content on your web page. You can find details about these tags at <a href="http://schema.org/"> schema.org</a>.</p>
-    <p>For your media player, Brightcove recommends using the <a href="http://schema.org/VideoObject"> VideoObject</a> schema.</p>
+    <p>These schemas, or micro-formats, provide you with a collection of shared vocabularies to add to your markup that will define the content on your web page. You can find details about these tags at <a href="https://schema.org/"> schema.org</a>.</p>
+    <p>For your media player, Brightcove recommends using the <a href="https://schema.org/VideoObject"> VideoObject</a> schema.</p>
     <p>Brightcove has created a tool to generate your player publishing code with the micro-format data included. Check out the <a href="https://apis.support.brightcove.com/cms/code-samples/cms-api-sample-video-schema-builder.html"> Video Schema Builder.</a></p>
   </section>
   <section class="bcls-section">

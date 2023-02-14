@@ -38,7 +38,7 @@ echo 'Adding audience insghts'
 git submodule add https://github.com/BrightcoveLearning/s-audience-insights
 git submodule add https://github.com/BrightcoveLearning/s-live
 git submodule add https://github.com/BrightcoveLearning/s-web-conferencing
-git submodule add https://github.com/rcrooks/s-integrations
+git submodule add https://github.com/BrightcoveLearning/s-integrations
 git submodule add https://github.com/BrightcoveLearning/s-template-page-includes
 cd ..
 cd assets/images
@@ -74,7 +74,7 @@ git submodule add https://github.com/BrightcoveLearning/s-training-img
 git submodule add https://github.com/BrightcoveLearning/s-audience-insights-img
 git submodule add https://github.com/BrightcoveLearning/s-live-img
 git submodule add https://github.com/BrightcoveLearning/s-web-conferencing-img
-git submodule add https://github.com/rcrooks/s-integrations-img
+git submodule add https://github.com/BrightcoveLearning/s-integrations-img
 cd ..
 echo 'Adding site assets'
 git submodule add https://github.com/BrightcoveLearning/s-site-assets-favicons
