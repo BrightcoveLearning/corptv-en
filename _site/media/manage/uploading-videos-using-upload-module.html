@@ -3552,7 +3552,7 @@
     </ul>
     <aside class="bcls-aside bcls-aside--information">Notes:
       <ul>
-        <li>There is no file size limit. Brightcove has tested with uploads as large as 100GB without any issues.</li>
+        <li>There is no file size limit. Brightcove has tested with uploads as large as 100GB without any issues. It is important to understand that if there are network connection issues during the upload, the upload will fail. There are many factors out of the control of Video Cloud Studio that can impact network connectivity such as bandwidth, server configuration and network routing.</li>
         <li>When uploading large files, Brightcove recommends setting the <a href="/admin/general/managing-account-settings.html#upload">Upload Queueing</a> setting to <strong>Upload one file at a time</strong>.</li>
         <li>If you receive Studio timeout errors when uploading large files, try uploading the file to S3 or some other remote storage location and use the URL upload option in the Studio.</li>
         <li>YouTube URLs cannot be used as they do not generate direct links to video files.</li>
