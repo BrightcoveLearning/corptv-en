@@ -3497,16 +3497,14 @@
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Reference ID" src="/assets/images/s-publish-img/publishing/node16827-ref-id.png" /></figure>
     <p>Give your video a reference ID and then change your embed code so that it refers to the video by reference ID and not by video ID.</p>
     <p>The embed code would change from this:</p>
-    <pre>
-<code translate="No">&lt;iframe src="//players.brightcove.net/1486906377/default_default/index.html?<strong>videoId=5308260054001</strong>"   allowfullscreen  webkitallowfullscreen  mozallowfullscreen  width="640"  height="360"&gt;&lt;/iframe&gt;</code></pre>
+    <pre class="line-numbers"><code class="language-html" translate="No">&lt;iframe src="//players.brightcove.net/1486906377/default_default/index.html?<strong>videoId=5308260054001</strong>"   allowfullscreen  webkitallowfullscreen  mozallowfullscreen  width="640"  height="360"&gt;&lt;/iframe&gt;</code></pre>
     <p>To this:</p>
-    <pre>
-<code translate="No">&lt;iframe src="//players.brightcove.net/1486906377/default_default/index.html?<strong>videoId=ref:frontpage</strong>"   allowfullscreen  webkitallowfullscreen  mozallowfullscreen  width="640"  height="360"&gt;&lt;/iframe&gt;</code></pre>
+    <pre class="line-numbers"><code class="language-html" translate="No">&lt;iframe src="//players.brightcove.net/1486906377/default_default/index.html?<strong>videoId=ref:frontpage</strong>"   allowfullscreen  webkitallowfullscreen  mozallowfullscreen  width="640"  height="360"&gt;&lt;/iframe&gt;</code></pre>
     <p>Now, whenever you need to change the video in the player, remove the <strong>frontpage</strong> reference ID from the video and assign it to the new video you want to appear in the player.</p>
   </section>
   <section class="bcls-section">
     <h2 id="pubplaylist">Using a playlist player</h2>
-    <p>You can also easily change the video in a player by creating a and using a playlist. To do it, follow these steps:</p>
+    <p>You can also easily change the video in a player by creating and using a playlist. To do it, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
       <li>Open the <strong>Media</strong> module.</li>
       <li>Click <strong> Create playlist</strong>.</li>
