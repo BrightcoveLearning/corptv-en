@@ -3491,16 +3491,14 @@
       <li>Provide stereo vs. multi-channel (surround sound) audio</li>
     </ul>
     <p>Multiple audio tracks are supported for HLS V4+ and DASH - with and without DRM protection. Videos with multiple audio tracks will display a headphone icon (<img alt="" src="/assets/images/s-media-img/captions/node18591-headphone-icon.png" />) in the controlbar. When the icon is clicked, the viewer can select between audio tracks.</p>
-    <aside class="bcls-aside bcls-aside--information">Notes:
+    <h4>Notes:</h4>
       <ul>
         <li>Audio source files can be in MP3, M4A, or WAV format.</li>
-        <li>Multiple audio tracks can only be used with videos set up for <a href="/general/architecture/overview-dynamic-delivery.html">Dynamic Delivery</a>. In addition, your account must be enabled for multiple audio tracks. Contact your Customer Success Manager for details.</li>
-        <li>If audio tracks are added to a title after the video was originally ingested; the default ingest profile for the publisher's account is selected when processing the audio track. We recommend processing audio tracks with the same ingest profile as the original video title to ensure the same audio bitrate/renditions are used. For more details in setting the default ingest profile, please refer to <a href="/admin/ingest-profiles/managing-ingest-profiles.html#default">Managing Ingest Profiles</a>.</li>
-        <li>When a video is uploaded using a Dynamic Delivery ingest profile, the source audio for the video will be transcoded according to the ingest profile and will appear in the <strong>Audio Tracks</strong> section for the video in the Media module. By default, the audio <strong>Language</strong> is set to <strong>English</strong> with a <strong>Variant</strong> type of <strong>main</strong>. The defaults can be changed by Brightcove Support. Additional audio tracks can then be added.</li>
+        <li>Your account must be enabled for multiple audio tracks. Contact your Customer Success Manager for details.</li>
+        <li>All audio tracks must be added using the same <strong>ingest profile</strong> that was used to upload the video.</li>
+        <li>By default, the audio <strong>Language</strong> is set to <strong>English</strong> with a <strong>Variant</strong> type of <strong>main</strong>. The defaults can be changed by Brightcove Support. Additional audio tracks can then be added.</li>
         <li>When you add additional audio tracks to a video, they must all have the same bitrate/rendition profile to ensure successful playback in HLS (DASH playback will still work).</li>
-        <li>When you add an audio track to a video, and then add a duplicate before the first one has finished uploading, one of the tracks may be corrupted, silently, <strong>causing playback of the video to fail</strong>. Be sure to wait until each track has fully uploaded before uploading another one.</li>
-        <li>Brightcove has seen cases where Safari will not always loadi ng the audio track marked as default. Due to Safari loading content natively, the language settings of the device will take priority when determining the audio track to load.</li>
-        <li>Cloud Playout doesn't support <strong>Multiple Audio Track</strong>.</li>
+        <li>Only one active ingest job is allowed on a video. Do not add an audio track until processing of the video has finished, and if you are adding multiple tracks, wait till each one has finished processing before adding another.</li>
       </ul>
     </aside>
     <p>Below is an example of a video that has been configured with multiple audio tracks.</p>
@@ -3611,6 +3609,10 @@
       <dd>The video <code translate="No">duration</code> reported by the catalog/Playback API may be incorrect if the audio tracks have different durations.</dd>
       <dt>Videos shared from other accounts</dt>
       <dd>Audio tracks cannot be added to videos shared from other accounts, as this involves re-transcoding. Audio tracks need to be added to the account the video was shared from.</dd>
+      <dt>Safari</dt>
+      <dd>Brightcove has seen cases where Safari will not always load ng the audio track marked as default. Due to Safari loading content natively, the language settings of the device will take priority when determining the audio track to load.</dd>
+      <dt>Cloud Playout</dt>
+        <dd>Cloud Playout doesn't support <strong>Multiple Audio Track</strong>.</dd>
     </dl>
   </section>
 </article>
