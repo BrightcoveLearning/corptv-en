@@ -3501,7 +3501,7 @@
     <aside class="bcls-aside bcls-aside--information">
       <p><strong>Notes</strong></p>
       <ul>
-        <li>SRT, SCC and DFXP captions will be automatically converted to WebVTT for Dynamic Delivery accounts</li>
+        <li>SRT, SCC and DFXP captions will be automatically converted to WebVTT for Dynamic Delivery accounts <strong>(regardless of format, the text encoding of the file must be UTF-8 or the processing will fail)</strong>.</li>
         <li>The text of the captions must be encoded UTF-8 to display properly for double-byte languages such as Japanese and Korean</li>
         <li>Because the captions are displayed in HTML, any text inside brackets will be interpreted as a tag and not displayed</li>
         <li>If "&lt;" is used within  a WebVTT file without a trailing whitespace, captions will not be displayed by the Android SDK</li>
