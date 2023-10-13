@@ -2250,12 +2250,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/get-started/basics/publish/publishing-single-video-web.html",
+      "newURL": "https://corptv.support.brightcove.com/basics/media/publishing-single-video-web.html",
       "oldURL": "/publishing-single-video-web"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/basics/media/publishing-single-video-web.html",
+      "newURL": "https://corptv.support.brightcove.com/get-started/basics/publish/publishing-single-video-web.html",
       "oldURL": "/publishing-single-video-web"
   },
 
@@ -2330,17 +2330,17 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/analytics/general/resources.html",
-      "oldURL": "/resources"
-  },
-
-  {
       "newURL": "https://corptv.support.brightcove.com/monetization/general/resources.html",
       "oldURL": "/resources"
   },
 
   {
       "newURL": "https://corptv.support.brightcove.com/publishing-apps/ios-tvos/resources.html",
+      "oldURL": "/resources"
+  },
+
+  {
+      "newURL": "https://corptv.support.brightcove.com/analytics/general/resources.html",
       "oldURL": "/resources"
   },
 
@@ -2675,12 +2675,12 @@
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/get-started/basics/media/uploading-videos.html",
+      "newURL": "https://corptv.support.brightcove.com/basics/media/uploading-videos.html",
       "oldURL": "/uploading-videos"
   },
 
   {
-      "newURL": "https://corptv.support.brightcove.com/basics/media/uploading-videos.html",
+      "newURL": "https://corptv.support.brightcove.com/get-started/basics/media/uploading-videos.html",
       "oldURL": "/uploading-videos"
   },
 
@@ -2717,11 +2717,6 @@
   {
       "newURL": "https://corptv.support.brightcove.com/campaign/general/using-custom-metrics-and-events.html",
       "oldURL": "/using-custom-metrics-and-events"
-  },
-
-  {
-      "newURL": "https://corptv.support.brightcove.com/campaign/get-started/using-hud.html",
-      "oldURL": "/using-hud"
   },
 
   {
