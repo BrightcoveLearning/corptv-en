@@ -3475,7 +3475,7 @@
   <summary>In this topic, you will learn how to use the Live module to create a Live Event with Playback Restrictions.</summary>
   <section class="bcls-section">
     <h2 id="Introduction">Introduction</h2>
-    <p> By default, live streams talk to the Brightcove Live API to stream your event. A new system to manage Playback Rights and Restrictions sits in front of the Live API and provides playback authorization using DRM licenses or AES-128 (HLSe) encryption. </p>
+    <p> By default, live streams talk to the Brightcove Live API to stream your event. A new system to manage Playback Rights and Restrictions sits in front of the Live API and provides playback authorization using DRM licenses DRM licenses or AES-128 (HLSe) encryption. </p>
     <p>Live streams use <a href="https://apis.support.brightcove.com/playback-restrictions/getting-started/overview-playback-restrictions.html#Runtime_restrictions">runtime restrictions</a>, so you will need a JSON Web Token (JWT) with specific permissions (claims) for your stream request.</p>
     <p>The token is used when requesting the video license, once the video has been loaded to the player and the source has been selected.</p>
     <p>To use Playback Restrictions with live streams, your account must be enabled for either studio-grade DRM or AES-128 (HLSe) encryption.</p>
@@ -3542,7 +3542,7 @@
       <li>Expand the <strong>Advanced Options</strong> section.</li>
       <li>For <strong>Content Encryption</strong>, select either <strong>AES-128</strong> or <strong>Digital Rights Management (DRM)</strong>.
         <ul>
-          <li><strong>AES-128</strong> - Secures the live HLS outputs using AES-128 encryption. If this option is selected, you must enter your <strong>Encryption Key</strong>. The key must be 32 hexadecimal characters. For best results, use a key generator of your choice, choosing the <code translate="No">128-bit</code> and <code translate="No">Hex</code> options.  The encryption key value is only entered in the Live module, it is not used as part of your encoder settings.
+          <li><strong>AES-128</strong> - Secures the live HLS outputs using AES-128 encryption. If this option is selected, you must enter your <strong>Encryption Key</strong>. The key must be 32 hexadecimal characters. For best results, use a <a href="https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx">key generator</a>, choosing the <code translate="No">128-bit</code> and <code translate="No">Hex</code> options.  The encryption key value is only entered in the Live module, it is not used as part of your encoder settings.
             <aside class="bcls-aside bcls-aside--information">Note: When using this option, you should not send an encrypted stream to Brightcove. Configure your encoder as you normally would. Selecting this option will encrypt the HLS output streams sent from Brightcove Live.</aside>
             <aside class="bcls-aside bcls-aside--information">Note: Clips can't be created from encrypted live streams.</aside>
           </li>
@@ -3625,7 +3625,7 @@
         <div class="col-6 col-md">
           <h5 class="h5-text">Training</h5>
           <ul class="list-unstyled text-small">
-            <!-- <li><a class="a-text" href="https://studio.support.brightcove.com/get-started/training/online-training-courses.html">Online courses</a></li> -->
+            <li><a class="a-text" href="https://studio.support.brightcove.com/get-started/training/online-training-courses.html">Online courses</a></li>
             <li><a class="a-text" href="https://academy.brightcove.com/">Brightcove Academy</a></li>
           </ul>
         </div>
