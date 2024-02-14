@@ -16,7 +16,8 @@
         
         <!-- FontAwesome JS-->
         
-        <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>  
+        <!-- <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>   -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Plugins CSS -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
@@ -3524,6 +3525,7 @@
       <li><a href="#fb">Facebook</a></li>
       <li><a href="#twitter">Twitter</a></li>
       <li><a href="#linkedin">LinkedIn</a></li>
+      <li><a href="#sprinklr">Sprinklr</a></li>
     </ul>
     <aside class="bcls-aside bcls-aside--information">Notes:
       <ul>
@@ -3623,6 +3625,29 @@
         </li>
       </ol>
     </div>
+    <div id="sprinklr" class="BCL-subsection">
+      <h3>Configuring Sprinklr rules</h3>
+      <ol class="bcls-tasklist-restart">
+        <li>Select what happens when a video is untagged or deleted from CorpTV:
+          <ul>
+            <li><strong>Delete distributed video on Sprinklr</strong> - The video will be deleted from Sprinklr</li>
+            <li><strong>Expire distributed video on Sprinklr</strong> - The video will be expired on Sprinklr</li>
+            <li><strong>No action</strong> - Nothing happens to the Sprinklr video</li>
+          </ul>
+        </li>
+        <li>Select what happens when the video metadata is changed:
+          <ul>
+            <li><strong>Update video metadata on Sprinklr</strong> - Changes to video metadata on the CorpTV side will be synchronized to Sprinklr</li>
+            <li><strong>No action</strong> - No action is taken</li>
+          </ul>
+          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/general/auto-sync-set-up.webp" /></figure>
+        </li>
+        <li>Click <span class="button-blue">Next</span>.</li>
+        <li>Confirm the Auto Sync settings and then click <span class="button-blue">Finish</span>.
+          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/general/auto-sync-finish.webp" /></figure>
+        </li>
+      </ol>
+    </div>
   </section>
   <section class="bcls-section">
     <h2 id="view">Viewing and editing Auto Sync jobs</h2>
@@ -3682,7 +3707,7 @@
         <div class="col-6 col-md">
           <h5 class="h5-text">Training</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="a-text" href="https://studio.support.brightcove.com/get-started/training/online-training-courses.html">Online courses</a></li>
+            <!-- <li><a class="a-text" href="https://studio.support.brightcove.com/get-started/training/online-training-courses.html">Online courses</a></li> -->
             <li><a class="a-text" href="https://academy.brightcove.com/">Brightcove Academy</a></li>
           </ul>
         </div>
@@ -3691,7 +3716,7 @@
           <h5 class="h5-text">Brightcove</h5>
           <ul class="list-unstyled text-small">
             <li><a class="a-text" href="https://www.brightcove.com">Brightcove.com</a></li>
-            <li><a class="a-text" href="https://www.linkedin.com/groups/3229573/">Bright Spot Community</a></li>
+            <li><a class="a-text" href="https://community.brightcove.com/">Bright Spot Community</a></li>
             <li><a class="a-text" href="https://support.brightcove.com/product-updates.html">Product release notes</a></li>
             <li><a class="a-text" href="https://support.brightcove.com/doc-updates.html">Documentation updates</a></li>
           </ul>

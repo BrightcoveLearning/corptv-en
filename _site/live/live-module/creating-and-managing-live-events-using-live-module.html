@@ -16,7 +16,8 @@
         
         <!-- FontAwesome JS-->
         
-        <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>  
+        <!-- <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>   -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Plugins CSS -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
@@ -3500,6 +3501,7 @@
       <li>Live streams with SSAI must be published via the Live module, not the Media Module.</li>
       <li>Live broadcasts will experience a 20-30 second delay.</li>
       <li>Streaming must begin within 30 minutes of the event start (default-level account setting).</li>
+      <li>Live DVR is not supported on Chromecast. Non-DVR streams will play on these devices instead.</li>
       <li>Live streams with DVR are not supported when using the Brightcove Player SDKs. In this case, you should add the DVR playback URL to a remote asset and then use the remote asset URL with the SDK.</li>
       <li>Output settings <strong>cannot</strong> be modified after the event has been created.</li>
       <li>Brightcove scales live streaming capacity up or down to match demand, and generally this is transparent. When an account attempts to create several live jobs in a region in a short time, however, there may be a short delay while additional capacity is prepared. If you try the request again in a few minutes, it should succeed.</li>
@@ -3613,11 +3615,14 @@
         <li><strong>Low Latency</strong> - Live delay reduced to approximately 5-10 seconds (see the <a href="#low-latency">Using Low Latency streaming</a> section below)</li>
       </ul></li>
       <li>Select a <strong>Live Ingest Profile</strong>. The dropdown list will list all Live ingest profiles. The ingest profile will control the quality and number of live renditions that are created. Clicking the <strong>Manage Profiles</strong> link will open the ingest profile editor in another browser tab. Note that you must be an account administrator to access the ingest profile editor. Click the <strong>Renditions</strong> link to view the renditions that will be created using the selected ingest profile.
-        <aside class="bcls-aside bcls-aside--information">The bitrate and billing details of the three tiers are as follows:
+        <aside class="bcls-aside bcls-aside--information"> <strong>Live Tiers</strong>:
           <ul>
-            <li>Tier 1 allows up to 5,500 Kbps and is charged at 1.0x hours</li>
+            <li>For a Live ingest profile to be considered <strong>Tier 1</strong>, the sum of the bitrates of all its renditions, cannot be greater than 5,500 Kbps and is charged at 1.0x hours.</li>
+            <li>If the sum of the bitrates of all its renditions is greater than 5,500 but less than 10,000, the Live ingest profile will be considered <strong>Tier 2</strong> and it will be charged at 1.5x hours.</li>
+            <li>If the sum of the bitrates of all its renditions is greater than 10,000, the profile will be considered <strong>Tier 3</strong> and is charged at 2.0x hours.</li>
+            <!-- <li>Tier 1 allows up to 5,500 Kbps and is charged at 1.0x hours</li>
             <li>Tier 2 allows up to 10,000 Kbps and is charged at 1.5x hours</li>
-            <li>Tier 3 allows up to 20,000 Kbps and is charged at 2.0x hours</li>
+            <li>Tier 3 allows up to 20,000 Kbps and is charged at 2.0x hours</li> -->
           </ul>
         </aside>
         <aside class="bcls-aside bcls-aside--information">Note: For information on creating Live ingest profiles, see <a href="/admin/ingest-profiles/creating-custom-live-ingest-profiles.html">Creating Custom Live Ingest Profiles</a>.</aside>
@@ -3682,7 +3687,7 @@
       </li>
       <li><strong>Create Cloud DVR</strong> - Enables DVR capability. If the event is published using a Brightcove Player version earlier than 6.33.0, the <a href="https://player.support.brightcove.com/plugins/live-dvrux-plugin.html">Live DVRUX Plugin</a> is required. Content is available for 7 days after the event finishes.
         <ul>
-          <li><strong>DVR Window</strong> - The amount of time, in seconds, to keep in the live DVR manifest.</li>
+          <li><strong>DVR Window</strong> - The amount of time, in seconds, to keep in the live DVR manifest. The maximum value allowed for this field is 86400 seconds, which is 24 hours in seconds.</li>
         </ul>
       </li>
       <li><strong>Input Format</strong> - The input format from the encoder that will be sent to the Live module. This feature enables additional metadata in a live stream like now, now-next, more flexibility in subtitles and captioning, audio tracks and enables streamlined digital experiences with standard broadcast level data. The following input formats are supported:
@@ -3704,6 +3709,7 @@
       <li><strong>Create this as a recurring event using a Static Entry Point (SEP)</strong> - Allows a single live stream to be created and then activated/deactivated when needed. For information, see the <a href="#intro_recurring">Introduction to recurring events</a> section of this document.</li>
     </ul>
     <p>Click <strong>Edit Configuration </strong> to view/edit the API request that will be made to create the live stream. Caution should be used when editing the API call directly.</p>
+    <aside class="bcls-aside bcls-aside--warning language-editable">Live DVR is not supported on Chromecast. Non-DVR streams will play on these devices instead.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="low-latency">Using low latency streaming</h2>
@@ -4071,7 +4077,7 @@
         <div class="col-6 col-md">
           <h5 class="h5-text">Training</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="a-text" href="https://studio.support.brightcove.com/get-started/training/online-training-courses.html">Online courses</a></li>
+            <!-- <li><a class="a-text" href="https://studio.support.brightcove.com/get-started/training/online-training-courses.html">Online courses</a></li> -->
             <li><a class="a-text" href="https://academy.brightcove.com/">Brightcove Academy</a></li>
           </ul>
         </div>
@@ -4080,7 +4086,7 @@
           <h5 class="h5-text">Brightcove</h5>
           <ul class="list-unstyled text-small">
             <li><a class="a-text" href="https://www.brightcove.com">Brightcove.com</a></li>
-            <li><a class="a-text" href="https://www.linkedin.com/groups/3229573/">Bright Spot Community</a></li>
+            <li><a class="a-text" href="https://community.brightcove.com/">Bright Spot Community</a></li>
             <li><a class="a-text" href="https://support.brightcove.com/product-updates.html">Product release notes</a></li>
             <li><a class="a-text" href="https://support.brightcove.com/doc-updates.html">Documentation updates</a></li>
           </ul>
