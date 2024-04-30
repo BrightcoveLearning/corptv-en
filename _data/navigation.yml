@@ -4,7 +4,7 @@
 - section:
   name: Getting Started
   url: /get-started/index.html
-  icon: fa-regular fa-map-pin
+  icon: fa-solid fa-map-pin
   description: This section provides guides to help you get started with Brightcove CorpTV.
   docs:
     - name: Brightcove CorpTV Learning Guide
@@ -95,7 +95,7 @@
 - section:
   name: Managing Media
   url: /media/index.html
-  icon: fa-regular fa-photo-film
+  icon: fa-solid fa-photo-film
   description: Learn how to manage the videos, series and seasons in your account.
   docs:
   - name: Using the Media Module
@@ -209,7 +209,7 @@
 - section:
   name: Managing Pages
   url: '/layout/index.html'
-  icon: fa-regular fa-files
+  icon: fa-solid fa-pager
   description: Learn how to create and manage pages.
   docs:
     - name: Getting Started with the Layout Module
@@ -237,7 +237,7 @@
 - section:
   name: Managing Channels
   url: '/channels/index.html'
-  icon: fa-regular fa-table-list
+  icon: fa-solid fa-table-list
   description: Documents to help you create and manage CorpTV and Cloud Playout channels.
   docs:
     - name: CorpTV Channels
@@ -309,7 +309,7 @@
 - section:
   name: Managing Players
   url: /players/index.html
-  icon: fa-regular fa-play
+  icon: fa-solid fa-play
   description: Learn how to manage the players in your account.
   docs:
   - name: Using the Players Module
@@ -373,7 +373,7 @@
 - section:
   name: Reviewing Analytics
   url: /analytics/index.html
-  icon: fa-regular fa-chart-line-up
+  icon: fa-solid fa-chart-line
   description: Learn how to use video analytics to check the performance and engagement of your videos.
   docs:
     - name: Using the Analytics Module
@@ -428,7 +428,7 @@
 - section:
   name: Administering Accounts
   url: /admin/index.html
-  icon: fa-regular fa-gear
+  icon: fa-solid fa-gear
   description: Learn how to create users and manage account settings.
   docs:
   - name: General Information
@@ -486,7 +486,7 @@
 - section:
   name: Registered Users
   url: /registered-users/index.html
-  icon: fa-regular fa-users
+  icon: fa-solid fa-users
   description: Quickly view account details, subscription plans and viewing history for the registered users in your account.
   docs:
     - name: Controlling Viewer Access with Roles
@@ -500,7 +500,7 @@
 - section:
   name: 'App Publishing and Behavior'
   url: '/publishing-apps/index.html'
-  icon: fa-regular fa-display-code
+  icon: fa-solid fa-square-caret-up
   description: This section provides guidance on submitting your apps to the app stores and behaviors of your OTT apps.
   docs:
     - name: 'General Information'
@@ -604,7 +604,7 @@
 - section:
   name: 'Publishing Videos & Players'
   url: /publish/index.html
-  icon: fa-regular fa-display-code
+  icon: fa-regular fa-square-caret-up
   description: Learn different ways of publishing your videos and players.
   docs:
   - name: Publishing
@@ -660,7 +660,7 @@
 - section:
   name: Social Sharing
   url: /social/index.html
-  icon: fa-regular fa-share-nodes
+  icon: fa-solid fa-share-nodes
   description: Learn how to share videos out to social media accounts.
   docs:
   - name: Getting Started
@@ -718,7 +718,7 @@
 - section:
   name: Live Streaming
   url: /live/index.html
-  icon: fa-regular fa-satellite-dish
+  icon: fa-solid fa-satellite-dish
   description: The Live module is used to broadcast live events to both desktop and mobile devices. After entering your event information into the Live module, you will be provided with a set of encoder settings that you plug into your on-site encoder. All transcoding is done in the cloud so you don't need a hardware-based transcoder.
   docs:
   - name: Getting Started
@@ -790,7 +790,7 @@
 - section:
   name: Styling & Appearance
   url: /styling/index.html
-  icon: fa-regular fa-brush
+  icon: fa-solid fa-brush
   description: Documents to help you change the appearance of your Brightcove CorpTV apps.
   docs:
     - name: Branding Brightcove CorpTV Apps
@@ -800,7 +800,7 @@
 - section:
   name: Marketing Automation
   url: /campaign/index.html
-  icon: fa-regular fa-chart-network
+  icon: fa-solid fa-ranking-star
   description: Learn how to connect Video Cloud with popular marketing automation platforms to track viewer engagement.
   docs:
   - name: Getting Started
@@ -917,7 +917,7 @@
 - section:
   name: 'General Information'
   url: '/general/index.html'
-  icon: fa-regular fa-circle-info
+  icon: fa-solid fa-circle-info
   description: General Information about Brightcove CorpTV.
   docs:
     - name: 'References'
@@ -1003,7 +1003,7 @@
 - section:
   name: OTT Plugins
   url: /ott-plugins/index.html
-  icon: a-regular fa-plug
+  icon: fa-solid fa-plug
   description: This section contains topics on OTT plugins.
   docs:
     - name: 'Learning Guide: OTT Plugins'
@@ -1041,7 +1041,7 @@
 - section:
   name: 'Support'
   url: '/support/index.html'
-  icon: fa-regular fa-comments-question-check
+  icon: fa-regular fa-comments
   description: Learn how to get help from Brightcove Support
   docs:
     - name: 'Viewing the Brightcove System Status Page'
