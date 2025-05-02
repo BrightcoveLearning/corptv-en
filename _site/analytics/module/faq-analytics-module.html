@@ -45,6 +45,10 @@
     </head> 
 
     <body class="docs-page">
+        <div id="consent_blackbar"></div>
+        <div id="teconsent"></div>
+        <script async="async"
+            src="https://url.us.m.mimecastprotect.com/s/5CgOCzpzDQU89lO9HgivF9GSgA?domain=consent.trustarc.com"></script>
         
 
 <header class="header fixed-top">
@@ -3497,7 +3501,7 @@
     <h5 id="8">8. Can I run a report to show the number of unique viewers for my account?</h5>
     <p>The number of unique viewers can be seen in the Performance Report.</p>
     <h5 id="9">9. Are analytics for deleted videos included?</h5>
-    <p>The Analytics reports do include analytics for videos that have been deleted from your account. However, you cannot search for deleted videos in the Analytics module to see a report on a particular deleted video. To get such a report, you will need to know the video id for the deleted video and use the <a href="https://apis.support.brightcove.com/analytics/">Analytics API</a> to generate the report. Note that if report data is exported, data for deleted videos may appear without some of the video metadata.</p>
+    <p>The Analytics reports do include analytics for videos that have been deleted from your account and it is not possible to filter out the deleted video from analytics reports. However, you cannot search for deleted videos in the Analytics module to see a report on a particular deleted video. To get such a report, you will need to know the video id for the deleted video and use the <a href="https://apis.support.brightcove.com/analytics/">Analytics API</a> to generate the report. Note that if report data is exported, data for deleted videos may appear without some of the video metadata.</p>
     <h5 id="10">10. What is the earliest date that I can get analytics data?</h5>
     <p>The earliest date for any analytics data is 28 December 2010. Some data items were not collected until later, so the earliest date you can see data will depend on exactly what you are looking at. Video views are available back to 28 December 2010. Note that when navigating dates using the calendar control, it will only navigate back to January 2013, however, earlier dates can be entered manually.</p>
     <h5 id="11">11. Does analytics track players with live event streaming?</h5>
@@ -3567,7 +3571,11 @@
     <p>The Analytics & Campaign modules are two separate systems and it should not be expected that the view events are 1:1, as each captures separate use cases.</p>
     <p>The Campaign lead form requires a <code>video_view</code> event to have triggered before it can display a lead form. These <code>video_view</code> events trigger when a user initiates playback, which is done by having the user manually click the Play button. As a result, even though it may not look like any content has played back, a <code>video_view</code> has been registered and will appear for your video in the Analytics module.</p>
     <p>If you are seeing a higher number of video views in the Analytics module compared to view events in the Campaign module, the most likely reason is that a user was presented your lead form, but did not fill it out to continue through with playback.</p>
-    <h5 id="27">27. Why does iframe tag only report "Direct" on Analytics Traffic reports?</h5>
+   
+    <h5 id="27">27. How is <code>video_seconds_viewed</code> collected and calculated for playback that uses variable speed playback?</h5>
+    <p><code>video_seconds_viewed</code>is based on the playback position, and playback with variable speed is not reflected. For example, when a video plays for 30 seconds at double speed, <code>video_seconds_viewed</code> should be 30.</p>
+    
+    <h5 id="28">28. Why does iframe tag only report "Direct" on Analytics Traffic reports?</h5>
     <p>Traffic source is determined from the HTTP Referrer header. When using the iframe tag, HTTP referrer value is "players.brightcove.net/...", which is classified as 'Direct' on the Analytics module Traffic source data.</p>
     <p>Please use the in-page video tag to get the correct traffic source type.</p>
   </section>
@@ -3745,6 +3753,7 @@
       font-size: 1.4rem;
     }
     </style>
-
+ </div>
+</div>
   </body>
 </html> 

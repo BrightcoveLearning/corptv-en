@@ -45,6 +45,10 @@
     </head> 
 
     <body class="docs-page">
+        <div id="consent_blackbar"></div>
+        <div id="teconsent"></div>
+        <script async="async"
+            src="https://url.us.m.mimecastprotect.com/s/5CgOCzpzDQU89lO9HgivF9GSgA?domain=consent.trustarc.com"></script>
         
 
 <header class="header fixed-top">
@@ -3548,6 +3552,10 @@
       <li><strong>Tracker errors by ad configuration</strong> - A list of tracker errors sorted by ad configuration</li>
     </ul>
     <p>Click <strong>view more</strong> to see more details.</p>
+    <h4>What is the difference between <code translate="no">204 - NO CONTENT</code> and <code translate="no">200 - OK</code>?</h4>
+    <p>These status codes are the direct HTTP response status codes received from the ad provider after making the request. If the code received is 204, it means the ad provider responded with a successful response but did not include a body. A 200 indicates that the response was successful and included a body.</p>
+    <p><strong>If the ad request returns an empty response, will this be counted as 200, OK?</strong></p>
+    <p>If the response were successful and included a body that contained an empty VAST XML, then this would count as a 200. If a 204 is seen on an ad request, then an empty VAST from the provider was not received.</p>
   </section>
   <section class="bcls-section">
     <h2 id="Ad_Error_Codes">Ad Error Codes</h2>
@@ -3803,6 +3811,7 @@
       font-size: 1.4rem;
     }
     </style>
-
+ </div>
+</div>
   </body>
 </html> 

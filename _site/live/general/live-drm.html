@@ -45,6 +45,10 @@
     </head> 
 
     <body class="docs-page">
+        <div id="consent_blackbar"></div>
+        <div id="teconsent"></div>
+        <script async="async"
+            src="https://url.us.m.mimecastprotect.com/s/5CgOCzpzDQU89lO9HgivF9GSgA?domain=consent.trustarc.com"></script>
         
 
 <header class="header fixed-top">
@@ -3469,6 +3473,8 @@
   <h1>Live DRM</h1>
   <summary>In this topic, you will learn how to enable content protection for your live stream.</summary>
   <aside class="bcls-aside bcls-aside--information language-editable">Live DRM is an add-on feature, not active by default. <br> If you would like access to this feature, please contact your Customer Success Manager.</aside>
+  <aside class="bcls-aside bcls-aside--information language-editable">DRM protected content could not play in the Incognito mode of Chrome for Android due to the Chrome browser’s specifications.
+  </aside>
   <section class="bcls-section">
     <h2 id="create">Enabling DRM for Live content</h2>
     <aside class="bcls-aside bcls-aside--information">
@@ -3498,7 +3504,7 @@
         <li id="note1-1"><sup><strong>[1-1]</strong></sup> Widevine can be applied to DASH outputs instead of HLS. To make Widevine with DASH the default requires an account-level override. Contact Support if you want this override applied to your account. Using the <a href="https://apis.support.brightcove.com/live-api/guides/live-drm-live-api.html#create_live_job_example">Live API</a> you can also specify <code translate="No">widevine:hls</code> or <code translate="No">widevine:dash</code> for particular jobs, regardless of the default for your account. <strong><em>Note that depending on how your account/job is configured, the API response (like the one shown below) will include either <code translate="No">widevine:hls</code> or <code translate="No">widevine:dash</code> outputs, but not both.</em></strong></li>
       </ul>
     </aside>
-    <aside class="bcls-aside bcls-aside--information">Token authentication is not supported with live streams when using BYO CDN with live redundancy, DRM, or SSAI.</aside>
+    <aside class="bcls-aside bcls-aside--information"><a href="https://apis.support.brightcove.com/live-api/guides/signed-urls-and-token-auth-live-stream.html">Token authentication</a> is not supported with live streams when using BYO CDN with live redundancy, DRM, or SSAI.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="Playback_technologies_used">Playback technologies used</h2>
@@ -3770,6 +3776,7 @@
       font-size: 1.4rem;
     }
     </style>
-
+ </div>
+</div>
   </body>
 </html> 

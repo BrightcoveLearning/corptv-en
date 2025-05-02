@@ -45,6 +45,10 @@
     </head> 
 
     <body class="docs-page">
+        <div id="consent_blackbar"></div>
+        <div id="teconsent"></div>
+        <script async="async"
+            src="https://url.us.m.mimecastprotect.com/s/5CgOCzpzDQU89lO9HgivF9GSgA?domain=consent.trustarc.com"></script>
         
 
 <header class="header fixed-top">
@@ -3482,6 +3486,7 @@
   </section>
   <section class="bcls-section">
     <h2 id="engagement">Calculating video engagement</h2>
+    <p>The <code translate="No">video_engagement</code> event is a means of tracking video engagement while a video is playing back, and will likely be sent many times during playback. (The player instrumentation sends this event every 10 seconds, if playback is not interrupted.) <strong>At present, events describing ranges over 20 seconds are discarded by the Analytics system, so it is necessary to send these events more frequently.</strong></p>
     <p>Engagement is a measure of views, <strong>not</strong> viewers. In reporting the engagement data, we divide the video into 100 equal parts and count the views in each 100th. There is no distinction between one viewer watching a 100th part 5 times, and five viewers watching it 1 time.</p>
     <p>Also, engagement is a measure of views at particular points in a video, not video views. Repeated views at a particular point by scrubbing back and watching again will increase engagement at that point but not video views.</p>
     <p>The measurements are rounded in the Analytics UI for presentation. The numbers are a result of counting views by individuals and then normalizing those counts along a percentage of a video's timeline. The export API returns the result of this count. Since these are counted values, there is no simple way to estimate the significance of the value to a specific number of digits.</p>
@@ -3512,6 +3517,7 @@
       <li><strong>Views at 50%</strong> - how many views were recorded at the 50% point of the video</li>
       <li><strong>Views at 75%</strong> - how many views were recorded at the 75% point of the video</li>
       <li><strong>Views at 100%</strong> - how many views were recorded at the 100% point of the video</li>
+      <aside class="bcls-aside bcls-aside--information language-editable">Note: <strong>To learn how to calculate the video engagement and it works</strong>, see <a href="https://studio.support.brightcove.com/analytics/general/calculating-video-engagement-score.html">Calculating Video Engagement Score</a>.</aside>
     </ul>
     <p>In all cases, views at x% means that this segment of the video was played back in the player.</p>
     <p>Note that the <strong>Views at x%</strong> is not the same as a <strong>Video View</strong> in the Performance Report. A video view is counted when a video first starts playing back. The views at 1% is recorded when the first percent is watched. The difference here is that if the first percent is watched multiple times (if the video is set to auto-replay, for instance), the count increases, whereas a video view is counted when the video first starts playing back but is not counted on a replay (unless the user reloads the page or watches another video in the playlist, etc).</p>
@@ -3769,6 +3775,7 @@
       font-size: 1.4rem;
     }
     </style>
-
+ </div>
+</div>
   </body>
 </html> 
